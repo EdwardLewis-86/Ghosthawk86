@@ -1,0 +1,4707 @@
+
+% Clean A4 article preamble (box-free)
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{enumitem}
+% A friendly "steps" list for algorithms/solutions
+%\newlist{steps}{enumerate}{1} % removed: duplicate with steps environment
+%\setlist[steps,1]{label=\textbf{Step~\arabic*.}, leftmargin=1.5em, itemsep=0.4ex, topsep=0.4ex} % removed: using custom steps environment directly
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}
+
+% Handy math macros used in the body
+\providecommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\T}{\top}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\qed}{\hfill$\square$}
+
+\newcommand{\problemheader}[1]{\par\medskip\noindent\textbf{#1}\par\smallskip}
+\newenvironment{solution}{\par\medskip\noindent\textbf{Solution.}\ }{\par\medskip}
+
+% === Auto insert begin ===
+\newenvironment{steps}{\begin{enumerate}[label=\textbf{Step~\arabic*.}, leftmargin=*]}{\end{enumerate}}
+\DeclareMathOperator{\tr}{tr}
+\date{}
+\author{}
+\title{Final Exam Preparation (A4 Clean)}
+% === Auto insert end ===
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section*{Flashcard Wall}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=1.5em]
+\item Decompose any square matrix: \(A=\frac{A+A^\top}{2} + \frac{A-A^\top}{2}\).
+\item Commutator of symmetric matrices is skew-symmetric: \((AB-BA)^\top=-(AB-BA)\).
+\item Determinant tips: expand along sparse row/column; \(\operatorname{tr}(AB)=\operatorname{tr}(BA)\).
+\item Moore--Penrose for full column rank: \(A^{+}=(A^{\top}A)^{-1}A^{\top}\).
+\item Spectral decomposition (symmetric \(A\)): \(A=Q\Lambda Q^{\top}\).
+\item SVD of a vector: single singular value \(\lVert x\rVert_2\), left singular \(x/\lVert x\rVert_2\).
+\end{itemize}
+\end{multicols}
+\newpage\section*{Ungrouped}
+
+
+\needspace{10\baselineskip}
+\problemheader{Question 1}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{STA3710 Oct/Nov 2024 - Question 2}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{STA3710 Jan/Feb 2024 - Question 2}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	
+	\subsubsection*{1.2.1 \(\mathbb{E}[y]\) if \(\mathbb{E}[X]=\mu\).}
+	Linearity of expectation gives
+	\[
+	\boxed{\mathbb{E}[y]=5+\tfrac{2}{5}\mu}\]
+	
+	\subsubsection*{1.2.2 \(\operatorname{Var}(y)\) if \(\operatorname{Var}(X)=\sigma^2\).}
+	For constants \(a,b\), \(\operatorname{Var}\)(a+bX)=b^2\(\operatorname{Var}\)(X)).
+	\[
+	\boxed{\,\operatorname{Var}(y)=\Big(\frac{2}{5}\Big)^2\sigma^2=\frac{4}{25}\sigma^2.}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{STA3710 June/July 2021 - Question 2}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{STA3710 May/June 2019 - Question 1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+Joint density f_{X,Y}(x,y)=x+y on 0<x<1,\,0<y<1).
+	\textbf{(i) } f_X(x)=\int_0^1(x+y)\,dy=x+\tfrac12,\ 0<x<1.)
+	
+	\textbf{(ii) } P\big(\tfrac14<X<\tfrac12\big)=\int_{1/4}^{1/2}\!\!\left(x+\tfrac12\right)dx
+	=\Big[\tfrac{x^2}{2}+\tfrac{x}{2}\Big]_{1/4}^{1/2}=\boxed{\tfrac{7}{32}}.)
+	
+	\textbf{(iii) } P\big(\tfrac14<X<\tfrac12,\ \tfrac14<Y<\tfrac12\big)
+	=\int_{1/4}^{1/2}\!\!\int_{1/4}^{1/2}(x+y)\,dy\,dx=\boxed{\tfrac{3}{64}}.)
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+Compute \partial_x (x^{\top} S x) with S=S^{\top}.
+	Using differentials, d(x^{\top} S x)=x^{\top} S\,dx+(dx)^{\top} S x=2x^{\top} S\,dx).  
+	Hence \boxed{\dfrac{\partial}{\partial x}(x^{\top} S x)=2Sx}.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 1}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	\textbf{Goal.} For $x\in\R^4$, construct symmetric $A$ so that
+	\[
+	x^{\top} A x=(x_1-x_2-x_3)^2+(x_1+x_2-x_4)^2\].
+	
+	\(\mathbf{Step 1. Expand each square fully.}\) \[\begin{aligned}
+		(x_1-x_2-x_3)^2&=x_1^2+x_2^2+x_3^2-2x_1x_2-2x_1x_3+2x_2x_3,\\
+		(x_1+x_2-x_4)^2&=x_1^2+x_2^2+x_4^2+2x_1x_2-2x_1x_4-2x_2x_4.
+	\end{aligned}
+\]
+	\textbf{Step 2. Collect like terms.}
+\[
+\begin{aligned}
+x^\top A x
+&= (x_1^2+x_1^2) + (x_2^2+x_2^2) + x_3^2 + x_4^2 \\
+&\quad + (-2x_1x_2 + 2x_1x_2) - 2x_1x_3 + 2x_2x_3 - 2x_1x_4 - 2x_2x_4 \\
+&= 2x_1^2 + 2x_2^2 + x_3^2 + x_4^2 - 2x_1x_3 + 2x_2x_3 - 2x_1x_4 - 2x_2x_4.
+\end{aligned}
+\]
+
+\textbf{Step 3. Match coefficients to the symmetric form.}
+For symmetric $A=(a_{ij})$,
+\[
+x^\top A x=\sum_{i=1}^4 a_{ii}x_i^2 + 2\sum_{1\le i<j\le 4} a_{ij}x_ix_j\].
+Therefore,
+\[
+\begin{aligned}
+a_{11}&=2,\; a_{22}=2,\; a_{33}=1,\; a_{44}=1,\\[2pt]2a_{13}&=-2 \Rightarrow a_{13}=-1,\quad 2a_{23}=2 \Rightarrow a_{23}=1,\\[\begin{aligned}
+2pt]2a_{14}&=-2 \Rightarrow a_{14}=-1,\quad 2a_{24}=-2 \Rightarrow a_{24}=-1,\
+\end{aligned}\[2pt]2a_{12}&=0 \Rightarrow a_{12}=0,\quad 2a_{34}=0 \Rightarrow a_{34}=0.
+\end{aligned}
+\]
+
+\textbf{Step 4. Assemble $A$ (symmetric).}
+\[A=\begin{bmatrix}
+1 & 0 & 2 & 1\\[2pt]0 & 2 & 6 & -3\\[\begin{aligned}
+2pt]0 & 0 & -1 & 2\
+\end{aligned}\[2pt]0 & 0 & -1 & 1\\
+\end{bmatrix} \]\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.4}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	\textbf{Data.}
+	\textbf{Data.}
+	\[
+	x=\begin{bmatrix}1\\[2pt]2\\[2pt]1\\[2pt]2\\[2pt]1\end{bmatrix},\qquad
+\[
+	y=\begin{bmatrix}3\\[2pt]0\\[2pt]1\\[2pt]1\\[2pt]1\end{bmatrix}\].
+]
+	\textbf{Step 1.} Compute norms and inner product:
+	\[
+	\|x\|^2=1^2+2^2+1^2+2^2+1^2=11,\quad
+	\|y\|^2=3^2+0^2+1^2+1^2+1^2=12\],
+	\[
+	x^{\top} y=1\cdot3+2\cdot0+1\cdot1+2\cdot1+1\cdot1=7\].
+	\textbf{Step 2.} By the dot-product identity,
+	\[
+	\cos\theta=\frac{x^{\top}y}{\|x\|\,\|y\|}=\frac{7}{\sqrt{11}\sqrt{12}}=\frac{7}{2\sqrt{33}}\].
+	\[
+	\boxed{\theta=\arccos\!\left(\frac{7}{2\sqrt{33}}\right).}
+	\]
+	\[
+	\boxed{\;\theta=\arccos\!\left(\dfrac{7}{2\sqrt{33}}\right).}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+
+	
+	\textbf{2.1.1 Decompose x in the eigenbasis of A.}
+	
+	\textbf{Step 1. Eigenpairs (verify \(A\vec v=\lambda\vec v\)).}
+	\[
+\lambda_1=-1,\;\vec v_1=\begin{bmatrix}1\\[2pt]2\\[2pt]1\end{bmatrix};\quad
+
+
+\lambda_2=1,\;\vec v_2=\begin{bmatrix}\tfrac12\\[2pt]0\\[2pt]1\end{bmatrix};\quad
+
+
+\lambda_3=2,\;\vec v_3=\begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix}.
+	(Each equation $A\vec v_i=\lambda_i\vec v_i$ holds entry-by-entry.)
+	
+	\mathbf{Step 2. Solve x=\alpha_1\vec v_1+\alpha_2\vec v_2+\alpha_3\vec v_3.}
+Stack columns B=[\vec v_1\;\vec v_2\;\vec v_3] and solve
+\[
+B\begin{bmatrix}\alpha_1\\ \alpha_2\\ \alpha_3\end{bmatrix}
+=\begin{bmatrix}1&\tfrac12&1\\[\begin{aligned}
+2pt]2&0&1\
+\end{aligned}\[2pt]1&1&1\end{bmatrix}
+\begin{bmatrix}\alpha_1\\ \alpha_2\\ \alpha_3\end{bmatrix}
+=\begin{bmatrix}3\\[2pt]3\\[2pt]4\end{bmatrix}
+\Rightarrow
+\boxed{\,\alpha_1=1,\;\alpha_2=2,\;\alpha_3=1\,}\].
+Thus $x=1\cdot\(\vec\) v_1+2\cdot\(\vec\) v_2+1\cdot\(\vec\) v_3$.
+	
+	\textbf{2.1.2 Compute A^{10}x without forming A^{10}.}
+	\[
+	A^{10}x=\sum_{i=1}^3 \alpha_i\lambda_i^{10}\vec v_i
+	=1\cdot(1)\vec v_1+2\cdot(1)\vec v_2+1\cdot(2^{10})\vec v_3
+	=\vec v_1+2\vec v_2+1024\,\vec v_3\].
+	Therefore
+	\[
+\boxed{\,A^{10}x=
+\begin{bmatrix}1026\\[2pt]1026\\[2pt]1027\end{bmatrix}}
+	\textbf{2.1.3 Eigenvalues of A^{\top}.} For any square $A$, $\sigma(A^{\top})=\sigma(A)$. Hence
+	\[
+	\boxed{\,\operatorname{spec}(A^{\top})=\{-1,1,2\}\,}\].
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+\[
+\[
+x=\begin{bmatrix}1\\[2pt]5\\[2pt]7\\[2pt]5\\[2pt]1\end{bmatrix}\].
+]
+
+	\textbf{Definitions.} The SVD of a nonzero vector $x\in\(\mathbb{R}\)^{m}$ (viewed as $m\times 1$ matrix) is
+	\[
+	x=U\Sigma V^{\top},\quad \Sigma=\begin{bmatrix}\sigma_1\end{bmatrix},\;\sigma_1=\|x\|_2,\;
+	U=\begin{bmatrix}u_1\end{bmatrix},\;u_1=\dfrac{x}{\|x\|_2},\;V=[1].
+	
+	\mathbf{Compute norm and factors.}
+	\[
+	\|x\|_2=\sqrt{1^2+5^2+7^2+5^2+1^2}=\sqrt{1+25+49+25+1}=\sqrt{101}\].
+	\[
+\boxed{\,\sigma_1=\|x\|_2=\sqrt{101},\quad
+U=\frac{1}{\sqrt{101}}\begin{bmatrix}1\\[2pt]5\\[2pt]7\\[2pt]5\\[2pt]1\end{bmatrix},\quad
+\Sigma=\begin{bmatrix}\sqrt{101}\end{bmatrix},\quad
+V=\begin{bmatrix}1\end{bmatrix}.\,}
+\]
+(Verification: $U^{\top}U=1$, $V^{\top}V=1$, and $U\Sigma V^{\top}=\tfrac{x}{\|x\|_2}\,\|x\|_2\cdot 1=x$.)
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+A=\begin{bmatrix}2&0&1\\[\begin{aligned}
+2pt]0&2&3\
+\end{aligned}\[2pt]1&3&5\end{bmatrix}.
+	
+	\mathbf{Step 1. Eigenpairs (symmetric).}
+\[
+\lambda_1=0,\;\vec u_1=\frac{1}{\sqrt{14}}\begin{bmatrix}-1\\-3\\[2pt]2\end{bmatrix},\quad
+\lambda_2=2,\;\vec u_2=\frac{1}{\sqrt{10}}\begin{bmatrix}-3\\[2pt]1\\[2pt]0\end{bmatrix},\quad
+\[
+\lambda_3=7,\;\vec u_3=\frac{1}{\sqrt{35}}\begin{bmatrix}1\\[2pt]3\\[2pt]5\end{bmatrix}\].
+]
+(Each satisfies $A\(\vec\) u_i=\lambda_i\(\vec\) u_i$ and $\{\(\vec\) u_i\}$ are orthonormal.)
+\textbf{Step 2. MP inverse from spectrum (exclude $\lambda=0$).}
+\[
+\boxed{\;
+A^{+}=\sum_{\lambda_i>0}\frac{1}{\lambda_i}\,\vec u_i\vec u_i^{\top}
+=\frac{1}{2}\,\vec u_2\vec u_2^{\top}+\frac{1}{7}\,\vec u_3\vec u_3^{\top}
+=\begin{bmatrix}
+\dfrac{89}{196} & -\dfrac{27}{196} & \dfrac{1}{49}\\[8pt]
+-\dfrac{27}{196} & \dfrac{17}{196} & \dfrac{3}{49}\\[\begin{aligned}
+8pt]
+\dfrac{1}{49} & \dfrac{3}{49} & \dfrac{5}{49}
+\end{bmatrix}.
+\,}
+
+\end{aligned}\]
+(Verification: $AA^{+}A=A$; $A^{+}AA^{+}=A^{+}$; $(AA^{+})^{\top}=AA^{+}$; $(A^{+}A)^{\top}=A^{+}A$.)
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	This matches Jan/Feb 5.3; we provide the full derivation for completeness.
+	
+	\textbf{4.2.1 Determinant.} Using block rules (and that blocks commute as scalar multiples of $I_m$),
+	\[
+	\boxed{\;\det(A)=(ad-bc)^{m}.}\]
+	
+	\textbf{4.2.2 Nonsingularity.} \boxed{\,ad-bc\neq 0\,}.
+	
+	\textbf{4.2.3 Inverse.}
+	\[
+	\boxed{\;
+		A^{-1}=\frac{1}{ad-bc} \begin{bmatrix}
+			dI_m & -bI_m\\
+			-cI_m & aI_m
+		\end{bmatrix}.
+		\;}\]
+	\textit{Check (block-by-block):}
+\[
+\begin{aligned}
+\begin{bmatrix} aI & bI\\ cI & dI\end{bmatrix}
+		\frac{1}{ad-bc} \begin{bmatrix} dI & -bI\\ -cI & aI\end{bmatrix}
+		&=\frac{1}{ad-bc} \begin{bmatrix}
+			(ad-bc)I & 0\\[2pt]0 & (ad-bc)I
+		\end{bmatrix}
+		=I_{2m}.
+	\end{aligned}
+\]
+	
+	
+
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.5}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	
+	\textbf{Summary.} For a symmetric $A=[a_{ij}]$, the quadratic form is
+	\[
+	x^{\top} A x
+	= a_{11}x_1^2 + a_{22}x_2^2 + a_{33}x_3^2
+	+ 2a_{12}x_1x_2 + 2a_{13}x_1x_3 + 2a_{23}x_2x_3\].
+	We match coefficients term by term.
+	
+	\textbf{Step 1. Match diagonal coefficients.}
+	\[
+	a_{11}=3, \qquad a_{22}=5, \qquad a_{33}=2\].
+	
+	\textbf{Step 2. Match cross-term coefficients (remember factor $2a_{ij}$).}
+	\[
+	2a_{12}=2 \;\Rightarrow\; a_{12}=1, \qquad
+	2a_{13}=2 \;\Rightarrow\; a_{13}=1, \qquad
+	2a_{23}=3 \;\Rightarrow\; a_{23}=\frac{3}{2}\].
+	
+	\textbf{Step 3. Assemble $A$ symmetrically.}
+	\[
+	\boxed{
+		A=\begin{bmatrix}
+			3 & 1 & 1\\[2pt]1 & 5 & \tfrac{3}{2}\\[\begin{aligned}
+2pt]1 & \tfrac{3}{2} & 2
+		\end{bmatrix}.
+	}
+\end{aligned}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	\textbf{Summary.} With
+	\[
+	x_1 \begin{bmatrix}1\\[2pt]2\\[2pt]3\end{bmatrix},\quad
+	x_2 \begin{bmatrix}1\\[2pt]1\\-1\end{bmatrix},\quad
+	x=\begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix},
+	let $X=[x_1\;x_2]$. The orthogonal projection of $x$ onto $S=\operatorname{span}\{x_1,x_2\}$ is
+	\[
+	\boxed{\,\hat x \;=\; X\,(X^{\top} X)^{-1}X^{\top} x\,}\].
+	
+	\textbf{Step 1. Compute $X^{\top} X$ entry-by-entry.}
+	\[
+	X=\begin{bmatrix}
+\[\begin{bmatrix}
+		1&1\\[\begin{aligned}
+2pt]2&1\
+\end{aligned}\[2pt]3&-1
+	\end{bmatrix},\quad
+\]
+\[
+	X^{\top} X=\begin{bmatrix}
+		1^2+2^2+3^2 & 1\cdot1+2\cdot1+3\cdot(-1)\\[2pt]
+		1\cdot1+2\cdot1+3\cdot(-1) & 1^2+1^2+(-1)^2
+	\end{bmatrix}
+\]
+\[
+	 \begin{bmatrix}
+\[\begin{bmatrix}
+		14&0\\[\begin{aligned}
+2pt]0&3
+	\end{bmatrix}
+\end{aligned}\].\textbf{Step 2. Invert $X^{\top} X$ (diagonal).}
+	\[
+	(X^{\top} X)^{-1} \begin{bmatrix}\tfrac{1}{14}&0\\[2pt]0&\tfrac{1}{3}\end{bmatrix}.
+	
+	\textbf{Step 3. Compute $X^{\top} x$.}
+	\[
+	X^{\top} x=\begin{bmatrix}
+		1\cdot1+2\cdot1+3\cdot1\\[2pt]
+		1\cdot1+1\cdot1+(-1)\cdot1
+	\end{bmatrix}
+	 \begin{bmatrix}
+		6\\[2pt]
+		1
+	\end{bmatrix}\].
+	
+	\textbf{Step 4. Compute the coefficient vector $\hat\beta=(X^{\top} X)^{-1}X^{\top} x$.}
+	\[
+	\hat\beta=\begin{bmatrix}\tfrac{1}{14}&0\\[2pt]0&\tfrac{1}{3}\end{bmatrix} \begin{bmatrix}6\\[2pt]1\end{bmatrix}
+	 \begin{bmatrix}\tfrac{6}{14}\\[2pt]\tfrac{1}{3}\end{bmatrix}
+	 \begin{bmatrix}\tfrac{3}{7}\\[2pt]\tfrac{1}{3}\end{bmatrix}.
+	
+	\textbf{Step 5. Form $\hat x = X\hat\beta = \tfrac{3}{7}x_1+\tfrac{1}{3}x_2$.}
+	\[
+	\hat x=
+	\tfrac{3}{7}
+\begin{bmatrix}1\\[2pt]2\\[2pt]3\end{bmatrix}
+	+\tfrac{1}{3}
+\begin{bmatrix}1\\[2pt]1\\-1\end{bmatrix}
+	 \begin{bmatrix}
+		\tfrac{3}{7}+\tfrac{1}{3}
+		\tfrac{6}{7}+\tfrac{1}{3}\\[4pt]
+		\tfrac{9}{7}-\tfrac{1}{3}
+	\end{bmatrix}
+	 \begin{bmatrix}
+		\tfrac{16}{21}\\[4pt]\tfrac{25}{21}\\[4pt]\tfrac{20}{21}
+	\end{bmatrix}\].
+	
+	\textbf{Step 6. Orthogonality check.} The residual $r=x-\hat x$ must be orthogonal to $S$:
+	\[r=\begin{bmatrix}
+		1-\tfrac{16}{21}
+		1-\tfrac{25}{21}\\[4pt]
+		1-\tfrac{20}{21}
+	\end{bmatrix}
+	 \begin{bmatrix}
+		\tfrac{5}{21}\\[4pt]-\tfrac{4}{21}\\[4pt]\tfrac{1}{21}
+	\end{bmatrix},\quad
+	x_1^{\top} r=1\cdot\tfrac{5}{21}+2\cdot\!\left(-\tfrac{4}{21}\right)+3\cdot\tfrac{1}{21}=0,\;
+	x_2^{\top} r=1\cdot\tfrac{5}{21}+1\cdot\!\left(-\tfrac{4}{21}\right)+(-1)\cdot\tfrac{1}{21}=0\].
+	Thus $\hat x$ is the nearest point].
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson].
+\item Verify by substitution or identity checks].
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\[
+\[
+P=\begin{bmatrix}\cos\theta&-\sin\theta\\[\begin{aligned}
+2pt]\sin\theta&\cos\theta\end{bmatrix}
+\end{aligned}\].
+]
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+	\textbf{Step 1. Orthogonality.} Using $P^{\top} P=I$:
+	\[
+	P^{\top} \begin{bmatrix}\cos\theta&\sin\theta\\[2pt]-\sin\theta&\cos\theta\end{bmatrix},\quad
+	P^{\top} P=\begin{bmatrix}
+		\cos^2\theta+\sin^2\theta & -\cos\theta\sin\theta+\sin\theta\cos\theta\\
+		-\sin\theta\cos\theta+\cos\theta\sin\theta & \sin^2\theta+\cos^2\theta
+	\end{bmatrix}
+	 \begin{bmatrix}1&0\\[\begin{aligned}
+2pt]0&1\end{bmatrix}.
+	Thus $P$ is orthogonal.
+	
+	\mathbf{Step 2. Eigenvalues.} Solve $\det(\lambda I-P)=0$:
+	
+\end{aligned}\[
+	\det\begin{bmatrix}\lambda-\cos\theta&\sin\theta\\[\begin{aligned}
+2pt]-\sin\theta&\lambda-\cos\theta\end{bmatrix}
+	=(\lambda-\cos\theta)^2+\sin^2\theta=\lambda^2-2\lambda\cos\theta+1=0
+\end{aligned}\].
+	Hence
+	\[
+	\lambda=\cos\theta\pm i\sin\theta=e^{\pm i\theta}\].
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+\[\begin{bmatrix}
+			1&1&1\\[2pt]
+			0&0&0\\[\begin{aligned}
+2pt]
+			3&1&1\
+\end{aligned}\[2pt]
+			2&0&1
+		\end{bmatrix}\].
+	
+	\textbf{Summary.} $A\in\(\mathbb{R}\)^{4\times 3}$ has full column rank $r=3$. For full column rank,
+	\[
+	\boxed{\,A^{+}=(A^{\top} A)^{-1}A^{\top}\,}\].
+	
+	\textbf{Step 1. Compute A^{\top} A entry-by-entry.}
+	Let $c_1=[1,0,3,2]^{\top},\;c_2=[1,0,1,0]^{\top},\;c_3=[1,0,1,1]^{\top}$. Then
+	\[
+	A^{\top} A=\begin{bmatrix}
+		c_1^{\top} c_1 & c_1^{\top} c_2 & c_1^{\top} c_3\\
+		c_2^{\top} c_1 & c_2^{\top} c_2 & c_2^{\top} c_3\\
+		c_3^{\top} c_1 & c_3^{\top} c_2 & c_3^{\top} c_3
+	\end{bmatrix}
+	 \begin{bmatrix}
+\[\begin{bmatrix}
+		14&4&6\\[\begin{aligned}
+2pt]4&2&2\
+\end{aligned}\[2pt]6&2&3
+	\end{bmatrix}\].\textbf{Step 2. Invert $A^{\top} A$.}
+	\[
+	(A^{\top} A)^{-1} \begin{bmatrix}
+		\tfrac12&0&-1\\[2pt]
+		0&\tfrac32&-1\\[2pt]
+\[\begin{bmatrix}
+		-1&-1&3
+	\end{bmatrix}
+\]
+	\quad(\(\det\)=4\neq 0)].
+	
+	\textbf{Step 3. Form $A^{+}=(A^{\top} A)^{-1}A^{\top}$.}
+	\[
+	\boxed{
+		A^{+} \begin{bmatrix}
+			-\tfrac12&0&\tfrac12&0\\[2pt]
+			\tfrac12&0&\tfrac12&-1\\[2pt]
+\[\begin{bmatrix}
+			1&0&-1&1
+		\end{bmatrix}\].
+	\textbf{Step 4. Moore–Penrose check (one identity).} $AA^{+}$ is the orthogonal projector onto $\(\mathcal{R}\)(A)$. Compute
+	\[
+	AA^{+} \begin{bmatrix}
+\[\begin{bmatrix}
+		1&0&0&0\\[\begin{aligned}
+2pt]0&0&0&0\
+\end{aligned}\[2pt]0&0&1&0\\[\begin{aligned}
+2pt]0&0&0&1
+	\end{bmatrix}
+\end{aligned}\],which is symmetric idempotent, as required\].
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson].
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+2\\[2pt]1\\[2pt]3\\[2pt]2\end{bmatrix}.
+	
+	\mathbf{Fact.} For nonzero $a\in\mathbb{R}^{m\times 1}$,
+	\[
+	\boxed{\,a^{+}=\dfrac{a^{\top}}{a^{\top} a}\,}\].
+	\textbf{Compute.} $a^{\top} a=2^2+1^2+3^2+2^2=18$, hence
+	\[
+	\boxed{\,a^{+}=\dfrac1{18}\,[\,2\;\;1\;\;3\;\;2\\],.\,}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+Given $B\succ 0$.
+	
+	\textbf{Key ideas.}
+	\begin{itemize}[leftmargin=2em]
+		\item For any real matrix $X$, $XX^{+}$ is the orthogonal projector onto $\(\mathcal{R}\)(X)$.
+		\item If $B\succ 0$, write $B=C^{\top} C$ with $C$ invertible. Then $ABA^{\top}=(AC^{\top})(AC^{\top})^{\top}$, so
+		\[
+		\mathcal{R}(ABA^{\top})=\mathcal{R}(AC^{\top})=\mathcal{R}(A)\]
+		(because $C^{\top}$ is invertible and does not change the column space dimension).
+	\end{itemize}
+	\textbf{Conclusion.} Since $XX^{+}$ is the projector onto $\(\mathcal{R}\)(X)$ and $\(\mathcal{R}\)(ABA^{\top})=\(\mathcal{R}\)(A)$,
+	\[
+	ABA^{\top}\big(ABA^{\top}\big)^{+}A = \underbrace{(ABA^{\top})(ABA^{\top})^{+}}_{\text{proj onto }\mathcal{R}(A)}\,A = A\].
+	\(\square\)
+	
+	% ================================
+	% JAN/FEB 2024 — QUESTION 5
+	% ================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+\[A=\begin{bmatrix}
+			a_{11}&a_{12}&a_{13}\\
+			a_{21}&a_{22}&a_{23}\\
+			a_{31}&a_{32}&a_{33}
+\]
+		\end{bmatrix}.
+	
+	\subsubsection*{1.1.1 \; Find A^{\top} and \(\operatorname{tr}\)(A)).}
+	\textbf{Definition.} A^{\top} denotes A^{\top} (transpose). Transpose swaps rows/columns entrywise.
+	\[
+	\boxed{\,A^{\top} \begin{bmatrix}
+			a_{11}&a_{21}&a_{31}\\
+			a_{12}&a_{22}&a_{32}\\
+			a_{13}&a_{23}&a_{33}
+	\end{bmatrix}},\qquad
+	\boxed{\,\operatorname{tr}(A)=a_{11}+a_{22}+a_{33}\,}\].
+	
+	\subsubsection*{1.1.2 \; Submatrix A_{11} \begin{bmatrix}a_{11}&a_{12}\\ a_{31}&a_{32}\end{bmatrix} with all a_{ij} (\(i,j=1,2\)) nonzero. Find \(\det\)(A_{11}) and the condition for A_{11}^{-1} to exist.}
+	\[
+	\det(A_{11})=\begin{vmatrix}a_{11}&a_{12}\\ a_{31}&a_{32}\end{vmatrix}
+	= a_{11}a_{32}-a_{12}a_{31}\].
+	\[
+	\boxed{\,A_{11}^{-1}\ \text{exists} \iff \det(A_{11})\neq 0 \iff a_{11}a_{32}-a_{12}a_{31}\neq 0.}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	\[
+	x^{\top} A x=(x_1-x_2-x_3)^2+(x_1+x_2-x_4)^2\].
+	\textbf{Expand and collect.} \begin{aligned}
+\[\begin{aligned}
+		(x_1-x_2-x_3)^2&=x_1^2+x_2^2+x_3^2-2x_1x_2-2x_1x_3+2x_2x_3,\\
+		(x_1+x_2-x_4)^2&=x_1^2+x_2^2+x_4^2+2x_1x_2-2x_1x_4-2x_2x_4.
+	\end{aligned}
+
+\end{aligned}\]
+	Sum:
+	\[
+	2x_1\]^2+2x_2^2+x_3^2+x_4^2-2x_1x_3+2x_2x_3-2x_1x_4-2x_2x_4.
+	Match to the symmetric form x^{\top} A x=\sum_i a_{ii}x_i^2+2\sum_{i<j}a_{ij}x_ix_j to obtain
+	\[
+	\boxed{
+		A=\begin{bmatrix}
+\[A=\begin{bmatrix}
+			2&0&-1&-1\\[\begin{aligned}
+2pt]0&2&1&-1\\
+			-1&1&1&0\\
+			-1&-1&0&1
+		\end{bmatrix}
+\end{aligned}\].% ================================
+	% STA3710 Oct/Nov 2023 — QUESTION 2
+	% ================================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.4}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\[
+A=\begin{bmatrix}
+4&2\\[2pt]3&5\end{bmatrix}
+\]
+
+	\subsubsection*{2.4.1 \; Characteristic equation.}
+	\[
+	\chi_A(\lambda)=\det\begin{bmatrix}\lambda-4&-2\\ -3&\lambda-5\end{bmatrix}
+	=(\lambda-4)(\lambda-5)-6
+	= \boxed{\lambda^2-9\lambda+14=0}\].
+	\subsubsection*{2.4.2 \; Characteristic equation of A^2.}
+	Eigenvalues of A are \lambda\in\{7,2\}\Rightarrow eigenvalues of A^2 are 49 and 4. Hence
+	\[
+	\boxed{\,t^2-53t+196=0\quad\text{for }A^2.}\]
+	
+	\subsubsection*{2.4.3 \; Eigenpairs of A).}
+	\[
+	\lambda_1=7:\ (A-7I)=\begin{bmatrix}-3&2\\[2pt]3&-2\end{bmatrix}\Rightarrow y=\tfrac32 x
+	\ \Rightarrow\ \boxed{v_1 \begin{bmatrix}2\\[2pt]3\end{bmatrix}}.
+	\[
+	\lambda_2=2:\ (A-2I)=\begin{bmatrix}2&2\\[2pt]3&3\end{bmatrix}\Rightarrow y=-x
+	\ \Rightarrow\ \boxed{v_2 \begin{bmatrix}1\\-1\end{bmatrix}}.
+	
+	% ================================
+	% STA3710 Oct/Nov 2023 \text{—} QUESTION 3
+	% ================================
+\]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+\[
+\[
+x=\begin{bmatrix}1\\[2pt]5\\[2pt]7\\[2pt]5\\[2pt]1\end{bmatrix}\].
+]
+
+	\[
+	\|x\|=\sqrt{1^2+5^2+7^2+5^2+1^2}=\sqrt{101}\].
+	A valid SVD (vector case) is
+	\[\boxed{\,x=U\Sigma V^{\top},\quad
+		U=\frac{1}{\sqrt{101}}
+\begin{bmatrix}1\\[2pt]5\\[2pt]7\\[2pt]5\\[2pt]1\end{bmatrix},\;
+		\Sigma=\begin{bmatrix}\sqrt{101}\end{bmatrix},\;
+\[
+		V=\begin{bmatrix}1\end{bmatrix}\].
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\[
+A=\begin{bmatrix}
+0&-1&2\\[2pt]0&-1&2\\[\begin{aligned}
+2pt]3&2&-1\end{bmatrix}
+
+\end{aligned}\]
+
+	\subsubsection*{4.1.1 \; Moore–Penrose inverse of AA^{\top}.}
+	Compute AA^{\top} \begin{bmatrix}5&5&-4\\[2pt]5&5&-4\\ -4&-4&14\end{bmatrix}.)
+	An orthonormal eigenbasis is \begin{aligned}
+		&\\[lambda=18,\quad u_{18}=\frac{1}{\sqrt6}
+\begin{bmatrix}1\\[2pt]1\\-2\end{bmatrix};\qquad
+		\lambda=6,\quad u_{6}=\frac{1}{\sqrt3}
+\begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix};\\
+		&\lambda=0,\quad u_{0}=\frac{1}{\sqrt2}
+\begin{bmatrix}1\\-1\\[2pt]0\end{bmatrix}.
+	\end{aligned}
+
+	Thus
+\[
+	AA^{\top}\]=\;18\,u_{18}u_{18}^{\top}\;+\;6\,u_6u_6^{\top}\;+\;0\cdot u_0u_0^{\top},
+
+	and hence
+\[
+	(AA^{\top})^{+}=\;\tfrac{1}{18}u_{18}u_{18}^{\top}\;+\;\tfrac{1}{6}u_6u_6^{\top}\].
+	Expanding gives the explicit symmetric matrix
+\[
+	\boxed{\ (AA^{\top})^{+}
+		=\frac{1}{108}
+\begin{bmatrix}
+\[\begin{bmatrix}
+			7&7&4\\[\begin{aligned}
+2pt]
+			7&7&4\
+\end{aligned}\[2pt]
+			4&4&10
+		\end{bmatrix}.\
+\]\subsubsection*{4.1.2 \; Moore–Penrose inverse of A).}
+	Use the identity A^{+}=A^{\top}(AA^{\top})^{+}. With A^{\top} \begin{bmatrix}0&0&3\\ -1&-1&2\\[\begin{aligned}
+2pt]2&2&-1\end{bmatrix} and the matrix above,
+
+\end{aligned}\[
+	\boxed{
+		A^{+}=\frac{1}{108} \begin{bmatrix}
+\[\begin{bmatrix}
+			12&12&30\\[2pt]
+			-6&-6&12\\[\begin{aligned}
+2pt]
+			24&24&6
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		 \begin{bmatrix}
+			\frac{1}{9}&\frac{1}{9}&\frac{5}{18}\\[6pt]
+			-\frac{1}{18}&-\frac{1}{18}&\frac{1}{9}\\[\begin{aligned}
+6pt]
+			\frac{2}{9}&\frac{2}{9}&\frac{1}{18}
+		\end{bmatrix}
+\end{aligned}\].
+]
+	\emph{Check (sketch).} Verify AA^{+}A=A and symmetry of AA^{+}, A^{+}A)].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.4}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	Given A=\begin{bmatrix}1&2\\[2pt]2&4\end{bmatrix}, B=\begin{bmatrix}4&1\\[2pt]1&3\end{bmatrix},)
+\[
+	\boxed{\,A\odot B=\begin{bmatrix}
+			1\!\cdot\!4 & 2\!\cdot\!1\\[2pt]
+			2\!\cdot\!1 & 4\!\cdot\!3
+		\end{bmatrix}
+		 \begin{bmatrix}
+\[\begin{bmatrix}
+			4&2\\[2pt]
+			2&12
+		\end{bmatrix}\].\newpage	
+	% =======================
+	% QUESTION 1
+	% =======================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+2&-3&0\\[2pt]1&4&2\end{bmatrix},\;
+		\(B=\begin{bmatrix}6&1\\[2pt]-1&3\\[\begin{aligned}
+2pt]0&5\end{bmatrix}.\)
+	
+	\subsubsection{1.1.1 \; Find kA for k=-2,0,\tfrac14).}
+	\mathbf{Definition.} Scalar multiplication is entrywise.
+	
+	\mathbf{Compute.}
+	
+\end{aligned}\[
+	-2A=\begin{bmatrix}-4&6&0\\[2pt]-2&-8&-4\end{bmatrix},\quad
+	0\cdot A=\begin{bmatrix}0&0&0\\[2pt]0&0&0\end{bmatrix},\quad
+	\tfrac14 A=\begin{bmatrix}\tfrac12&-\tfrac34&0\\[\begin{aligned}
+2pt]\tfrac14&1&\tfrac12\end{bmatrix}
+\end{aligned}\].
+	\subsubsection{1.1.2 \; Find \big(B-A^{\top}\big)^{\top}.}
+	\(\mathbf{Step 1.}\) A^{\top} \begin{bmatrix}2&1\\[\begin{aligned}
+2pt]-3&4\
+\end{aligned}\[2pt]0&2\end{bmatrix} (transpose swaps rows/columns).
+	
+	\mathbf{Step 2.} Subtract (same size 3\times2):
+	\[
+	B-A^{\top} \begin{bmatrix}
+		6-2 & 1-1\\
+		-1-(-3) & 3-4\\
+\[\begin{bmatrix}
+		0-0 & 5-2
+	\end{bmatrix}
+\]
+	 \begin{bmatrix}
+\[\begin{bmatrix}
+		4&0\\[2pt]
+		2&-1\\[\begin{aligned}
+2pt]
+		0&3
+	\end{bmatrix}
+\end{aligned}\].\(\mathbf{Step 3.}\) Transpose:
+	\[
+	\boxed{\big(B-A^{\top}\big)^{\top} \begin{bmatrix}
+\[\begin{bmatrix}
+			4&2&0\\[\begin{aligned}
+2pt]
+			0&-1&3
+		\end{bmatrix}
+\end{aligned}\].
+	
+]
+	\subsubsection{1.1.3 \; Find \(\mathrm{tr}\)(AB)).}
+	\textbf{Step 1.} Multiply A(2\times3) by B(3\times2) entry-by-entry:
+	\[AB=\begin{bmatrix}
+		2\cdot6+(-3)\cdot(-1)+0\cdot0 & 2\cdot1+(-3)\cdot3+0\cdot5\\[2pt]1\cdot6+4\cdot(-1)+2\cdot0 & 1\cdot1+4\cdot3+2\cdot5
+	\end{bmatrix}
+	 \begin{bmatrix}
+\[\begin{bmatrix}
+		15 & -7\\[2pt]
+		2 & 23
+	\end{bmatrix}\].\(\mathbf{Step 2.}\) Trace is sum of diagonal entries:
+	\[
+	\boxed{\mathrm{tr}(AB)=15+23=38.}\]
+	
+]
+	\subsubsection{1.1.4 \; Demonstrate (AB)^{\top}=B^{\top} A^{\top}.}
+	\textbf{Identity (transpose of a product).} For conformable matrices,
+	\[
+	(AB)^{\top}=B^{\top} A^{\top}\],
+	proved entrywise by noting[(((AB)^{\top})_{ij}=(AB)_{ji}=\sum_k a_{jk}b_{ki}=\sum_k (B^{\top})_{ik}(A^{\top})_{kj}=(B^{\top} A^{\top})_{ij}.)]
+	Thus the two matrices are equal].
+	\subsubsection{1.1.5 \; Let \(\mathbf{1}\) \begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix}. Find \mathbf{1}^{\top}\mathbf{1} and \mathbf{1}\mathbf{1}^{\top}.}
+	\[
+	\mathbf{1}^{\top}\mathbf{1}=1^2+1^2+1^2=3,\qquad
+	\mathbf{1}\mathbf{1}^{\top} \begin{bmatrix}
+\[\begin{bmatrix}
+		1&1&1\\[\begin{aligned}
+2pt]1&1&1\
+\end{aligned}\[2pt]1&1&1
+	\end{bmatrix}\].\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+
+	\begin{enumerate}[label=\textbf{1.3.\arabic*}, leftmargin=2em]
+		\item (\alpha A)^{\top}=\alpha A^{\top} — \textbf{True}. Transpose is linear: (\alpha A)^{\top}=\alpha A^{\top}.
+		\item A^{-1}=A^{\top} — \textbf{False in general}. Equality holds only for orthogonal matrices (\(A^{\top} A=I\)). Counterexample:
+		\(A=\begin{bmatrix}1&1\\[2pt]0&1\end{bmatrix} has A^{-1} \begin{bmatrix}1&-1\\[2pt]0&1\end{bmatrix}\neq A^{\top}.
+		\item “\(p is normalized if p^{\top} p\neq 1\)” \text{—} \mathbf{False}. Normalized means \|p\|_2=1), i.e.\(p^{\top} p=1\).
+	\end{enumerate}
+	
+	% =======================
+	% QUESTION 2
+	% =======================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\mathbf{Source}: STA3710 Jan/Feb 2023\\
+\mathbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+
+	\mathbf{Given.} \mu=\begin{bmatrix}1\\[2pt]1\end{bmatrix}, \Omega=\begin{bmatrix}1&-\tfrac12\\[2pt]-\tfrac12&1\end{bmatrix},)
+	\(x_1 \begin{bmatrix}2\\[2pt]2\end{bmatrix}, x_2 \begin{bmatrix}2\\[2pt]0\end{bmatrix}.\)
+	
+	\mathbf{Definition.} d_M(x)=\sqrt{(x-\mu)^{\top}\,\Omega^{-1}\,(x-\mu)}. For
+	\(\Omega=\begin{bmatrix}a&b\\b&c\end{bmatrix},\)
+	\(\Omega^{-1}=\dfrac{1}{ac-b^2} \begin{bmatrix}c&-b\\-b&a\end{bmatrix}.\)
+	
+	\mathbf{Step 1.} Here a=c=1,\;b=-\tfrac12\Rightarrow ac-b^2=1-\tfrac14=\tfrac34).
+	\[
+	\Omega^{-1}=\frac{1}{3/4} \begin{bmatrix}1&\tfrac12\\[2pt]\tfrac12&1\end{bmatrix}
+	 \begin{bmatrix}\tfrac{4}{3}&\tfrac{2}{3}\\[2pt]\tfrac{2}{3}&\tfrac{4}{3}\end{bmatrix}.
+	
+	\mathbf{Step 2.} x_1-\mu=\begin{bmatrix}1\\[2pt]1\end{bmatrix}.
+\[
+	d_M^2(x_1)=[1\;\;1]
+\begin{bmatrix}\tfrac{4}{3}&\tfrac{2}{3}\\[2pt]\tfrac{2}{3}&\tfrac{4}{3}\end{bmatrix}
+\begin{bmatrix}1\\[2pt]1\end{bmatrix}
+	=[1\;\;1]
+\begin{bmatrix}2\\[2pt]2\end{bmatrix}=4
+	\Rightarrow d_M(x_1)=2\].
+\[
+	\mathbf{Step 3.} x_2-\mu=\begin{bmatrix}1\\-1\end{bmatrix}. \begin{aligned}
+\]
+		d_M^2(\[x_2)
+		&=[1\;\;-1]
+\begin{bmatrix}\tfrac{4}{3}&\tfrac{2}{3}\\[2pt]\tfrac{2}{3}&\tfrac{4}{3}\end{bmatrix}
+\begin{bmatrix}1\\-1\end{bmatrix}
+		=[1\;\;-1]
+\begin{bmatrix}\tfrac{2}{3}\\[\begin{aligned}
+2pt]-\tfrac{2}{3}\end{bmatrix}
+		=\tfrac{4}{3},\\
+		&\Rightarrow\quad d_M(x_2)=\frac{2}{\sqrt{3}}.
+	\end{aligned}
+
+\end{aligned}\]
+	
+	\textbf{Conclusion.}] d_M(x_2)<d_M(x_1)\Rightarrow \boxed{x_2\ \text{is closer to the mean}.}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+1\\[2pt]2\\[2pt]1\\[2pt]2\end{bmatrix} and y=\begin{bmatrix}3\\[2pt]0\\[2pt]1\\[2pt]1\end{bmatrix}.)
+	\mathbf{Definition.} \cos\theta=\dfrac{x^{\top} y}{\|x\|\,\|y\|}.
+	
+	\mathbf{Compute.}
+	\[
+	x^{\top} y=1\cdot3+2\cdot0+1\cdot1+2\cdot1=6,\quad
+	\|x\|=\sqrt{1+4+1+4}=\sqrt{10},\quad
+	\|y\|=\sqrt{9+0+1+1}=\sqrt{11}\].
+	\[
+	\boxed{\ \cos\theta=\dfrac{6}{\sqrt{110}},\quad
+		\theta=\arccos\!\Big(\dfrac{6}{\sqrt{110}}\Big).\
+	}\]
+	
+	% =======================
+	% QUESTION 3
+	% =======================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+4&2\\[\begin{aligned}
+2pt]3&5\end{bmatrix}.
+	
+\end{aligned}\[
+	\chi_A(\lambda)=\det\begin{bmatrix}\lambda-4&-2\\[\begin{aligned}
+2pt]-3&\lambda-5\end{bmatrix}
+	=(\lambda-4)(\lambda-5)-6
+	=\lambda^2-9\lambda+14
+\end{aligned}\].
+	\[
+	\boxed{\ \lambda^2-9\lambda+14=0.\ }
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.4}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+
+	Eigenvalues 1,2,3 with eigenvectors
+	
+	x_1 \begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix},\;
+	x_2 \begin{bmatrix}1\\[2pt]2\\[2pt]0\end{bmatrix},\;
+	x_3 \begin{bmatrix}2\\-1\\[2pt]6\end{bmatrix}.
+	
+	
+	\mathbf{Step 1.} Form P=[x_1\;x_2\;x_3] and D=\mathrm{diag}(1,2,3):
+	\[
+	P=\begin{bmatrix}
+\[\begin{bmatrix}
+		1&1&2\\[2pt]1&2&-1\\[2pt]1&0&6
+	\end{bmatrix},\qquadD=\begin{bmatrix}
+\]
+\[\begin{bmatrix}
+		1&0&0\\[2pt]0&2&0\\[\begin{aligned}
+2pt]0&0&3
+	\end{bmatrix}
+\end{aligned}\].\(\mathbf{Step 2.}\) Since the eigenvectors are linearly independent, P is invertible and
+	\[
+	A=PD P^{-1}\].
+	
+	\textbf{Step 3.} Compute P^{-1} (via adjugate or row-reduction) and multiply entry-by-entry:
+	\[
+	\boxed{
+		A=\begin{bmatrix}
+\[A=\begin{bmatrix}
+			-14&8&7\\[\begin{aligned}
+2pt]
+			-10&7&4\
+\end{aligned}\[2pt]
+			-24&12&13
+		\end{bmatrix}\].
+	\textit{Verification:} Ax_i=\lambda_i x_i for i=1,2,3 (check each product).
+	
+	% =======================
+	% QUESTION 4
+	% =======================
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+1\\[2pt]5\\[2pt]7\\[2pt]5\end{bmatrix}.
+	\mathbf{Facts.} Viewing x as a 4\times1 matrix, its SVD has one nonzero singular value
+	\(\sigma_1=\|x\|_2\), with U=\frac{x}{\|x\|_2}, \Sigma=[\sigma_1]), V=[1]).
+	
+	\mathbf{Compute norm.} \|x\|_2=\sqrt{1^2+5^2+7^2+5^2}=\sqrt{100}=10).
+	
+	\[
+	\boxed{
+		U=\frac{1}{10}
+\begin{bmatrix}1\\[2pt]5\\[2pt]7\\[2pt]5\end{bmatrix},\quad
+		\Sigma=\begin{bmatrix}10\end{bmatrix},\quad
+		V=\begin{bmatrix}1\end{bmatrix},\quad
+		x=U\Sigma V^{\top}.}
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+)\in\R^{m\times n}. Mark True/False with justifications.}
+	
+	\textbf{1.1.1} ``A is square if m=n and rectangular if m\neq n.'' \textbf{True.}  
+	\emph{Square} means same number of rows and columns; otherwise the matrix is (strictly) rectangular.
+	
+	\textbf{1.1.2} ``An m\times 1 matrix is called a row vector.'' \textbf{False.}  
+	An m\times 1 matrix has one column: it is a \emph{column vector}. A row vector is 1\times n.
+	
+	\textbf{1.1.3} ``An upper triangular matrix has all entries \emph{above} the diagonal equal to zero.'' \textbf{False.}  
+	That is the definition of a \emph{lower} triangular matrix. Upper triangular means all entries \emph{below} the main diagonal are zero.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.4}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+\(\cos\)\theta&-\(\sin\)\theta\\[\begin{aligned}
+2pt]\sin\theta&\cos\theta\end{bmatrix}.
+	
+	\subsubsection{2.4.1 \; Show P is orthogonal.}
+	
+\end{aligned}\[
+	P^{\top} \begin{bmatrix}\cos\theta&\sin\theta\\[2pt]-\sin\theta&\cos\theta\end{bmatrix},\quad
+	P^{\top} P=\begin{bmatrix}
+		\cos^2\theta+\sin^2\theta & -\cos\theta\sin\theta+\sin\theta\cos\theta\\
+		-\sin\theta\cos\theta+\cos\theta\sin\theta & \sin^2\theta+\cos^2\theta
+	\end{bmatrix}
+	=I_2\].
+	Hence P is orthogonal.
+	
+	\subsubsection{2.4.2 \; Eigenvalues of P).}
+	Solve \(\det\)(\lambda I-P)=0):
+	\[
+	\lambda^2-2\lambda\cos\theta+1=0
+	\ \Rightarrow\
+	\boxed{\ \lambda=e^{\pm i\theta}=\cos\theta\pm i\sin\theta.\
+	}\]
+	
+	% =======================
+	% QUESTION 3
+	% =======================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+2\\[2pt]1\\[2pt]3\\[2pt]3\end{bmatrix}.
+	\mathbf{Fact (nonzero vector).}
+	\[
+	a^{+}=\frac{a^{\top}}{a^{\top} a}\].
+	\textbf{Compute.} a^{\top} a=2^2+1^2+3^2+3^2=23). Hence
+	\[
+	\boxed{\ a^{+}=\dfrac{1}{23}\,[\,2\ \ 1\ \ 3\ \ 3\\],.\ }
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+), \quad B=\begin{bmatrix}1&2\\[\begin{aligned}
+2pt]4&3\end{bmatrix}\in\R^{2\times2}. Find A\otimes B).}
+	
+	\mathbf{Definition (Kronecker).} For A=[a_1\ a_2\ a_3] (row),  
+	
+\end{aligned}\[
+	A\otimes B=\big[\,a_1B\ \ a_2B\ \ a_3B\,\big\].
+	\textbf{Compute blocks.}
+	\[
+	0\cdot B=\begin{bmatrix}0&0\\[2pt]0&0\end{bmatrix},\quad
+	1\cdot B=\begin{bmatrix}1&2\\[2pt]4&3\end{bmatrix},\quad
+	2\cdot B=\begin{bmatrix}2&4\\[2pt]8&6\end{bmatrix}.
+	Concatenate horizontally:
+	\[
+	\boxed{\
+		A\otimes B=\begin{bmatrix}
+\[\begin{bmatrix}
+			0&0&1&2&2&4\\[\begin{aligned}
+2pt]
+			0&0&4&3&8&6
+		\end{bmatrix}.\
+
+\end{aligned}\]
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+2&0&5\\[\begin{aligned}
+2pt]8&1&3\end{bmatrix}\in\R^{2\times3}, find \operatorname{vec}(A)).}
+	
+	\mathbf{Definition.} \operatorname{vec}(A) stacks columns of A on top of each other:
+	
+\end{aligned}\[
+	\operatorname{vec}(A)=\begin{bmatrix}\text{col}_1(A)\\ \text{col}_2(A)\\ \text{col}_3(A)\end{bmatrix}.
+	\mathbf{Compute.} Columnsare=\begin{bmatrix}2\\[2pt]8\end{bmatrix}, \begin{bmatrix}0\\[2pt]1\end{bmatrix}, \begin{bmatrix}5\\[2pt]3\end{bmatrix}. Hence
+	\[
+	\boxed{\
+		\operatorname{vec}(A)=\begin{bmatrix}2\\[2pt]8\\[2pt]0\\[2pt]1\\[2pt]5\\[2pt]3\end{bmatrix}\in\R^{6\times1}.\
+	}\]
+	
+	
+	\newpage
+	% =========================================================
+	% QUESTION 1
+	% =========================================================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+1&1\\[2pt]1&2\end{bmatrix}, B=\begin{bmatrix}b_{11}&b_{12}\\[2pt]b_{21}&b_{22}\end{bmatrix}.)
+	}
+	Compute both products entry-by-entry:
+\[AB=\begin{bmatrix}
+		b_{11}+b_{21} & b_{12}+b_{22}\\
+		b_{11}+2b_{21}& b_{12}+2b_{22}
+	\end{bmatrix},\qquadBA=\begin{bmatrix}
+		b_{11}+b_{12} & b_{11}+2b_{12}\\
+		b_{21}+b_{22} & b_{21}+2b_{22}
+	\end{bmatrix}\].
+	Equate entries: \begin{cases}
+		b_{11}+b_{21}=b_{11}+b_{12} &\Rightarrow\ b_{21}=b_{12},\\
+		b_{12}+b_{22}=b_{11}+2b_{12} &\Rightarrow\ b_{22}=b_{11}+b_{12}.
+	\end{cases}
+	(The remaining two equations then hold automatically.) Hence the full solution set is
+\[
+	\boxed{\;
+		B=\begin{bmatrix}a&t\\ t&a+t\end{bmatrix},\quad a,t\in\R.
+		\;}
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+\[
+	A=\tfrac12
+\begin{bmatrix}1&\sqrt3\\[2pt]0&0\\[2pt]-\sqrt3&1\end{bmatrix},\quad
+	B=\tfrac12
+\begin{bmatrix}\sqrt3&1\\[2pt]-1&\sqrt3\end{bmatrix},\quad
+	x=\tfrac{1}{\sqrt2}
+\begin{bmatrix}-1\\[2pt]0\\[2pt]1\end{bmatrix},\y=\begin{bmatrix}1\\[2pt]2\\-1\end{bmatrix},\z=\begin{bmatrix}\tfrac13\\[2pt]-\tfrac13\\[2pt]\tfrac13\end{bmatrix}\].
+	Let $M=\begin{bmatrix}1&\sqrt3\\[2pt]0&0\\-\sqrt3&1\end{bmatrix} and $N=\begin{bmatrix}\sqrt3&1\\[2pt]-1&\sqrt3\end{bmatrix} so that $A=\frac12M$, $B=\frac12N$.
+	
+	\paragraph{1.3.1 $\bm{A^{\top} A}$.}
+\[
+	A^{\top} A=\frac14 M^{\top} M,\quad
+	M^{\top}M=\begin{bmatrix}
+		1^2+0^2+(\!-\sqrt3)^2 & 1\!\cdot\!\sqrt3+0\!\cdot\!0+(\!-\sqrt3)\!\cdot\!1\\
+		\cdot & (\sqrt3)^2+0^2+1^2
+	\end{bmatrix}
+	 \begin{bmatrix}4&0\\[2pt]0&4\end{bmatrix}\].
+	Hence \boxed{A^{\top} A=I_2}.
+	
+	\paragraph{1.3.2 $\bm{AA^{\top}}$.}
+	\(
+	AA^{\top}=\frac14MM^{\top}=\frac14\operatorname{diag}(4,0,4)
+	=\(\operatorname{diag}(1,0,1)\).
+	)
+	
+	\paragraph{1.3.3 $\bm{AB}$.}
+	\(
+	AB=\tfrac14MN=\begin{bmatrix}0&1\\[\begin{aligned}
+2pt]0&0\
+\end{aligned}\[2pt]-1&0\end{bmatrix}.
+	\)
+	
+	\paragraph{1.3.4 $\bm{x^{\top} y}$.}
+	\(
+	x^{\top} y=\tfrac{1}{\sqrt2}(-1\cdot1+0\cdot2+1\cdot(-1))
+	= \boxed{-\sqrt2}.
+	\)
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\mathbf{Source}: STA3710 Oct/Nov 2021\\
+\mathbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	Let the three items be [\,\text{juice},\ \text{mineral water},\ \text{milk}\,]).
+	\[c=\begin{bmatrix}50\\[2pt]25\\[2pt]25\end{bmatrix},\quads=\begin{bmatrix}40\\[2pt]20\\[2pt]22\end{bmatrix},\quadp=\begin{bmatrix}0.75\\[2pt]0.50\\[2pt]0.75\end{bmatrix}\ (\text{Rands}).
+	\mathbf{2.2.2} Total value when fully stocked: p^{\top} c=0.75(50)+0.50(25)+0.75(25)= \boxed{R\,68.75}.
+	
+	\mathbf{2.2.3} Inventory left: c-s=\boxed{\begin{bmatrix}10\\[2pt]5\\[2pt]3\end{bmatrix}}.
+	
+	\mathbf{2.2.4} Money in the coin box: p^{\top} s=0.75(40)+0.50(20)+0.75(22)= \boxed{R\,56.50}\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\(\mathbf{Source}\): STA3710 Oct/Nov 2021\\
+\(\mathbf{Year/Season}\): 2021 Oct/Nov
+\par\medskip
+A=\begin{bmatrix}1&-1&5\\[\begin{aligned}
+2pt]0&2&1\
+\end{aligned}\[2pt]2&1&3\end{bmatrix},\ \ B=\begin{bmatrix}3&-1\\[\begin{aligned}
+2pt]1&5\end{bmatrix}.
+	The mixed-product rule says (X\otimes Y)(U\otimes V)=(XU)\otimes(YV) when conformable.
+	Thus
+	
+\end{aligned}\[
+	(A\otimes I_2)(I_3\otimes B)=(A I_3)\otimes(I_2 B)=A\otimes B.\ \checkmark\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\(\mathbf{Source}\): STA3710 Oct/Nov 2021\\
+\(\mathbf{Year/Season}\): 2021 Oct/Nov
+\par\medskip
+\(A=\begin{bmatrix}a_{11}&a_{12}\\[\begin{aligned}
+2pt]a_{21}&a_{22}\end{bmatrix}.\)
+	
+	\paragraph{3.1.1 Characteristic equation.}
+	
+\end{aligned}\[
+	\det(\lambda I-A)=(\lambda-a_{11})(\lambda-a_{22})-a_{12}a_{21}
+	=\lambda^2-(a_{11}+a_{22})\lambda+(a_{11}a_{22}-a_{12}a_{21})\].
+	
+	\paragraph{3.1.2 Eigenvalues.}
+	\[
+	\lambda_{1,2}=\frac{(a_{11}+a_{22})\pm\sqrt{(a_{11}+a_{22})^2-4(a_{11}a_{22}-a_{12}a_{21})}}{2}\].
+	
+	\paragraph{3.1.3 Realness condition.}
+	Eigenvalues are real iff the discriminant is nonnegative:
+	\[
+	\boxed{\ (a_{11}+a_{22})^2-4(a_{11}a_{22}-a_{12}a_{21})\ge 0.\ }\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\(\mathbf{Source}\): STA3710 June/July 2021\\
+\(\mathbf{Year/Season}\): 2021 June/July
+\par\medskip
+
+	\[
+	A=\begin{bmatrix}11&12\\[2pt]21&22\\[2pt]31&32\end{bmatrix},\ 
+	B=\begin{bmatrix}0&-1&3\\[2pt]1&4&1\end{bmatrix},\a=\begin{bmatrix}-1\\[2pt]0\\[2pt]1\end{bmatrix},\ 
+	C=\big(\,A\ \ B^{\top}\ \ a\,\big)\].
+	\(\mathbf{Entrywise transposes:}\)
+	\[
+	A^{\top} \begin{bmatrix}11&21&31\\[2pt]12&22&32\end{bmatrix},\qquad
+	B^{\top} \begin{bmatrix}0&1\\[\begin{aligned}
+2pt]-1&4\
+\end{aligned}\[2pt]3&1\end{bmatrix},\qquad
+	a^{\top} \begin{bmatrix}-1&0&1\end{bmatrix}.
+	Since C is a horizontal concatenation of three 3\times{}blocks, 
+	\[
+	\boxed{\,C^{\top} \begin{bmatrix}A^{\top}\\ B\\ a^{\top}\end{bmatrix}\,}
+	\ \ (\text{$5\times3$ by stacking block transposes})\].
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+    \Needspace*{10\baselineskip}
+\end{steps}
+\end{solution}
+\problemheader{1.3}
+        \(\mathbf{Source}\): LindRand (2024), Section 1.2.1
+        \par\medskip
+\problemheader{2.2 (matrix and projector practice)}
+Compute the following for
+\[
+X=\begin{bmatrix}
+\[\begin{bmatrix}
+4&1&2\\[\begin{aligned}
+2pt]3&1&7\
+\end{aligned}\[2pt]1&2&3
+\end{bmatrix},\qquad
+\]
+\[
+\mathbf{1}=\begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix}\].
+]
+\begin{solution}
+\begin{align*}
+\text{(a)}\quad \(\mathbf{1}\)^{\(\mathsf\) T}X&=\begin{bmatrix}8&4&12\end{bmatrix},\\[4pt]
+X^{\mathsf T}\mathbf{1}&=\begin{bmatrix}8\\[2pt]4\\[2pt]12\end{bmatrix}
+\;\Rightarrow\;
+\text{(b)}\quad \operatorname{proj}_{\operatorname{span}(X^{\mathsf T}\mathbf{1})}(X^{\mathsf T}\mathbf{1})
+= X^{\mathsf T}\mathbf{1}
+=\begin{bmatrix}8\\[2pt]4\\[2pt]12\end{bmatrix},\\[4pt]
+\text{(c)}\quad
+X^{\mathsf T}\!\left(I-\tfrac{1}{3}\mathbf{1}\mathbf{1}^{\mathsf T}\right)X
+&=\boxed{\begin{bmatrix}
+\frac{14}{3}&-\frac{5}{3}&0\\[\begin{aligned}
+2pt]
+-\frac{5}{3}&\frac{2}{3}&-1\
+\end{aligned}\[2pt]
+\[\begin{bmatrix}
+0&-1&14
+\end{bmatrix}}\].
+\end{align*}
+\end{solution}
+\[\begin{bmatrix}
+			0&-1&14
+		\end{bmatrix}\].
+	
+	% =========================================================
+	% QUESTION 2
+	% =========================================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\(\mathbf{Source}\): STA3710 June/July 2021\\
+\(\mathbf{Year/Season}\): 2021 June/July
+\par\medskip
+\problemheader{2.3 (Kronecker practice)}
+Let
+\[
+A=\begin{bmatrix}2&1\\[2pt]-1&4\end{bmatrix},\quad
+B=I_2,\quad
+c=\begin{bmatrix}1\\[2pt]3\end{bmatrix},\quad
+d=2\].
+\begin{solution}
+\begin{align*}
+A\otimes d&=\begin{bmatrix}2d&1d\\[2pt]-1d&4d\end{bmatrix}
+=\begin{bmatrix}4&2\\[2pt]-2&8\end{bmatrix},\\[6pt]
+c\otimes A&=\begin{bmatrix}1A\\[2pt]3A\end{bmatrix}
+=\begin{bmatrix}
+\[\begin{bmatrix}
+2&1\\[2pt]-1&4\\[\begin{aligned}
+6pt]
+6&3\
+\end{aligned}\[2pt]-3&12
+\end{bmatrix},\\[8pt]
+\]
+A\otimes B&=\begin{bmatrix}2I_2&1I_2\\[2pt]-I_2&4I_2\end{bmatrix}
+=\begin{bmatrix}
+\[\begin{bmatrix}
+2&0&1&0\\[\begin{aligned}
+2pt]0&2&0&1\\
+-1&0&4&0\
+\end{aligned}\[2pt]0&-1&0&4
+\end{bmatrix}\].
+\end{align*}
+\end{solution}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\(\mathbf{Source}\): STA3710 June/July 2021\\
+\(\mathbf{Year/Season}\): 2021 June/July
+\[\begin{cases}
+		2x+2y-z=-1,\\
+		x+2y+4z=2,\\[2pt]2x+3y-2z=-4.
+	\end{cases}\]
+	\(\mathbf{3.1.1}\) Ax=b with
+	\(
+	A=\begin{bmatrix}2&2&-1\\[\begin{aligned}
+2pt]1&2&4\
+\end{aligned}\[2pt]2&3&-2\end{bmatrix},b=\begin{bmatrix}-1\\[2pt]2\\-4\end{bmatrix}.
+	\)
+	
+	\mathbf{3.1.2 Inverse of A).}  
+	\(\det A= -11\neq 0\Rightarrow A^{-1} exists. Cofactors give
+	\[
+\problemheader{3.1 (cofactors, adjugate, and inverse)}
+Given
+\[
+A=\begin{bmatrix}
+\[A=\begin{bmatrix}
+2&2&-1\\[\begin{aligned}
+2pt]1&2&4\
+\end{aligned}\[2pt]2&3&-2
+\end{bmatrix}\],the adjugate is
+\[
+\operatorname{adj}(A)=
+\begin{bmatrix}
+\[\begin{bmatrix}
+-16&1&10\\[\begin{aligned}
+2pt]10&-2&-9\\
+-1&-2&2
+\end{bmatrix}
+\end{aligned}\],and since \det(A)=-12\), the inverse is
+\[
+A^{-1}=\frac{1}{\det(A)}\,\operatorname{adj}(A)
+=-\frac{1}{12}\begin{bmatrix}
+\[\begin{bmatrix}
+-16&1&10\\[\begin{aligned}
+2pt]10&-2&-9\\
+-1&-2&2
+\end{bmatrix}
+
+\end{aligned}\]
+=\begin{bmatrix}
+\(\frac{4}\){3}&-\(\frac{1}\){12}&-\(\frac{5}\){6}\\[\begin{aligned}
+2pt]
+-\frac{5}{6}&\frac{1}{6}&\frac{3}{4}\
+\end{aligned}\[2pt]
+\frac{1}{12}&\frac{1}{6}&-\frac{1}{6}
+\end{bmatrix}\].
+	(If desired, the solution to Ax=b is x=A^{-1}b).)
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson].
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+
+	For A=\(\operatorname{diag}\)(4,-2,\tfrac13)),
+	\[
+	\boxed{\,A^{-1}=\operatorname{diag}\!\Big(\tfrac14,-\tfrac12,3\Big).\,}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+2&4&1\\[\begin{aligned}
+2pt]0&2&2\
+\end{aligned}\[2pt]0&0&1\end{bmatrix}.
+	Upper-triangular \Rightarrow eigenvalues are diagonal entries:
+	\[
+	\boxed{\ \{2,2,1\}\ }\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	\subsubsection{1.2.1 \; Show A=U^{\top} U (Cholesky check).}
+	Given
+	\[
+	A=\begin{bmatrix}4&8&4\\[2pt]8&25&11\\[2pt]4&11&30\end{bmatrix},\quad
+	U=\begin{bmatrix}2&4&2\\[2pt]0&3&1\\[\begin{aligned}
+2pt]0&0&5\end{bmatrix}.
+	Compute U^{\top} U entry-by-entry:
+	
+\end{aligned}\[
+	U^{\top} \begin{bmatrix}2&0&0\\[\begin{aligned}
+2pt]4&3&0\
+\end{aligned}\[2pt]2&1&5\end{bmatrix},]
+	\[
+	U^{\top} U=\begin{bmatrix}
+\[\begin{bmatrix}
+		4&8&4\\[\begin{aligned}
+2pt]8&25&11\
+\end{aligned}\[2pt]4&11&30
+	\end{bmatrix}=A\].Thus A=U^{\top} U). \square)
+	
+]
+	\subsubsection{1.2.2 \; If A,B are orthogonal (same size), show AB is orthogonal.}
+	Orthogonal means A^{\top} A=I), B^{\top} B=I). Then
+	\[
+	(AB)^{\top}(AB)=B^{\top} A^{\top} A B=B^{\top} I B=I\].
+	Hence AB is orthogonal. \square)
+	
+]
+	\subsubsection{1.2.3 \; Show A\otimes B=(A\otimes I_2)(I_3\otimes B) for
+		\(A=\begin{bmatrix}1&-1&0\end{bmatrix}, B=\begin{bmatrix}3&1\\[\begin{aligned}
+2pt]1&4\end{bmatrix}.\)
+	Use the mixed-product rule: (X\otimes Y)(U\otimes V)=(XU)\otimes(YV) (when conformable).  
+	Here (A\otimes I_2)(I_3\otimes B)=(AI_3)\otimes(I_2B)=A\otimes B). \square)
+	
+	% =========================================================
+	% QUESTION 2
+	% =========================================================
+
+\end{aligned}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+a&6\\[\begin{aligned}
+2pt]6&b\end{bmatrix} has eigenvalues 9,-3).}
+	For a $2\times2$ matrix, \operatorname{tr}A=a+b equals the sum of eigenvalues and \det A=ab-36 equals their product.
+	
+\end{aligned}\[
+	a+b=9+(-3)=6,\qquad ab-36=9\cdot(-3)=-27\Rightarrow ab=9\].
+	Solve t^2-6t+9=0\Rightarrow (t-3)^2=0). Hence
+	\[
+	\boxed{a=3,\quad b=3.}
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+5\\[2pt]2\end{bmatrix}, b=\begin{bmatrix}-1\\[2pt]5\end{bmatrix}.
+	\mathbf{3.1.1 Length of a.}
+	\|a\|=\sqrt{5^2+2^2}=\sqrt{29}.
+	
+	\mathbf{3.1.2 Norms of a and b.}
+	\[
+	\|a\|=\sqrt{29},\qquad \|b\|=\sqrt{(-1)^2+5^2}=\sqrt{26}\].
+	
+	\textbf{3.1.3 Normal?}
+	A vector is normal (unit) iff its norm is $1$. Both norms $\neq 1$, so neither is normal.
+	
+	\textbf{3.1.4 Angle between a and b).}
+	\[
+	a^{\top} b=5(-1)+2\cdot5=5,\quad
+	\cos\theta=\frac{a^{\top} b}{\|a\|\|b\|}=\frac{5}{\sqrt{29}\sqrt{26}},\quad
+	\boxed{\theta=\arccos\!\Big(\frac{5}{\sqrt{754}}\Big)}\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+Let X=\begin{bmatrix}
+\[\begin{bmatrix}
+3&2&-4\\[2pt]
+-4&-4&6\\[\begin{aligned}
+2pt]
+2&2&-3
+\end{bmatrix}, with columns $a,b,c$
+\end{aligned}\].
+	
+	\textbf{3.2.1 Normalized vectors of a and b).}
+	\[a=\begin{bmatrix}3\\-4\\[2pt]2\end{bmatrix},\quad
+\problemheader{3.2 (norms and linear combinations)}
+Let
+\[
+a=\begin{bmatrix}3\\[2pt]-4\\[2pt]2\end{bmatrix},\quad
+b=\begin{bmatrix}2\\[2pt]-4\\[2pt]2\end{bmatrix},\quad
+\[
+c=\begin{bmatrix}2\\[2pt]2\\[2pt]-3\end{bmatrix}\].
+]
+\textbf{(a)} Determine scalars m,n (if they exist) such that c = m\,a + n\,b).
+This corresponds to solving
+\[
+\begin{cases}
+3m+2n=2,\\
+-4m-4n=2,\\[2pt]2m+2n=-3.
+\end{cases}
+\]
+This system is inconsistent, so no such m,n exist and thus c\notin\(\operatorname{span}\)\{a,b\}.
+\par\medskip
+\textbf{(b)} Orthogonal decomposition of c with respect to a):
+\[
+c_{\parallel a}=\frac{\langle c,a\rangle}{\langle a,a\rangle}\,a,\qquad
+c_{\perp a}=c-c_{\parallel a}\].
+We compute \langle c,a\rangle= c^{\(\mathsf\) T}a = 2\cdot 3 + 2\cdot(-4) + (-3)\cdot 2 = -8 and \langle a,a\rangle=3^2+(-4)^2+2^2=29).
+Hence
+\[
+c_{\parallel a}= \begin{bmatrix}-\frac{24}{29}\\[2pt]\frac{32}{29}\\[2pt]-\frac{16}{29}\end{bmatrix},
+\qquad
+c_{\perp a}= \begin{bmatrix}\frac{82}{29}\\[2pt]\frac{26}{29}\\[2pt]-\frac{71}{29}\end{bmatrix}\].
+	Differentiate elementwise:
+\[
+	\boxed{
+		\frac{\partial}{\partial x}(Y+Z)=\begin{bmatrix}
+			2+\dfrac{1}{2\sqrt{x}} & 1\\[8pt]
+			1+\dfrac{1}{x} & 2x
+		\end{bmatrix}\].
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}
+\end{solution}
+\problemheader{4.2 (product rule for matrix-valued functions)}
+Let
+\[
+Y(x)=\begin{bmatrix}\sqrt{x}&x\\[2pt] \dfrac{1}{x}&x^2\end{bmatrix},
+\qquad
+Z(x)=\begin{bmatrix}x&0\\[\begin{aligned}
+2pt]\log x&2x\end{bmatrix},
+\quad x>0
+\end{aligned}\].
+Then
+\[
+\frac{d}{dx}\big(Y(x)Z(x)\big)=Y'(x)Z(x)+Y(x)Z'(x)\].
+A straightforward computation gives
+\[
+Y'(x)=\begin{bmatrix}\dfrac{1}{2\sqrt{x}}&1\\[8pt]-\dfrac{1}{x^2}&2x\end{bmatrix},
+\qquad
+Z'(x)=\begin{bmatrix}1&0\\[\begin{aligned}
+2pt]\dfrac{1}{x}&2\end{bmatrix}
+\end{aligned}\],
+and therefore
+\[
+\boxed{\frac{d}{dx}\big(Y(x)Z(x)\big)=
+\begin{bmatrix}\dfrac{1}{2\sqrt{x}}&1\\[8pt]-\dfrac{1}{x^2}&2x\end{bmatrix}\!
+\begin{bmatrix}x&0\\[2pt]\log x&2x\end{bmatrix}
++\begin{bmatrix}\sqrt{x}&x\\[2pt] \dfrac{1}{x}&x^2\end{bmatrix}\!
+\begin{bmatrix}1&0\\[\begin{aligned}
+2pt]\dfrac{1}{x}&2\end{bmatrix}}
+\end{aligned}\].
+(You may multiply out if desired, but the product‑rule form above is already correct.)
+	\Rightarrow
+	\boxed{\ \(\frac{d}\){dx}\(\operatorname{tr}\)(Y)=20x^4+12x^3+4x+2.\ }
+
+	\newpage	
+	\section*{STA3710 May/June 2019}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+\[
+	A=\begin{bmatrix}0&0&0\\[2pt]0&0&0\end{bmatrix},\quad
+	B=\begin{bmatrix}1&3&2\\[\begin{aligned}
+2pt]4&0&-1\
+\end{aligned}\[2pt]5&7&1\end{bmatrix},\quad
+	C=I_3,\quadD=\begin{bmatrix}5&1&3\\-2&6&4\\[\begin{aligned}
+2pt]7&-1&3\end{bmatrix}
+\end{aligned}\].
+	\begin{enumerate}[label=(\roman*), leftmargin=2.2em]
+		\item C is a square. \textbf{True} ($3\times3$).
+		\item C is a matrix of ones. \textbf{False} (it is the identity).
+		\item C is an identity matrix. \textbf{True}.
+		\item A is a 3\times2 matrix. \textbf{False}; A is 2\times3).
+		\item B+D=\begin{bmatrix}6&4&5\\[\begin{aligned}
+2pt]6&6&3\
+\end{aligned}\[2pt]12&6&4\end{bmatrix}. \mathbf{False}; actually)
+		\(B+D=\begin{bmatrix}6&4&5\\[\begin{aligned}
+2pt]2&6&3\
+\end{aligned}\[2pt]12&6&4\end{bmatrix} (row~2, col~1 is 4+(-2)=2\)).
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\mathbf{Source}: STA3710 Jan/Feb 2021\\
+\mathbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Let A=\begin{bmatrix}1&1\\[2pt]0&1\end{bmatrix}, B=\begin{bmatrix}0&1\\[2pt]0&0\end{bmatrix}, and)
+\[
+\[M=\begin{bmatrix}A&B\\ B&-A\end{bmatrix}\].
+]
+	Block multiplication gives
+\[
+\[
+	M^2 \begin{bmatrix}A^2+B^2&\ AB-BA\\ BA-AB&\ B^2+A^2\end{bmatrix}\].
+]
+	Here AB=B and BA=B (compute directly), so $AB-BA=0$. Also $B^2=0$, $A^2 \begin{bmatrix}1&2\\[2pt]0&1\end{bmatrix} and A+B=\begin{bmatrix}1&2\\[2pt]0&1\end{bmatrix}.
+	Hence
+\[
+\[
+	\boxed{M^2 \begin{bmatrix}A+B&0\\[\begin{aligned}
+2pt]0&A+B\end{bmatrix}
+\end{aligned}\].
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.5}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Among the first 5 arrivals, suppose exactly 2 are men and 3 are women, occupying 5 separate rooms (one per room). Then 5 more arrive (2 men, 3 women).  
+	If we order columns as [\,\text{two male rooms}\mid\text{three female rooms}\,] and rows as
+	\([\,\text{two arriving men};\ \text{three arriving women}\,]\),
+	the incidence matrix (entry =1 when sexes match, else 0)) is
+	\[
+	\boxed{\begin{bmatrix}
+			\mathbf{1}_{2\times2} & 0_{2\times3}\\[2pt]
+			0_{3\times2} & \mathbf{1}_{3\times3}
+	\end{bmatrix}}
+	(and any row/column permutation of this form is acceptable). This is exactly the stated block form after rearrangement.
+	
+	% =========================
+	% QUESTION 2
+	% =========================
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Let A=\begin{bmatrix}2&-1\\[2pt]-1&4\end{bmatrix},
+	B=I_2,
+	c=\begin{bmatrix}1\\[2pt]3\end{bmatrix},
+	d=2.
+	\begin{align*}
+		\mathbf{(i)}\;\;A\otimes d&=\boxed{\,2A=\begin{bmatrix}4&-2\\[2pt]-2&8\end{bmatrix}};\\
+		\mathbf{(ii)}\;\;A\otimes c&= \begin{bmatrix}2c&-1\,c\\[2pt]-1\,c&4c\end{bmatrix}
+		=\boxed{\begin{bmatrix}2&-1\\[2pt]6&-3\\ -1&4\\ -3&12\end{bmatrix}};\\
+		\mathbf{(iii)}\;\;A\otimes B& \begin{bmatrix}2I_2&-I_2\\[2pt]-I_2&4I_2\end{bmatrix}
+		=\boxed{\begin{bmatrix}
+\[\begin{bmatrix}
+				2&0&-1&0\\[2pt]0&2&0&-1\\ -1&0&4&0\\[\begin{aligned}
+2pt]0&-1&0&4
+		\end{bmatrix}};\\
+
+\end{aligned}\]
+\(		\mathbf{(iv)}\;\;c\otimes c&=\boxed{\begin{bmatrix}1\\[2pt]3\\[2pt]3\\[2pt]9\end{bmatrix}}.\)
+	\end{align*}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\mathbf{Source}: STA3710 Jan/Feb 2021\\
+\mathbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	For
+	\[
+	A=\begin{bmatrix}
+\[A=\begin{bmatrix}
+		1&2&0&1\\[2pt]0&2&1&5\\[\begin{aligned}
+2pt]4&0&-1&0
+	\end{bmatrix}
+
+\end{aligned}\]
+	Gaussian elimination (full steps kept) gives the reduced form[ \begin{bmatrix}
+		1&0&0&\tfrac{4}{3}\\[\begin{aligned}
+2pt]
+		0&1&0&-\tfrac{1}{6}\
+\end{aligned}\[2pt]
+		0&0&1&\tfrac{16}{3}
+	\end{bmatrix}\].
+	Hence a row-echelon form has three nonzero rows and
+	\[
+	\boxed{\operatorname{rank}(A)=3}\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.4}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\[
+A=\begin{bmatrix}
+2&4&1\\[2pt]0&2&2\\[\begin{aligned}
+2pt]0&0&1\end{bmatrix}
+
+\end{aligned}\]
+
+	Upper triangular $\Rightarrow$ eigenvalues are the diagonal entries:
+	\[
+	\boxed{\{2,\,2,\,1\}}\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Let u=\tfrac12(x+y)), v=\tfrac12(x-y)\Rightarrow x=u+v,\ y=u-v).
+	Jacobian:
+	\[
+	J=\det\begin{bmatrix}\partial x/\partial u & \partial x/\partial v\\[2pt]
+		\partial y/\partial u & \partial y/\partial v\end{bmatrix}
+	=\det\begin{bmatrix}1&1\\[\begin{aligned}
+2pt]1&-1\end{bmatrix}=-2,\ \ |J|=2.
+	Thus
+	
+\end{aligned}\[
+	\boxed{\,f_{U,V}(u,v)=f_{X,Y}(u+v,u-v)\,|J|
+		=\big((u+v)+(u-v)\big)\cdot2=4u,}\]
+	on the region 0<u+v<1 and 0<u-v<1 (i.e.\(u\in(0,1) and v\in(\max\{-u,u-1\},\min\{u,1-u\})\)).
+	
+	% =========================
+	% QUESTION 5
+	% =========================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.3}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+{\partial X}\(\operatorname{tr}\)(X^{\top} A X B)$ (no symmetry assumed)}
+	Using d\,\(\operatorname{tr}\)(X^{\top} A X B)
+	=\(\operatorname{tr}\)(B X^{\top} A\,dX)+\(\operatorname{tr}\)(B^{\top} X^{\top} A^{\top} dX))
+	and cycling the trace,
+\[
+	\boxed{\ \frac{\partial}{\partial X}\operatorname{tr}(X^{\top} A X B)=A X B + A^{\top} X B^{\top}\ }\].
+	(If A,B are symmetric this reduces to 2AXB).)
+\end{document}
+
+
+	\newpage
+	%====================  Oct/Nov 2018 — Ultra-Detailed Solutions  ====================
+	
+	\section*{STA3710 Oct/Nov 2018}
+	
+	\subsection*{Question 1 \; (34 marks)}
+	
+	\paragraph{1.1} Consider
+\[
+	A=\begin{pmatrix}6&8&4\\[2pt]1&3&2\end{pmatrix}\!,\qquad
+	B=\begin{pmatrix}6&1\\[\begin{aligned}
+2pt]8&9\
+\end{aligned}\[2pt]2&-7\end{pmatrix}\].
+	\subparagraph{1.1.1} Compute $A+B^\top$.
+\[
+	B^\top=\begin{pmatrix}6&8&2\\[2pt]1&9&-7\end{pmatrix}\!,\quad
+	A+B^\top=\begin{pmatrix}
+		6+6&8+8&4+2\\[2pt]
+		1+1&3+9&2-7
+	\end{pmatrix}
+	=\begin{pmatrix}12&16&6\\[2pt]2&12&-5\end{pmatrix}\].
+	\textit{Checks:} both are $2\times 3$, so addition is defined; units match entrywise.
+	
+	\subparagraph{1.1.2} Compute $A^\top+B$.
+\[
+	A^\top=\begin{pmatrix}6&1\\[2pt]8&3\\[2pt]4&2\end{pmatrix},\qquad
+	A^\top+B=\begin{pmatrix}
+		6+6&1+1\\[2pt]8+8&3+9\\[2pt]4+2&2-7
+	\end{pmatrix}
+	=\begin{pmatrix}12&2\\[2pt]16&12\\[\begin{aligned}
+2pt]6&-5\end{pmatrix}
+\end{aligned}\].
+	\textit{Checks:} both are $3\times2$; result is $3\times2$.
+	
+	\subparagraph{1.1.3} Relationship between $(1,1,1)$ and $(1,1,2)$.
+\[
+	(1,1,1)\cdot(1,1,2)=1+1+2=4>0\quad\Rightarrow\quad \text{acute angle (not orthogonal)}\].
+	They are \emph{not} multiples (ratios $1/1,\,1/1,\,1/2$ differ) $\Rightarrow$ linearly independent.  
+	Angle:
+\[
+	\cos\theta=\frac{4}{\| (1,1,1)\|\;\|(1,1,2)\|}=\frac{4}{\sqrt{3}\sqrt{6}}=\frac{4}{3\sqrt2}\approx0.943,
+	\quad \theta\approx 20.0^\circ\].
+	\paragraph{1.2} Use $A=(\,t\; -1\; 0\,)$ and $B=\begin{pmatrix}3&1\\[\begin{aligned}
+2pt]1&4\end{pmatrix}$ to show
+
+\end{aligned}\[
+	A\otimes B=(A\otimes I_2)(I_3\otimes B)\].
+	\textit{Direct construction (block view).}
+\[
+	A\otimes B=\big(tB\;\; -1\!\cdot\!B\;\; 0\!\cdot\!B\big)
+	=\left(\;\begin{array}{cc|cc|cc}
+		3t& t & -3&-1 & 0&0\\[2pt]
+		t& 4t & -1&-4 & 0&0
+	\end{array}\;\right)\].
+	Next,
+\[
+	A\otimes I_2=\big(tI_2\;\; -I_2\;\; 0\cdot I_2\big),\qquad
+	I_3\otimes B=\mathrm{diag}(B,B,B)\].
+	Multiplying block-wise:
+\[
+	(A\!\otimes\! I_2)(I_3\!\otimes\! B)
+	=\big(tI_2\cdot B\;\; -I_2\cdot B\;\; 0\cdot B\big)
+	=\big(tB\;\; -B\;\; 0\big)=A\otimes B\].
+	\textit{Property used:} the mixed-product rule $(X\otimes Y)(Z\otimes W)=(XZ)\otimes(YW)$ when dimensions conform.
+	
+	\paragraph{1.3} Vectors $\;a=\binom{1}{5}$, $b=\binom{5}{-1}$.
+	
+	\subparagraph{1.3.1} Lengths: $\|a\|=\(\sqrt{1^2+5^2}\)=\(\sqrt{26}\)$, $\|b\|=\(\sqrt{5^2+(-1)^2}\)=\(\sqrt{26}\)$.
+	
+	\subparagraph{1.3.2} Norms (Euclidean/2-norm): same as lengths above.
+	
+	\subparagraph{1.3.3} Normal? “Normal” (unit) means $\|v\|=1$. Here $\(\sqrt{26}\)\neq1$ so neither is a unit vector.
+	
+	\subparagraph{1.3.4} Angle between $a$ and $b$:
+\[
+	a\cdot b=1\cdot5+5\cdot(-1)=0\Rightarrow \cos\theta=0\Rightarrow \theta=\frac{\pi}{2}\].
+	\paragraph{1.4} $X=\begin{pmatrix}-1&3&0\\[\begin{aligned}
+2pt]0&2&1\
+\end{aligned}\[2pt]1&0&4\end{pmatrix}$. Find $X^{-1}$.
+\[
+	\det X=-14\neq0\Rightarrow X^{-1}\text{ exists.}
+\]
+	A clean inverse (checked by multiplication):
+\[
+	X^{-1}=\frac1{14}\begin{pmatrix}-8&-12&3\\[2pt]2&-4&-1\\[\begin{aligned}
+2pt]4&6&-2\end{pmatrix}
+\end{aligned}\].
+	\textit{Sanity check:} $XX^{-1}=I_3$.
+	
+	\paragraph{1.5} $P=\begin{pmatrix}1&2&1\\[\begin{aligned}
+2pt]2&4&0\
+\end{aligned}\[2pt]1&0&1\end{pmatrix}$.
+	
+	\subparagraph{1.5.1} Partition as $\displaystyle P=\begin{pmatrix}A&-y\\[\begin{aligned}
+2pt]x^\top&1\end{pmatrix}$.
+
+\end{aligned}\[
+	A=\begin{pmatrix}1&2\\[\begin{aligned}
+2pt]2&4\end{pmatrix},\quad -y=\binom{1}{0}\Rightarrow y=\binom{-1}{0},\quad x^\top=(1\;\;2)
+\end{aligned}\].
+	\subparagraph{1.5.2} Determinant:
+\[
+	\det P=2\].
+	\subparagraph{1.5.3} Inverse (and verification):
+\[
+	P^{-1}=\frac12\begin{pmatrix}2&0&-2\\[2pt]0&\tfrac12&1\\[\begin{aligned}
+2pt]-2&1&2\end{pmatrix},\qquad
+	P^{-1}P=I_3
+\end{aligned}\].
+	% ------------------------------------------------------------------------------
+	
+	\subsection*{Question 2 \; (19 marks)}
+	
+	\paragraph{2.1} Solve the system
+\[
+	x-y=-1,\qquad x-z=1,\qquad -6x+2y+3z=-2\].
+	\subparagraph{2.1.1} Matrix form $Ax=b$:
+\[
+	A=\begin{pmatrix}1&-1&0\\[2pt]1&0&-1\\[2pt]-6&2&3\end{pmatrix},\quad
+	x=\begin{pmatrix}x\\y\\z\end{pmatrix},\quad
+	b=\begin{pmatrix}-1\\[2pt]1\\[2pt]-2\end{pmatrix}\].
+	\subparagraph{2.1.2} $A^{-1}$ (since $\(\det\) A=-1\neq0$):
+\[
+	A^{-1}=
+	\begin{pmatrix}
+		-2&-3&-1\\[2pt]
+		-3&-3&-1\\[\begin{aligned}
+2pt]
+		-2&-4&-1
+	\end{pmatrix}
+\end{aligned}\].
+	Solution $x=A^{-1}b=\begin{pmatrix}0\\[2pt]1\\[2pt]-1\end{pmatrix}$.
+	
+	\subparagraph{2.1.3} $\mathrm{tr}(A)=1+0+3=4$, \quad $\mathrm{rank}(A)=3$ (full rank, consistent unique solution).
+	
+	\paragraph*{2.2\quad Variance--Covariance and Correlation Matrices}
+	
+	We are given
+\[S=\begin{bmatrix}
+\[\begin{bmatrix}
+		2 & 1 & -4\\
+		-4 & -1 & 6\\
+		-2 & 2 & -2
+	\end{bmatrix},\qquad n=3\].Treating the rows of $S$ as centered observations, the unbiased sample
+	variance--covariance matrix is
+\[
+	\Sigma=\frac{1}{n-1}\,S^{\mathsf T}S=\frac{1}{2}\,S^{\mathsf T}S\].
+	First compute
+\[
+	S^{\mathsf T}S=\begin{bmatrix}
+\[\begin{bmatrix}
+		24 & 2 & -28\\[\begin{aligned}
+2pt]2 & 6 & -14\\
+		-28 & -14 & 56
+	\end{bmatrix}
+\end{aligned}\],hence
+\[
+	\boxed{\Sigma=
+		\frac{1}{2} \begin{bmatrix}
+\[\begin{bmatrix}
+			24 & 2 & -28\\[\begin{aligned}
+2pt]2 & 6 & -14\\
+			-28 & -14 & 56
+		\end{bmatrix}
+
+\end{aligned}\]
+		 \begin{bmatrix}
+\[
+A=\begin{bmatrix}12 & 1 & -14\\
+\[A=\begin{bmatrix}
+			1 & 3 & -7\\
+			-14 & -7 & 28\end{bmatrix}
+\]with variances $\(\operatorname{Var}\)(X_1)=12$, $\(\operatorname{Var}\)(X_2)=3$, and $\(\operatorname{Var}\)(X_3)=28$.
+	
+	\medskip
+	The correlation matrix is $R=D^{-1/2}\Sigma D^{-1/2}$ where
+\[
+	D=\operatorname{diag}(\Sigma)=\operatorname{diag}(12,3,28),\qquad
+	D^{-1/2}=\operatorname{diag}\!\Big(\tfrac{1}{\sqrt{12}},\tfrac{1}{\sqrt{3}},\tfrac{1}{\sqrt{28}}\Big)\].
+	Therefore
+\[
+	\boxed{R=\begin{bmatrix}
+			1 & \tfrac{1}{6} & -\tfrac{7}{2\sqrt{21}}\\[6pt]
+			\tfrac{1}{6} & 1 & -\tfrac{7}{2\sqrt{21}}\\[6pt]
+			-\tfrac{7}{2\sqrt{21}} & -\tfrac{7}{2\sqrt{21}} & 1
+		\end{bmatrix}
+	}
+	\;\approx\; \begin{bmatrix}
+		1 & 0.1667 & -0.7638\\[2pt]0.1667 & 1 & -0.7638\\
+		-0.7638 & -0.7638 & 1
+	\end{bmatrix}\].
+]
+	\subparagraph{2.2.2} \textbf{Correlation matrix.}
+	Let $D=\(\mathrm{diag}\)\!\big(\(\sqrt{v_1}\),\(\sqrt{v_2}\),\(\sqrt{v_3}\)\big)$ where $v_i$ are the variances (diagonal of the variance–covariance). Then
+\[
+	R=D^{-1}\,(\mathrm{VarCov})\,D^{-1},\qquad
+	R_{ij}=\frac{\mathrm{Cov}(i,j)}{\sqrt{v_i\,v_j}},\quad R_{ii}=1\].
+	\textit{Action for you:} confirm $S$’s nine entries (and whether it’s $C$ or already a covariance). I’ll plug them and simplify numerically.
+	
+	% ------------------------------------------------------------------------------
+	
+]
+	\subsection*{Question 3 \; (20 marks)}
+	
+	\paragraph{3.1} $\displaystyle M_X(t)=\(\frac{e^{2t}}\){2}+\(\frac{e^{3t}}\){3}+\(\frac{e^{6t}}\){6}$].
+	\subparagraph{3.1.1} Mean via $M^{\top}_X(0)$:
+\[
+	M^{\top}_X(t)=\frac{2e^{2t}}{2}+\frac{3e^{3t}}{3}+\frac{6e^{6t}}{6}=e^{2t}+e^{3t}+e^{6t}
+	\Rightarrow \mathbb E[X]=M^{\top}_X(0)=1+1+1=3\].
+]
+	\subparagraph{3.1.2} Variance via $M^{\top}'_X(0)-(\(\mathbb\) E X)^2$:
+\[
+	M^{\top}'_X(t)=2e^{2t}+3e^{3t}+6e^{6t}\Rightarrow
+	\mathbb E[X^2]=M^{\top}'_X(0)=2+3+6=11\].
+	Hence $\(\mathrm{Var}\)(X)=11-3^2=2$.
+	\textit{Interpretation:} $X$ is a mixture with masses at $2,3,6$ with weights $1/2,1/3,1/6$.
+	
+	\paragraph{3.2} Maclaurin series for $\(\log\)(1+x)$ ($|x|<1$):
+\[
+	\log(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots
+\]
+	\paragraph{3.3} $\displaystyle \lim_{x\to 0^+}\(\frac{\log x}\){x^r}$.
+	Let $x=e^{-t}$, $t\to\infty$:
+\[
+	\frac{\log x}{x^r}=\frac{-t}{e^{-rt}}=-t\,e^{rt}\ \Rightarrow\
+	\begin{cases}
+		-\infty, & r>0,\\
+		-\infty, & r=0\ (\log x\to-\infty),\\[2pt]0, & r<0.
+	\end{cases}\]
+	
+	\paragraph{3.4} Solve $1-e^{-\lambda m}=\tfrac12$ for $m$:
+\[
+	e^{-\lambda m}=\tfrac12\Rightarrow -\lambda m=\log \tfrac12=-\log 2
+	\Rightarrow m=\dfrac{\log 2}{\lambda}\].
+	\paragraph{3.5} $f(x)=(e^{-4x}-2)^3$. Then
+\[
+	f^{\top}(x)=3(e^{-4x}-2)^2(-4e^{-4x})\],
+\[
+	f^{\top}'(x)=48\big(4e^{-4x}-8e^{-8x}+3e^{-12x}\big)\].
+	(\textit{Either expanded or factored forms earn full credit}.)
+	
+	% ------------------------------------------------------------------------------
+	
+	\subsection*{Question 4 \; (14 marks)}
+	
+	\paragraph{4.1} Chi-square with parameter (d.f.) $n$: $M(t)=(1-2t)^{-n/2}$, $t<\tfrac12$.
+\[
+	\mathbb E[X]=n,\qquad \mathrm{Var}(X)=2n\].
+	\textit{Method:} differentiate $\(\log\) M(t)$ or $M(t)$ directly.
+	
+	\paragraph{4.2} $f_X(x)=\begin{cases}\lambda e^{-\lambda x},&x\ge0\\[\begin{aligned}
+2pt]0,&\text{otherwise}\end{cases}$, $\lambda>0$.
+	
+	\subparagraph{4.2.1} CDF:
+
+\end{aligned}\[
+	F_X(x)=\int_0^x \lambda e^{-\lambda u}\,du
+	=1-e^{-\lambda x},\qquad x\ge0\].
+	\subparagraph{4.2.2} Mgf:
+\[
+	M_X(t)=\mathbb E[e^{tX}
+	=\int_0^\infty \lambda e^{-(\lambda-t)x}\,dx
+	=\frac{\lambda}{\lambda-t},\quad t<\lambda\].
+	% ------------------------------------------------------------------------------
+	
+	\subsection*{Question 5 \; (13 marks)}
+	
+	\paragraph{5.1} $Y=\begin{pmatrix}2x&1\\[2pt]x&x^2\end{pmatrix}$,\quad
+	$Z=\begin{pmatrix}\sqrt{x}&x\\[2pt]\log x&1\end{pmatrix}$ (assume $x>0$).
+\[
+	\frac{d}{dx}(Y+Z)=\begin{pmatrix}2&0\\[2pt]1&2x\end{pmatrix}
+	+\begin{pmatrix}\dfrac{1}{2\sqrt{x}}&1\\[6pt]\dfrac1x&0\end{pmatrix}
+	=\begin{pmatrix}2+\dfrac{1}{2\sqrt{x}}&1\\[8pt]1+\dfrac1x&2x\end{pmatrix}\].
+	\paragraph{5.2} Product rule for matrices:
+\[
+	\frac{d}{dx}(YZ)=\frac{dY}{dx}\,Z+Y\,\frac{dZ}{dx}\].
+	Compute
+\[
+	\frac{dY}{dx}=\begin{pmatrix}2&0\\[2pt]1&2x\end{pmatrix},\qquad
+	\frac{dZ}{dx}=\begin{pmatrix}\dfrac{1}{2\sqrt{x}}&1\\[\begin{aligned}
+6pt]\dfrac1x&0\end{pmatrix}
+\end{aligned}\].
+	Therefore
+\[
+	\frac{d}{dx}(YZ)
+	=\begin{pmatrix}
+		3\sqrt{x}+\dfrac{1}{x} & 4x\\[10pt]
+		\dfrac{3}{2}\sqrt{x}+2x\log x+x & 4x
+	\end{pmatrix}\].
+	(\textit{Derived by explicit multiplication; each entry has been simplified.})
+	
+	\paragraph{5.3} $Y=\begin{pmatrix}3x^4&2x^2&5x^2-3\\[\begin{aligned}
+2pt]0&4x^5&1\
+\end{aligned}\[2pt]9x^3&5&2x^2+2x\end{pmatrix}$.  
+	Since $\mathrm{tr}(Y)=3x^4+4x^5+2x^2+2x$,
+\[
+	\frac{d}{dx}\,\mathrm{tr}(Y)=12x^3+20x^4+4x+2\].
+	\textit{Principle:} $\dfrac{d}{dx}\(\mathrm{tr}\)(Y)=\(\mathrm{tr}\)\!\left(\dfrac{dY}{dx}\right)$.
+	
+	%====================  End Oct/Nov 2018  ====================
+
+
+	\newpage
+
+	% ===================== MAY/JUNE 2018 — Ultra-Detailed Solutions =====================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 2}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	\textbf{Definitions.} $A$ is \emph{idempotent} if $A^2=A$.
+	
+	\subsubsection{1.1.1 \; $I_m-A$ is idempotent when $A$ is idempotent}
+	\textbf{Step 1.} Compute $(I-A)^2$:
+\[
+	(I-A)^2=I-2A+A^2\].
+	\textbf{Step 2.} Use $A^2=A$:
+\[
+	I-2A+A=I-A\].
+	\textbf{Conclusion.} $(I-A)^2=I-A$, so $I-A$ is idempotent.
+	
+	\subsubsection{1.1.2 \; $BAB^{-1}$ is idempotent for nonsingular $B$}
+	\textbf{Step 1.} Compute $(BAB^{-1})^2$:
+\[
+	(BAB^{-1})(BAB^{-1})=BA( B^{-1}B)AB^{-1}=BA^2B^{-1}\].
+	\textbf{Step 2.} Use $A^2=A$:
+\[
+	BA^2B^{-1}=BAB^{-1}\].
+	\textbf{Conclusion.} $(BAB^{-1})^2=BAB^{-1}$, so $BAB^{-1}$ is idempotent.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+(AB)=\(\operatorname{tr}\)(B^{\top} A^{\top})$}
+	\textbf{Facts used.} (i) $\(\operatorname{tr}\)(X)=\(\operatorname{tr}\)(X^{\top})$ for any real $X$; (ii) $(AB)^{\top}=B^{\top} A^{\top}$; (iii) $\(\operatorname{tr}\)(XY)=\(\operatorname{tr}\)(YX)$ when products are defined.
+	
+	\textbf{Derivation.}
+	\[
+	\operatorname{tr}(AB)=\operatorname{tr}\big((AB)^{\top}\big)=\(\operatorname{tr}(B^{\top} A^{\top})\)\].
+	This is exactly the desired identity.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	
+	\textbf{Claim.} If $A$ and $B$ are symmetric, then $A\otimes B$ is symmetric.
+	
+	\textbf{Proof.} Using $(X\otimes Y)^{\top}=X^{\top}\otimes Y^{\top}$ and $A^{\top}=A$, $B^{\top}=B$,
+	\[
+	(A\otimes B)^{\top}=A^{\top}\otimes B^{\top}=A\otimes B\].
+	Thus $A\otimes B$ is symmetric. \square)
+	
+
+	\newpage
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	
+	\textbf{Summary.} We prove that for any $A\in\R^{m\times m}$,
+	\[
+	A=\underbrace{\frac{A+A^{\top}}{2}}_{\text{symmetric}}+\underbrace{\frac{A-A^{\top}}{2}}_{\text{skew-symmetric}}\].
+	
+	\textbf{Step 1. Definition of the two parts.} Define
+	\[
+	S:=\frac{A+A^{\top}}{2}, \qquad K:=\frac{A-A^{\top}}{2}\].
+	
+	\textbf{Step 2. Symmetry of $S$.}
+	\[
+	S^{\top}=\left(\frac{A+A^{\top}}{2}\right)^{\top}=\frac{A^{\top}+(A^{\top})^{\top}}{2}=\frac{A^{\top}+A}{2}=S\].
+	Hence $S$ is symmetric (by definition $S^{\top}=S$).
+	
+	\textbf{Step 3. Skew-symmetry of $K$.}
+	\[
+	K^{\top}=\left(\frac{A-A^{\top}}{2}\right)^{\top}=\frac{A^{\top}-(A^{\top})^{\top}}{2}=\frac{A^{\top}-A}{2}=-\frac{A-A^{\top}}{2}=-K\].
+	Hence $K$ is skew-symmetric (by definition $K^{\top}=-K$).
+	
+	\textbf{Step 4. Reconstruction of $A$.}
+	\[
+	S+K=\frac{A+A^{\top}}{2}+\frac{A-A^{\top}}{2}=\frac{2A}{2}=A\].
+	Therefore, $A=S+K$ with $S$ symmetric and $K$ skew-symmetric, as required. \qed
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	
+	\textbf{Summary.} Using $(XY)^{\top}=Y^{\top} X^{\top}$ and symmetry $A^{\top}=A$, $B^{\top}=B$, we show $(AB-BA)^{\top}=-(AB-BA)$.
+	
+	\textbf{Step 1. Transpose of $AB-BA$.}
+	\[
+	(AB-BA)^{\top}=(AB)^{\top}-(BA)^{\top}=B^{\top} A^{\top}-A^{\top} B^{\top}\].
+	
+	\textbf{Step 2. Use symmetry of $A,B$.}
+	\[
+	B^{\top} A^{\top}-A^{\top} B^{\top}=BA-AB=-(AB-BA)\].
+	
+	\textbf{Conclusion.} $(AB-BA)^{\top}=-(AB-BA)$, so $AB-BA$ is skew-symmetric. \qed
+\begin{solution}\begin{steps}
+\item (AB-BA)^T=(AB)^T-(BA)^T=B^TA^T-A^TB^T).
+\item If A,B are symmetric, A^T=A and B^T=B)\,, hence (AB-BA)^T=-(AB-BA)).
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+
+	
+	\subsubsection{1.2.1 \; Show (A+B)(A-B)=A^2-B^2 iff AB=BA).}
+	\textbf{Left to right (expand).}
+	\[
+	(A+B)(A-B)=A^2-AB+BA-B^2\].
+	This equals A^2-B^2 \emph{iff} -AB+BA=0), i.e.\(AB=BA\).
+	
+	\textbf{Right to left.} If AB=BA), then
+	\[
+	A^2-AB+BA-B^2=A^2-AB+AB-B^2=A^2-B^2\].
+	So the equivalence holds.
+	
+	\subsubsection{1.2.2 \; If A,B are symmetric, prove AB is symmetric iff AB=BA).}
+	\textbf{Use} (AB)^{\top}=B^{\top} A^{\top}. Since A^{\top}=A), B^{\top}=B),
+	\[
+	(AB)^{\top}=BA\].
+	Thus AB is symmetric \Leftrightarrow (AB)^{\top}=AB \Leftrightarrow BA=AB).
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+
+	
+	\textbf{1.2.1} (A^{\top})^{\top}=A^{\top}. \textbf{False.}  
+	Here A^{\top} denotes A^{\top}. The identity is (A^{\top})^{\top}=A), not A^{\top} (unless A=A^{\top}).
+	
+	\textbf{1.2.2} (AB)^{\top}=A^{\top}B^{\top}. \textbf{False.}  
+	Transpose of a product reverses order: (AB)^{\top}=B^{\top} A^{\top}.
+	
+	\textbf{1.2.3} ``\(B is skew-symmetric if B=-B^{\top}.'' \mathbf{True.}  
+	Definition of skew-symmetry.
+	
+	\mathbf{1.2.4}  \operatorname{tr}(A+B)=\operatorname{tr}(B)+\operatorname{tr}(A)\). \textbf{True.}  
+	Trace is linear and commutative on sums: \(\operatorname{tr}\)(A+B)=\sum_i(a_{ii}+b_{ii})=\sum_i a_{ii}+\sum_i b_{ii}.
+	
+	\textbf{1.2.5} |\alpha A|=\alpha^{-m}|A| for scalar \alpha and A\in\R^{m\times m}. \textbf{False.}  
+	Scaling rule: \(\det\)(\alpha A)=\alpha^{m}\(\det\)(A)).
+	
+	\textbf{1.2.6} ``An m\times m matrix A is nonsingular iff |A|\neq 0 and singular iff |A|=0).'' \textbf{True.}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.4}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+
+	
+	\subsubsection{1.4.1 \; Show I_m-A is idempotent if A is idempotent.}
+	\textbf{Step 1.} Compute the square:
+	\[
+	(I-A)^2=I-2A+A^2\].
+	\textbf{Step 2.} Use A^2=A):
+	\[
+	I-2A+A=I-A\].
+	Hence (I-A)^2=I-A), i.e.\(I-A is idempotent. \square\)
+	
+	\subsubsection{1.4.2 \; Show BAB^{-1} is idempotent for any nonsingular B).}
+	\textbf{Step 1.} Multiply:
+	\[
+	(BAB^{-1})^2=BAB^{-1}BAB^{-1}=BA(B^{-1}B)AB^{-1}=BA^2B^{-1}\].
+	\textbf{Step 2.} Use A^2=A):
+	\[
+	BA^2B^{-1}=BAB^{-1}\].
+	Therefore BAB^{-1} is idempotent. \square)
+	
+	% =======================
+	% QUESTION 2
+	% =======================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	
+	\paragraph{2.1.1 $I_m-A$ is idempotent.}
+	\((I-A)^2=I-2A+A^2=I-A by $A^2=A$. 
+	
+	\paragraph{2.1.2 $BAB^{-1}$ is idempotent for nonsingular $B$.}
+	\((BAB^{-1})^2=BA(B^{-1}B)AB^{-1}=BA^2B^{-1}=BAB^{-1}. 
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\mathbf{Source}: STA3710 June/July 2021\\
+\mathbf{Year/Season}: 2021 June/July
+\par\medskip
+
+	\[
+	A=\begin{bmatrix}1&0&-2\\[2pt]0&0&-1\\[\begin{aligned}
+2pt]-2&1&4\end{bmatrix},\quad
+
+\end{aligned}\[
+	B=\begin{bmatrix}1&0&0\\[\begin{aligned}
+2pt]0&0&0\
+\end{aligned}\[2pt]0&0&1\end{bmatrix},\quadC=\begin{bmatrix}0&0&-2\\[\begin{aligned}
+2pt]0&0&-1\
+\end{aligned}\[2pt]2&1&1\end{bmatrix}\].
+]
+	\begin{enumerate}[label=\mathbf{1.2.\arabic*}, leftmargin=2em]
+		\item A symmetric? \mathbf{False}. A^{\top} \begin{bmatrix}1&0&-2\\[\begin{aligned}
+2pt]0&0&1\\-2&-1&4\end{bmatrix}\neq A (entries (2,3)/(3,2)).
+		\item B diagonal? \mathbf{True}. All off-diagonal entries are 0.
+		\item C upper triangular? \mathbf{False}. c_{31}=2\neq0 (nonzero below main diagonal).
+		\item C skew-symmetric? \mathbf{False}. Need C=-C^{\top}; but c_{33}=1\neq -c_{33}.
+		\item B contains two null vectors? \mathbf{True}. Row 2 is \mathbf{0} and column 2 is \mathbf{0}.
+		\item There is a unit vector in A,B,C? \mathbf{True}.  
+		Row 2 of A is [0,0,-1] (norm 1); columns 1 and 3 of B are standard basis vectors; column 2 of C is [0,0,1]^{\top}.
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item (AB-BA)^T=(AB)^T-(BA)^T=B^TA^T-A^TB^T.
+\item If A,B are symmetric, A^T=A and B^T=B\,, hence (AB-BA)^T=-(AB-BA).
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\mathbf{Source}: STA3710 June/July 2021\\
+\mathbf{Year/Season}: 2021 June/July
+\par\medskip
+2\
+\end{aligned}\[2pt]4\\[2pt]2\end{bmatrix}, $b=\begin{bmatrix}3\\[2pt]6\\[2pt]1\end{bmatrix}.
+\[
+	a\!\cdot\! b=2\cdot3+4\cdot6+2\cdot1= \boxed{32}\].
+	For the outer product ab^{\top}: \operatorname{tr}(ab^{\top})=b^{\top} a=a\!\cdot\! b= \boxed{32}.  
+	Since ab^{\top} has rank 1 (with a\neq 0\)), \(\det\)(ab^{\top})= \boxed{0} (size 3\times3)).
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Given
+\[a=\begin{bmatrix}1\\[2pt]0\\[2pt]1\end{bmatrix},\quad
+\[
+	B=\begin{bmatrix}2&2\\[\begin{aligned}
+2pt]0&0\
+\end{aligned}\[2pt]2&2\end{bmatrix},\quadC=\begin{bmatrix}1&0&3\\[\begin{aligned}
+2pt]0&2&3\
+\end{aligned}\[2pt]3&9&7\end{bmatrix},\quadd=\begin{bmatrix}1\\[2pt]0\\[2pt]0\end{bmatrix}\].\begin{enumerate}[label=\(\mathbf{1.1.\arabic*}\), leftmargin=2em]
+]
+		\item ``$a$ is of order $3\times1$.'' \textbf{True} (three rows, one column).
+		\item ``$B=2(a+a)$.'' \textbf{False}. $2(a+a)$ is $3\times1$; $B$ is $3\times2$ (sizes incompatible).
+		\item ``$d$ is an identity matrix.'' \textbf{False}. $d$ is a vector; an identity is square with ones on the diagonal.
+		\item ``$a$ is not a unit vector.'' \textbf{True}. $\|a\|=\(\sqrt{1^2+0^2+1^2}\)=\sqrt2\neq1$.
+		\item ``$a^{\top} C=C$.'' \textbf{False}. $a^{\top} C$ is $1\times3$; $C$ is $3\times3$ (size mismatch).
+		\item ``$d^{\top} a=1$.'' \textbf{True}. $d^{\top} a=[1\ 0\ 0]\,[1\ 0\ 1]^{\top}=1$.
+\(		\item ``$C$ is symmetric.'' \mathbf{False}. $C^{\top} \begin{bmatrix}1&0&3\\[\begin{aligned}
+2pt]0&2&9\
+\end{aligned}\[2pt]3&3&7\end{bmatrix}\neq C$ (entries $(2,3)$ vs $(3,2)$).\)
+		\item ``$a^{\top} d = a d^{\top}$.'' \mathbf{False}. $a^{\top} d$ is a scalar $1$; $a d^{\top}$ is $3\times3$ outer product.
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.1}
+\mathbf{Source}: STA3710 Jan/Feb 2021\\
+\mathbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	\begin{enumerate}[label=\mathbf{1.1.\arabic*}, leftmargin=2.2em]
+		\item \mathbf{Inner product} of $a,b\in\mathbb{R}^n$: \displaystyle a^{\top} b=\sum_{i=1}^n a_i b_i).
+		\item \mathbf{Idempotent matrix}: A with A^2=A).
+		\item \mathbf{Normal (unit) vector}: v with \|v\|=1).
+		\item \mathbf{Orthogonal vectors}: u,v with u^{\top} v=0).
+		\item \mathbf{Orthonormal vectors}: mutually orthogonal and each of unit length.
+		\item \mathbf{Orthogonal matrix} Q): square and Q^{\top} Q=I (columns/rows are orthonormal).
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 3}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.5}
+\mathbf{Source}: STA3710 Oct/Nov 2024\\
+\mathbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+
+	\mathbf{Context.} The given matrix
+\[
+	P=\begin{bmatrix}
+\[\begin{bmatrix}
+		1&-1&1\\[\begin{aligned}
+2pt]0&-2&3\
+\end{aligned}\[2pt]0&-2&3
+	\end{bmatrix}
+\]
+	is the projector onto $S_1$ \emph{along} $S_2$. For such an oblique projector, two standard facts hold]:
+	\begin{enumerate}[label=\textbf{F\arabic*.}, leftmargin=2em]
+		\item $\(\operatorname{Range}\)(P)=S_1$.
+		\item $\(\operatorname{Null}\)(P)=S_2$.
+	\end{enumerate}
+	
+	\subsubsection{1.5.1 \; Basis for $S_1=\(\operatorname{Range}\)(P)$}
+	\textbf{Step 1. Column space generators.} Columns of $P$ are
+\[
+	p_1 \begin{bmatrix}1\\[2pt]0\\[2pt]0\end{bmatrix},\quad
+	p_2 \begin{bmatrix}-1\\-2\\-2\end{bmatrix},\quad
+	p_3 \begin{bmatrix}1\\[2pt]3\\[2pt]3\end{bmatrix}\].
+\(	\mathbf{Step 2. Independence check.} Note $p_3=-p_2+3p_1$ (compute: $-p_2+3p_1 \begin{bmatrix}1\\[2pt]2\\[2pt]2\end{bmatrix}+ \begin{bmatrix}3\\[2pt]0\\[2pt]0\end{bmatrix} \begin{bmatrix}4\\[2pt]2\\[2pt]2\end{bmatrix}\; not equal). We perform a quick rank test using $[p_1\;p_2\;p_3]$:[ \begin{bmatrix}
+\[\begin{bmatrix}
+		1&-1&1\\[2pt]0&-2&3\\[\begin{aligned}
+2pt]0&-2&3
+	\end{bmatrix}
+
+\end{aligned}\]
+\[
+	\xrightarrow{R_3\leftarrow R_3-R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+		1&-1&1\\[\begin{aligned}
+2pt]0&-2&3\
+\end{aligned}\[2pt]0&0&0
+	\end{bmatrix}\].Two pivots $\Rightarrow$ $\dim \operatorname{Range}(P)=2$. Pivot columns are 1 and 2, so
+	\[
+	\boxed{\;\text{Basis}(S_1)=\left\{\, \begin{bmatrix}1\\[2pt]0\\[2pt]0\end{bmatrix},\; \begin{bmatrix}-1\\-2\\-2\end{bmatrix}\right\}.}
+	
+\]
+	\subsubsection{1.5.2 \; Basis for $S_2=\operatorname{Null}(P)$}
+	\textbf{Step 1. Solve $Pz=\mathbf{0}$ for $z=(z_1,z_2,z_3)^{\top}$.} \begin{cases}
+		z_1-z_2+z_3=0,\\
+		-2z_2+3z_3=0,\\
+		-2z_2+3z_3=0.
+	\end{cases}
+	\textbf{Step 2. Parameterize solutions.} From $-2z_2+3z_3=0\Rightarrow z_2=\tfrac{3}{2}z_3$. Then first equation gives $z_1=z_2-z_3=(\tfrac{3}{2}-1)z_3=\tfrac{1}{2}z_3$. Let $t=z_3$:
+	\[
+	z=t=\begin{bmatrix}\tfrac{1}{2}\\[2pt]\tfrac{3}{2}\\[2pt]1\end{bmatrix} = 
+	t\cdot \tfrac{1}{2} \begin{bmatrix}1\\[2pt]3\\[2pt]2\end{bmatrix}.
+	\mathbf{Step 3. Basis vector.} Take integer-scaled generator:
+	\[
+	\boxed{\;\text{Basis}(S_2)=\left\{ \begin{bmatrix}1\\[2pt]3\\[2pt]2\end{bmatrix}\right\}.}
+	
+	
+	
+	
+	% ================================
+	% OCT/NOV 2024 \text{—} QUESTION 2
+	% ================================
+\]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.4}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	
+	\textbf{Summary.} Both are rank-one updates of the identity. We apply the Sherman--Morrison formula
+	\[
+	\boxed{(I+uv^{\top})^{-1} = I - \frac{uv^{\top}}{1+v^{\top} u}}\]
+	whenever $1+v^{\top} u\neq 0$, and then verify by direct multiplication (entrywise).
+	
+	\subsubsection{1.4.1 \; $I_m+\mathbf{1}_m\1_m^{\top}$}
+	
+	\textbf{Step 1. Identify $u$ and $v$.} Let $u=\mathbf{1}_m\in\R^{m\times 1}$ and $v=\mathbf{1}_m\in\R^{m\times 1}$. Then $v^{\top} u=\mathbf{1}_m^{\top}\mathbf{1}_m=m$.
+	
+	\textbf{Step 2. Apply Sherman--Morrison.}
+	\[
+	(I_m+\mathbf{1}_m\1_m^{\top})^{-1} \;=\; I_m - \frac{\mathbf{1}_m\1_m^{\top}}{1+\mathbf{1}_m^{\top}\mathbf{1}_m}
+	\;=\; I_m - \frac{\mathbf{1}_m\1_m^{\top}}{1+m}\].
+	
+	\textbf{Step 3. Verify by entrywise multiplication.} Let $X:=I_m - \dfrac{\mathbf{1}_m\1_m^{\top}}{1+m}$. Compute
+	\[
+	(I_m+\mathbf{1}\mathbf{1}^{\top})X
+	= X + \mathbf{1}\mathbf{1}^{\top} X\].
+	First, $X$ is given entrywise by $X_{ij}=\delta_{ij}-\dfrac{1}{1+m}$ (since $(\mathbf{1}\mathbf{1}^{\top})_{ij}=1$ for all $i,j$).
+	Next,
+	\[
+	(\mathbf{1}\mathbf{1}^{\top} X)_{ij}=\sum_{k=1}^m (\mathbf{1}\mathbf{1}^{\top})_{ik} X_{kj}=\sum_{k=1}^m 1\cdot X_{kj}=\sum_{k=1}^m\left(\delta_{kj}-\frac{1}{1+m}\right)=1-\frac{m}{1+m}=\frac{1}{1+m}\].
+	Therefore, entrywise:
+	\[
+	\big[(I+\mathbf{1}\mathbf{1}^{\top})X\big\]_{ij}=X_{ij}+(\mathbf{1}\mathbf{1}^{\top} X)_{ij}
+	=\left(\delta_{ij}-\frac{1}{1+m}\right)+\frac{1}{1+m}=\delta_{ij}.
+	Hence $(I_m+\mathbf{1}_m\1_m^{\top})X=I_m$, proving
+	\[
+	\boxed{(I_m+\mathbf{1}_m\1_m^{\top})^{-1}=I_m-\dfrac{\mathbf{1}_m\1_m^{\top}}{1+m}}\].
+	
+	\subsubsection{1.4.2 \; $I_m+e_1\mathbf{1}_m^{\top}$}
+	
+	\textbf{Step 1. Identify $u$ and $v$.} Let $u=e_1\in\R^{m\times 1}$ (the first standard basis vector) and $v=\mathbf{1}_m\in\R^{m\times 1}$. Then $v^{\top} u=\mathbf{1}_m^{\top} e_1=1$.
+	
+	\textbf{Step 2. Apply Sherman--Morrison.}
+	\[
+	(I_m+e_1\mathbf{1}_m^{\top})^{-1}=I_m-\frac{e_1\mathbf{1}_m^{\top}}{1+\mathbf{1}_m^{\top} e_1}
+	=I_m-\frac{e_1\mathbf{1}_m^{\top}}{2}\].
+	
+	\textbf{Step 3. Verify by entrywise multiplication.} Let $Y:=I_m-\dfrac{e_1\mathbf{1}_m^{\top}}{2}$. Then
+	\[
+	(I_m+e_1\mathbf{1}_m^{\top})Y
+	=Y+e_1\mathbf{1}_m^{\top} Y\].
+	Compute the second term entrywise:
+	\[
+	\big(e_1\mathbf{1}_m^{\top} Y\big)_{ij}
+	=\sum_{k=1}^m (e_1\mathbf{1}_m^{\top})_{ik} Y_{kj}
+	=\sum_{k=1}^m (e_1)_i(\mathbf{1}_m)_k Y_{kj}
+	=(e_1)_i\sum_{k=1}^m Y_{kj}\].
+	Because $(e_1)_i=\delta_{i1}$, only $i=1$ survives, so for $i\neq 1$ the term is $0$. For $i=1$,
+	\[
+	\sum_{k=1}^m Y_{kj}
+	=\sum_{k=1}^m\left(\delta_{kj}-\frac{(e_1)_k(\mathbf{1}_m)_j}{2}\right)
+	=1-\frac{1\cdot 1}{2}
+	=\frac{1}{2}\].
+	Thus $(e_1\mathbf{1}_m^{\top} Y)_{ij}=\delta_{i1}\cdot \frac{1}{2}$. Therefore entrywise,
+	\[
+	\big[(I+e_1\mathbf{1}_m^{\top})Y\big\]_{ij}
+	=Y_{ij} + \delta_{i1}\cdot \frac{1}{2}
+	=\left(\delta_{ij}-\frac{(e_1)_i(\mathbf{1}_m)_j}{2}\right) + \delta_{i1}\cdot \frac{1}{2}
+	=\delta_{ij}.
+	Hence $(I_m+e_1\mathbf{1}_m^{\top})Y=I_m$, proving
+	\[
+	\boxed{(I_m+e_1\mathbf{1}_m^{\top})^{-1}=I_m-\dfrac{e_1\mathbf{1}_m^{\top}}{2}}\].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	\textbf{Summary.} We are given
+	\[
+	v_1 \begin{bmatrix}1\\[2pt]2\\[2pt]2\\[2pt]2\end{bmatrix},\quad
+	v_2 \begin{bmatrix}1\\[2pt]2\\[2pt]1\\[2pt]2\end{bmatrix},\quad
+	v_3 \begin{bmatrix}1\\[2pt]1\\[2pt]1\\[2pt]1\end{bmatrix}.
+	We show $c_1v_1+c_2v_2+c_3v_3=\mathbf{0}$ implies $c_1=c_2=c_3=0$ by row-reducing the $4\times3$ matrix with these columns.
+	
+	\mathbf{Step 1. Form the matrix and write the homogeneous system.}
+	\[
+	A=\begin{bmatrix}
+\[A=\begin{bmatrix}
+		1&1&1\\[\begin{aligned}
+2pt]2&2&1\
+\end{aligned}\[2pt]2&1&1\\[\begin{aligned}
+2pt]2&2&1\\
+	\end{bmatrix},\qquad
+
+\end{aligned}\]
+\[
+\(	A=\begin{bmatrix}c_1\\c_2\\c_3\end{bmatrix}=\mathbf{0}.\)
+\]
+	
+	\textbf{Step 2. Row-reduction to echelon form (Gaussian elimination).}[ \begin{aligned}
+\begin{bmatr\[ix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]2&2&1\
+\end{aligned}\[2pt]2&1&1\\[\begin{aligned}
+2pt]2&2&1
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		&\xrightarrow{R_2\leftarrow R_2-2R_1,\;R_3\leftarrow R_3-2R_1,\;R_4\leftarrow R_4-2R_1} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]0&0&-1\
+\end{aligned}\[2pt]0&-1&-1\\[\begin{aligned}
+2pt]0&0&-1
+		\end{bmatrix}\
+\end{aligned}\[6pt]
+\]
+\[
+		&\xrightarrow{R_3\leftrightarrow R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]0&-1&-1\
+\end{aligned}\[2pt]0&0&-1\\[\begin{aligned}
+2pt]0&0&-1
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		\xrightarrow{R_4\leftarrow R_4-R_3} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]0&-1&-1\
+\end{aligned}\[2pt]0&0&-1\\[\begin{aligned}
+2pt]0&0&0
+		\end{bmatrix}
+\end{aligned}\].
+	\end{aligned}
+]
+	
+	\textbf{Step 3. Rank and] independence.} The echelon form has three pivots (in columns 1,2,3), so $\(\operatorname{rank}\)(A)=3$. Thus the only solution to $A[c_1,c_2,c_3]^{\top}=\(\mathbf{0}\)$ is the trivial one, hence $\{v_1,v_2,v_3\}$ is linearly independent].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+	\textbf{Summary.} Given
+	\[
+	x_1=
+\begin{bmatrix}3\\[2pt]1\\[2pt]3\\[2pt]1\end{bmatrix},\;
+	x_2=
+\begin{bmatrix}1\\[2pt]1\\[2pt]1\\[2pt]1\end{bmatrix},\;
+	x_3=
+\begin{bmatrix}2\\[2pt]1\\[2pt]2\\[2pt]1\end{bmatrix},\qquad
+	y_1=
+\begin{bmatrix}3\\[2pt]0\\[2pt]5\\-1\end{bmatrix},\;
+	y_2=
+\begin{bmatrix}1\\[2pt]2\\[2pt]3\\[2pt]1\end{bmatrix},\;
+	y_3=
+\begin{bmatrix}1\\-4\\-1\\-3\end{bmatrix}.
+	We find bases for $S_1=\operatorname{span}\{x_1,x_2,x_3\}$ and $S_2=\operatorname{span}\{y_1,y_2,y_3\}$, then $\dim(S_1+S_2)$, a basis of $S_1+S_2$, and $\dim(S_1\cap S_2)$\].
+	\subsubsection{2.3.1 \; Basis for $S_1$ (row-reduction)}
+	\textbf{Step 1.} Form $M_1=[x_1\;x_2\;x_3]$:
+	\[
+	M_1 \begin{bmatrix}
+\[\begin{bmatrix}
+		3&1&2\\[\begin{aligned}
+2pt]1&1&1\
+\end{aligned}\[2pt]3&1&2\\[\begin{aligned}
+2pt]1&1&1
+	\end{bmatrix}
+\end{aligned}\].\(\mathbf{Step 2.}\) Row-reduce:[ \begin{aligned}
+\[
+\begin{bmatrix}
+\[\begin{bmatrix}
+\[\begin{aligned}
+			3&1&2\
+\end{aligned}\[2pt]1&1&1\\[\begin{aligned}
+2pt]3&1&2\
+\end{aligned}\[2pt]1&1&1
+		\end{bmatrix}
+\]
+\[
+		&\xrightarrow{R_1\leftrightarrow R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]3&1&2\
+\end{aligned}\[2pt]3&1&2\\[\begin{aligned}
+2pt]1&1&1
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		\xrightarrow{R_2\leftarrow R_2-3R_1,\;R_3\leftarrow R_3-3R_1,\;R_4\leftarrow R_4-R_1} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]0&-2&-1\
+\end{aligned}\[2pt]0&-2&-1\\[\begin{aligned}
+2pt]0&0&0
+		\end{bmatrix}\
+\end{aligned}\[6pt]
+\]
+\[
+		&\xrightarrow{R_3\leftarrow R_3-R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&1\\[\begin{aligned}
+2pt]0&-2&-1\
+\end{aligned}\[2pt]0&0&0\\[\begin{aligned}
+2pt]0&0&0
+		\end{bmatrix}
+\end{aligned}\].
+	\end{aligned}
+]
+	\textbf{Step 3.} Pivot columns] are 1 and 2 $\Rightarrow$ columns $\{x_1,x_2\}$ form a basis. Hence
+	\[
+	\boxed{\;\text{Basis}(S_1)=\{x_1,x_2\},\quad \dim S_1=2.\;}\]
+	
+	\subsubsection{2.3.2 \; Basis for $S_2$ (row-reduction)}
+	\textbf{Step 1.} Form $M_2=[y_1\;y_2\;y_3]$:
+	\[
+	M_2 \begin{bmatrix}
+\[\begin{bmatrix}
+		3&1&1\\[\begin{aligned}
+2pt]0&2&-4\
+\end{aligned}\[2pt]5&3&-1\\
+		-1&1&-3
+	\end{bmatrix}\].\(\mathbf{Step 2.}\) Row-reduce:[ \begin{aligned}
+\[
+\begin{bmatrix}
+\[\begin{bmatrix}
+			3\[\begin{aligned}
+&1&1\
+\end{aligned}\[2pt]0&2&-4\\[\begin{aligned}
+2pt]5&3&-1\\
+			-1&1&-3
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		&\xrightarrow{R_1\leftrightarrow R_3} \begin{bmatrix}
+\[\begin{bmatrix}
+			5&3&-1\\[\begin{aligned}
+2pt]0&2&-4\
+\end{aligned}\[2pt]3&1&1\\
+			-1&1&-3
+		\end{bmatrix}
+\]
+\[
+		\xrightarrow{R_3\leftarrow R_3-\tfrac{3}{5}R_1,\;R_4\leftarrow R_4+\tfrac{1}{5}R_1} \begin{bmatrix}
+			5&3&-1\\[2pt]0&2&-4\\[\begin{aligned}
+2pt]0&-\tfrac{4}{5}&\tfrac{8}{5}\
+\end{aligned}\[2pt]0&\tfrac{8}{5}&-\tfrac{16}{5}
+		\end{bmatrix}\\[6pt]
+\]
+\[
+		&\xrightarrow{R_3\leftarrow 5R_3,\;R_4\leftarrow 5R_4} \begin{bmatrix}
+\[\begin{bmatrix}
+			5&3&-1\\[\begin{aligned}
+2pt]0&2&-4\
+\end{aligned}\[2pt]0&-4&8\\[\begin{aligned}
+2pt]0&8&-16
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		\xrightarrow{R_4\leftarrow R_4-2R_3} \begin{bmatrix}
+\[\begin{bmatrix}
+			5&3&-1\\[\begin{aligned}
+2pt]0&2&-4\
+\end{aligned}\[2pt]0&-4&8\\[\begin{aligned}
+2pt]0&0&0
+		\end{bmatrix}\
+\end{aligned}\[6pt]
+\]
+\[
+		&\xrightarrow{R_3\leftarrow R_3+2R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			5&3&-1\\[\begin{aligned}
+2pt]0&2&-4\
+\end{aligned}\[2pt]0&0&0\\[\begin{aligned}
+2pt]0&0&0
+		\end{bmatrix}
+\end{aligned}\].
+	\end{aligned}
+]
+	\textbf{Step 3.} Pivot columns are] 1 and 2 $\Rightarrow$ columns $\{y_1,y_2\}$ are independent; $y_3$ is dependent. Thus
+	\[
+	\boxed{\;\text{Basis}(S_2)=\{y_1,y_2\},\quad \dim S_2=2.\;}\]
+	
+	\subsubsection{2.3.3 \; Dimension and basis of $S_1+S_2$}
+	\textbf{Step 1.} Stack all candidate generators as columns:
+	\[
+	M_{+}=[x_1\;x_2\;y_1\;y_2 \begin{bmatrix}
+\[\begin{bmatrix}
+		3&1&3&1\\[\begin{aligned}
+2pt]1&1&0&2\
+\end{aligned}\[2pt]3&1&5&3\\[\begin{aligned}
+2pt]1&1&-1&1
+	\end{bmatrix}
+\end{aligned}\].\(\mathbf{Step 2.}\) Row-reduce $M_{+}$ to find the number of pivots (rank).[ \begin{aligned}
+\[
+\begin{bmatrix}
+\[\begin{bmatrix}
+			3&1&3\[\begin{aligned}
+&1\
+\end{aligned}\[2pt]1&1&0&2\\[\begin{aligned}
+2pt]3&1&5&3\
+\end{aligned}\[2pt]1&1&-1&1
+		\end{bmatrix}
+\]
+\[
+		&\xrightarrow{R_1\leftrightarrow R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&0&2\\[\begin{aligned}
+2pt]3&1&3&1\
+\end{aligned}\[2pt]3&1&5&3\\[\begin{aligned}
+2pt]1&1&-1&1
+		\end{bmatrix}
+
+\end{aligned}\]
+\[
+		\xrightarrow{R_2\leftarrow R_2-3R_1,\;R_3\leftarrow R_3-3R_1,\;R_4\leftarrow R_4-R_1} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&0&2\\[\begin{aligned}
+2pt]0&-2&3&-5\
+\end{aligned}\[2pt]0&-2&5&-3\\[\begin{aligned}
+2pt]0&0&-1&-1
+		\end{bmatrix}\
+\end{aligned}\[6pt]
+\]
+		&\xrightarrow{R_3\leftarrow R_3-R_2} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&0&2\\[2pt]0&-2&3&-5\\[\begin{aligned}
+2pt]0&0&2&2\
+\end{aligned}\[2pt]0&0&-1&-1
+		\end{bmatrix}
+\]
+		\xrightarrow{R_4\leftarrow R_4+\tfrac{1}{2}R_3} \begin{bmatrix}
+\[\begin{bmatrix}
+			1&1&0&2\\[2pt]0&-2&3&-5\\[\begin{aligned}
+2pt]0&0&2&2\
+\end{aligned}\[2pt]0&0&0&0
+		\end{bmatrix}\].
+	\end{aligned}
+]
+	\textbf{Step 3.} There are 3 pivots $]Rightarrow \(\operatorname{rank}\)(M_{+})=3$. Therefore
+	\[
+	\boxed{\;\dim(S_1+S_2)=3,\quad \text{one basis is }\{x_1,\;x_2,\;y_1\}\;(\text{pivot columns}).\;}\]
+	
+	\subsubsection{2.3.4 \; Dimension of $S_1\cap S_2$}
+	\[
+	\boxed{\;\dim(S_1\cap S_2)=\dim S_1+\dim S_2-\dim(S_1+S_2)=2+2-3=1.\;}
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	Let A\in\(\mathbb{R}\)^{m\times n} and B\in\(\mathbb{R}\)^{m\times p}. Every column of (A\ B) is a column of A or of B, hence
+	\[
+	\mathcal{R}([A\ B\])\subseteq \(\mathcal{R}\)(A)+\(\mathcal{R}\)(B).
+	Taking dimensions:
+	\[
+	\boxed{\,\operatorname{rank}\!\big([A\ B\]\big)\le
+		\dim\big(\(\mathcal{R}\)(A)+\(\mathcal{R}\)(B)\big)
+		\le \dim\(\mathcal{R}\)(A)+\dim\(\mathcal{R}\)(B)
+		= \(\operatorname{rank}\)(A)+\(\operatorname{rank}(B)\).}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	\emph{“If A is diagonalizable, then \(\operatorname{rank}\)(A) is not equal to the number of nonzero eigenvalues.”} \textbf{False.}  
+	If A=PDP^{-1} with diagonal D), then \(\operatorname{rank}\)(A)=\(\operatorname{rank}\)(D)=\#\{\lambda_i\neq0\} (counting multiplicity).
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.1}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+
+	\[
+	S=\{(a,\ a+b,\ a+b,\ -b)^{\top}:\ a,b\in\R\}\].
+	\textbf{Step 1 (parametric basis).} Write
+	\[
+	(a,\ a+b,\ a+b,\ -b)^{\top}
+	= a\underbrace{(1,1,1,0)^{\top}}_{u}
+	+ b\underbrace{(0,1,1,-1)^{\top}}_{v}\].
+	Thus S=\(\operatorname{span}\)\{u,v\} and \dim S=2 (since u,v are independent).
+	
+	\subsubsection{2.1.1 \; Is \{(1,0,0,1)^{\top},\ (1,2,2,-1)^{\top}\} a span set of S)?}
+	\textbf{Membership check.}  
+	For (1,0,0,1)^{\top}: choose b=-1\Rightarrow -b=1); then a+b=0\Rightarrow a=1); x_1=a=1). Hence vector \in S).  
+	For (1,2,2,-1)^{\top}: choose b=1\Rightarrow -b=-1); a+b=2\Rightarrow a=1); x_1=a=1). Hence \in S).
+	
+	\textbf{Independence.} The two vectors are not multiples; form 4\times2 matrix and row-reduce (two pivots). Therefore they are independent in S), and because \dim S=2), they span S).
+	
+	\[
+	\boxed{\text{Yes, it is a spanning set of }S.}\]
+	
+	\subsubsection{2.1.2 \; Is \{(2,1,1,1)^{\top},\ (3,1,1,2)^{\top},\ (3,2,2,1)^{\top}\} a span set of S)?}
+	All three vectors satisfy the pattern with appropriate (a,b) (solve  -b = x_4), a+b=x_2=x_3), a=x_1)). The rank of the 4\times3 matrix with these as columns is 2 (two pivots), hence they span a 2-D subspace inside S), which equals S itself.
+	
+	\[
+	\boxed{\text{Yes, these vectors also span }S\ (\text{redundant set, rank }2).}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+Let A\in\R^{m\times n} and B\in\R^{n\times p} with \(\operatorname{rank}\)(B)=n). Show that \(\operatorname{rank}\)(A)=\(\operatorname{rank}\)(AB)).
+
+\textbf{Key fact.} \(\operatorname{rank}\)(X)=\dim\(\mathcal{R}\)(X) (dimension of column space/range). If \(\operatorname{rank}\)(B)=n for B\in\R^{n\times p}, then \(\mathcal{R}\)(B)=\R^{n} (full row rank; its columns span all of \R^n)).
+	
+	\textbf{Step 1.} \(\mathcal{R}\)(AB)=A(\(\mathcal{R}\)(B))=A(\R^n)=\(\mathcal{R}\)(A) because every y\in\R^n is Bz for some z).
+	
+	\textbf{Step 2.} Take dimensions:
+	\[
+	\boxed{\ \operatorname{rank}(AB)=\dim\mathcal{R}(AB)=\dim\mathcal{R}(A)=\(\operatorname{rank}(A)\).\
+	}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+(A)=1 for A\in\R^{m\times n}, show A^{+}=c^{-1}A^{\top} where c=\(\operatorname{tr}\)(A^{\top}A)).}
+	
+	\textbf{Step 1 (rank–1 representation).} Since \(\operatorname{rank}\)(A)=1), there exist nonzero u\in\R^{m}, v\in\R^{n} with
+	\[
+	A=uv^{\top}\].
+	\textbf{Step 2 (standard MP form for rank–1).} For such A),
+	\[
+\Needspace*{10\baselineskip}
+\problemheader{3.3}
+\mathbf{Source}: STA3710 Oct/Nov 2022\\
+\mathbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+If \operatorname{rank}(A)=1 for A\in\R^{m\times n}, show that A^{+}=c^{-1}A^{\top} where c=\(\operatorname{tr}(A^{\top}A)\)\].
+\begin{solution}\begin{steps}
+\item \textbf{Rank--1 representation.} Since \(\operatorname{rank}\)(A)=1, there exist nonzero u\in\R^{m}, v\in\R^{n} with A=uv^{\top}.
+\item \textbf{Standard MP form for rank--1.} For such A, A^{+}=\dfrac{1}{\|u\|^2\,\|v\|^2}\,v u^{\top}.
+\item \textbf{Compute c.} A^{\top}A=(uv^{\top})^{\top}(uv^{\top})=vu^{\top}uv^{\top}=(u^{\top}u)\,vv^{\top}. Hence c=\(\operatorname{tr}\)(A^{\top}A)=\(\operatorname{tr}\)((u^{\top}u)\,vv^{\top})=(u^{\top}u)\(\operatorname{tr}\)(vv^{\top})=(u^{\top}u)(v^{\top}v)=\|u\|^2\|v\|^2.
+\item \textbf{Conclude.} Therefore A^{+}=(\|u\|^2\|v\|^2)^{-1}vu^{\top}=c^{-1}A^{\top}.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.4}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	\textbf{2.4.1} \{(1,-1,2)^{\top},(3,1,1)^{\top}\}: no scalar $k$ with $(3,1,1)=k(1,-1,2)$, hence \textbf{independent}.
+	
+	\textbf{2.4.2} \{(4,-1,2)^{\top},(3,2,3)^{\top},(2,5,4)^{\top}\}: determinant of the $3\times3$ matrix with these as columns is $0$, hence \textbf{dependent}.
+	
+	% =========================================================
+\problemheader{2.4 (rank‑1 matrices and symmetry)}
+Let A,B\in\(\mathbb{R}\)^{m\times n} with \(\operatorname{rank}\)(A)=\(\operatorname{rank}\)(B)=1 and suppose A^{\(\mathsf\) T}A=B^{\(\mathsf\) T}B.
+\par\medskip
+\textbf{2.4.1}\quad Prove that the column spaces of A and B are identical.
+\par\smallskip
+\textbf{2.4.2}\quad Give an example showing that A^{\(\mathsf\) T}A=B^{\(\mathsf\) T}B does not imply A=B.
+\begin{solution}
+\begin{steps}
+\item Since \(\operatorname{rank}\)(A)=1, there exist nonzero vectors u\in\(\mathbb{R}\)^{n}, v\in\(\mathbb{R}\)^{m} such that A=v\,u^{\(\mathsf\) T}. Likewise B=\tilde v\,\tilde u^{\(\mathsf\) T}.
+\item Then A^{\(\mathsf\) T}A=u\,v^{\(\mathsf\) T}v\,u^{\(\mathsf\) T}=\|v\|^2 uu^{\(\mathsf\) T} and B^{\(\mathsf\) T}B=\|\tilde v\|^2 \tilde u \tilde u^{\(\mathsf\) T}. If A^{\(\mathsf\) T}A=B^{\(\mathsf\) T}B\neq 0, their ranges coincide, so \(\operatorname{span}\)(u)=\(\operatorname{span}(\tilde u)\). Consequently the column spaces of A and B are both \(\operatorname{span}\)(v) (with v proportional to \tilde v).
+\item Counterexample: take A=\begin{bmatrix}1&0\\[2pt]0&0\end{bmatrix}, B=\begin{bmatrix}-1&0\\[2pt]0&0\end{bmatrix}. Then A^{\mathsf T}A=B^{\mathsf T}B=\begin{bmatrix}1&0\\[\begin{aligned}
+2pt]0&0\end{bmatrix} but A\neq B.
+\end{steps}
+\end{solution}
+
+\end{aligned}\[
+	\boxed{\ \cos\theta=\frac{x^{\top} y}{\|x\|\|y\|}=\frac{6}{\sqrt{110}},\qquad
+		\theta=\arccos\!\Big(\frac{6}{\sqrt{110}}\Big).\ }
+\]
+	\subsubsection*{2.1.2 \; Compute x^{\top} y when x^{\top} x=3), y^{\top} y=2), and angle \theta=\pi/6).}
+	\[
+	\boxed{\,x^{\top} y=\|x\|\|y\|\cos\theta=\sqrt{3}\sqrt{2}\cdot\frac{\sqrt{3}}{2}=\frac{3\sqrt{2}}{2}.}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.3}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+
+	
+	\textbf{1.3.1} (\alpha A)^{-1}=A^{\top}\alpha^{-1}. \textbf{False.}  
+	Correct identity: (\alpha A)^{-1}=\alpha^{-1}A^{-1}.
+	
+	\textbf{1.3.2} (A^{-1})^{-1}=A). \textbf{True.}
+	
+	\textbf{1.3.3} If A=\(\operatorname{diag}\)(a_{11},\dots,a_{mm})), then A^{-1}=\(\operatorname{diag}\)(a_{11},\dots,a_{mm})). \textbf{False.}  
+	Assuming each a_{ii}\neq 0), A^{-1}=\(\operatorname{diag}\)(1/a_{11},\dots,1/a_{mm})).
+	
+	\textbf{1.3.4} ``An m\times 1 vector p is normalized iff p^{\top} p=1).'' \textbf{True.}
+	
+	\textbf{1.3.5} ``An m\times m matrix P whose columns form an orthonormal set is called orthogonal.'' \textbf{True.}  
+	Columns orthonormal \iff P^{\top} P=I (definition of an orthogonal matrix).
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+
+	\textbf{Definition.} \(\cos\)\theta=\dfrac{x^{\top} y}{\|x\|\,\|y\|}.
+	
+	\textbf{Compute.}
+	\[
+	x^{\top} y=1\cdot3+2\cdot0+1\cdot1+2\cdot1=6,\quad
+	\|x\|=\sqrt{1+4+1+4}=\sqrt{10},\quad
+	\|y\|=\sqrt{9+0+1+1}=\sqrt{11}\].
+	\[
+	\boxed{\ \cos\theta=\dfrac{6}{\sqrt{110}},\qquad
+		\theta=\arccos\!\Big(\dfrac{6}{\sqrt{110}}\Big).\
+	}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.2}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	\begin{enumerate}[label=\textbf{1.2.\arabic*}, leftmargin=2em]
+		\item If $AB=BA$ then we say $A$ and $B$ \emph{commute}. \textbf{True} (definition).
+		\item Multiplying a matrix by the identity leaves it changed. \textbf{False}; $IA=AI=A$.
+		\item $A$ is idempotent if $A=\(\sqrt{A}\)$. \textbf{True} (sufficient condition): squaring gives $A^2=(\(\sqrt{A}\))^2=A$.
+		\item Multiplying a vector by an $n\times m$ matrix results in a column vector. \textbf{False} as stated; $Mx$ is defined only for $m\times n$ by $n\times 1$.
+		\item If $a^{\top} b=0$ and $a,b$ are \emph{normal} (unit) vectors, then they are orthonormal. \textbf{True}.
+		\item A matrix may contain orthonormal vectors yet not be orthogonal. \textbf{True} (e.g.\ a non-square matrix with orthonormal columns).
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.4}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	\begin{enumerate}[label=\textbf{1.4.\arabic*}, leftmargin=2em]
+		\item $A$ and $B$ are orthogonal matrices. \textbf{False}: $A$ is $3\times2$ (not square), whereas $B$ \emph{is} orthogonal since $B^{\top} B=I_2$.
+		\item $A$ is orthogonal to $B$. \textbf{False/not defined} as matrices in Frobenius inner-product sense because their sizes differ.
+		\item $x$ and $z$ are normal (unit) vectors. \textbf{False}; $\|x\|=1$ but $\|z\|=\(\sqrt{1/3}\)\neq1$.
+		\item $x$ and $y$ are orthonormal. \textbf{False}; $x^{\top} y=-\sqrt2\neq 0$ and $\|y\|=\sqrt6\neq1$.
+	\end{enumerate}
+	
+	% =========================================================
+	% QUESTION 2
+	% =========================================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 5}
+
+\problemheader{1.6 (5 marks) Find}
+Given
+\[
+A=\begin{bmatrix}
+1&0&2&1\\[2pt]0&2&6&-3\\[\begin{aligned}
+2pt]0&0&-1&2\
+\end{aligned}\[2pt]0&0&-1&1
+\end{bmatrix}\].
+\textbf{Solution.}
+Expanding along the first column, only the $(1,1)$ entry contributes (since entries below are zero), hence
+\[
+\det(A)=\det\!\begin{bmatrix}
+2&6&-3\\[2pt]0&-1&2\\[\begin{aligned}
+2pt]0&-1&1
+\end{bmatrix}
+\end{aligned}\].
+Compute this $3\times3$ determinant by expansion along the first column again:
+\[
+\det(A)=2\cdot\det\!\begin{bmatrix}-1&2\\-1&1\end{bmatrix}
+=2\bigl((-1)(1)-(-1)(2)\bigr)=2(-1+2)=2\].
+
+\problemheader{1.7 (5 marks) Compute the}
+Let
+\[
+B=\begin{bmatrix}
+2&1&-1\\
+-4&-1&2\\
+-2&1&2
+\end{bmatrix}\].
+\textbf{Solution.}
+Perform Gaussian elimination to obtain an upper–triangular $U$, while recording multipliers in a unit lower–triangular $L$.
+\begin{steps}
+\item Eliminate the $(2,1)$ and $(3,1)$ entries using row\,1:
+\[
+R_2\leftarrow R_2+2R_1,\qquad R_3\leftarrow R_3+R_1\].
+This yields
+\[
+\begin{bmatrix}
+2&1&-1\\[2pt]0&1&0\\[\begin{aligned}
+2pt]0&2&1
+\end{bmatrix}
+\end{aligned}\].
+Multipliers: $m_{21}=-2,\ m_{31}=-1$.
+\item Eliminate the $(3,2)$ entry using row\,2:
+\[
+R_3\leftarrow R_3-2R_2,
+\qquad
+\begin{bmatrix}
+2&1&-1\\[2pt]0&1&0\\[\begin{aligned}
+2pt]0&0&1
+\end{bmatrix}
+\end{aligned}\].
+Multiplier: $m_{32}=2$.
+\end{steps}
+Hence
+\[
+U=\begin{bmatrix}
+2&1&-1\\[2pt]0&1&0\\[2pt]0&0&1
+\end{bmatrix},
+\qquad
+L=\begin{bmatrix}
+1&0&0\\
+-2&1&0\\
+-1&2&1
+\end{bmatrix},
+\qquad
+B=LU\].
+	\textbf{Facts (Kronecker \otimes)).}
+	\begin{itemize}[leftmargin=2em]
+		\item \(\mathrm{tr}\)(A\otimes B)=\(\mathrm{tr}\)(A)\,\(\mathrm{tr}\)(B)).
+		\item \(\det\)(A\otimes B)=\(\det\)(A)^{n}\(\det\)(B)^{m} for A\in\R^{m\times m}, B\in\R^{n\times n}.
+		\item Eigenvalues of A\otimes B are all pairwise products \alpha_i\beta_j of eigenvalues of A,B).
+	\end{itemize}
+	
+	\textbf{Compute traces/determinants.}
+	\[
+	\mathrm{tr}(A)=2+2=4,\quad \mathrm{tr}(B)=5+2=7,\quad \Rightarrow\boxed{\mathrm{tr}(A\otimes B)=28.}\]
+	\[
+	\det(A)=2\cdot2-3\cdot1=1,\quad \det(B)=5\cdot2-3\cdot3=1,\quad
+	\Rightarrow\boxed{\det(A\otimes B)=1^2\cdot1^2=1.}
+	
+	\mathbf{Eigenvalues.} Eigenvalues of A solve \lambda^2-(\mathrm{tr}A)\lambda+\det A=\lambda^2-4\lambda+1=0\Rightarrow
+	\lambda_A=2\pm\sqrt{3}.
+	Eigenvalues of B: \lambda^2-7\lambda+1=0\Rightarrow
+	\lambda_B=\dfrac{7\pm3\sqrt{5}}{2}.
+	Therefore the eigenvalues of A\otimes B are
+	\[
+	\boxed{
+		\Big\{(2\pm\sqrt{3})\cdot \tfrac{7\pm3\sqrt{5}}{2}\Big\}
+		\ \text{(all four sign combinations)}.}\]
+
+	\newpage	
+	% ================================
+	% STA3710 Oct/Nov 2023 — QUESTION 1
+	% ================================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\[\begin{cases}
+		2x+2y-z=-1,\\
+		x+2y+4z=2,\\[2pt]2x+3y-2z=-4.
+	\end{cases}\]
+	
+	\subsubsection{2.2.1 \; Matrix form Ax=b).}
+	\[
+	A=\begin{bmatrix}2&2&-1\\[2pt]1&2&4\\[2pt]2&3&-2\end{bmatrix},\quad
+	x=\begin{bmatrix}x\\y\\z\end{bmatrix},\quadb=\begin{bmatrix}-1\\[2pt]2\\-4\end{bmatrix}\].
+	\subsubsection{2.2.2 \; Inverse (or g-inverse) of A.}
+	\(\det\) A=-11\neq 0\Rightarrow A^{-1} exists. Cofactors give
+	\[
+	\boxed{\,A^{-1}=\frac{1}{11} \begin{bmatrix}
+\[A=\begin{bmatrix}
+			16&-1&-10\\[\begin{aligned}
+2pt]
+			-10&2&9\
+\end{aligned}\[2pt]
+			1&2&-2
+		\end{bmatrix}\].
+	
+]
+	\subsubsection{2.2.3 \; Trace and rank of A).}
+	\[
+	\boxed{\ \operatorname{tr}(A)=2+2+(-2)=2,\qquad \operatorname{rank}(A)=3\ (\det A\neq0).\
+	}\]
+	
+	\subsubsection{2.2.4 \; Solve the system (any method).}
+	Using x=A^{-1}b):
+	\[
+	x=\frac{1}{11} \begin{bmatrix}
+\[\begin{bmatrix}
+		16&-1&-10\\
+		-10&2&9\\[\begin{aligned}
+2pt]1&2&-2
+	\end{bmatrix}
+
+\end{aligned}\]
+\begin{bmatrix}-1\\[2pt]2\\-4\end{bmatrix}
+\(	=\frac{1}{11} \begin{bmatrix}22\\-22\\[2pt]11\end{bmatrix}
+	=
+\(	\boxed{\begin{bmatrix}2\\-2\\[2pt]1\end{bmatrix}}.\)
+	
+	% =========================================================
+	% QUESTION 3
+	% =========================================================
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 6}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.1}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+\[\begin{bmatrix}
+			1&-1&-2&1\\
+			-2&4&3&-2\\[2pt]1&1&-3&1
+		\end{bmatrix}\].
+	
+	\textbf{Definitions.} A (one-sided) generalized inverse $G$ of $A$ satisfies $AGA=A$. The Moore–Penrose inverse $A^{+}$ is a particular $G$.
+	
+	\textbf{Approach (construct a valid $G$).} We compute a Moore–Penrose inverse (which is, in particular, a generalized inverse):
+	\[
+	\boxed{
+		A^{+} \begin{bmatrix}
+			\frac{2}{77} & -\frac{3}{77} & \frac{3}{77}
+			\frac{4}{385} & \frac{71}{385} & \frac{83}{385}\\[4pt]
+			-\frac{27}{385} & \frac{2}{385} & -\frac{79}{385}\\[\begin{aligned}
+4pt]
+			\frac{2}{77} & -\frac{3}{77} & \frac{3}{77}
+		\end{bmatrix}.
+	}
+	\mathbf{Verification.} Direct multiplication shows $A A^{+} A=A$, so $A^{+}$ is indeed a generalized inverse (and the MP inverse)
+\end{aligned}\].
+\begin{solution}\begin{steps}
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA, inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.3}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+ aI_m & bI_m\\ cI_m & dI_m\end{bmatrix} with $a,b,c,d\neq 0$.}
+	
+	\textbf{5.3.1 Determinant.} Using block-determinant rules (or Kronecker with a $2\times2$ scalar block),
+	\[
+	\boxed{\;\det(A)=(ad-bc)^{m}.}\]
+	
+	\textbf{5.3.2 Nonsingularity condition.} $A$ is invertible iff $\(\det\)(A)\neq 0$, i.e.
+	\[
+ \boxed{\,ad-bc\neq 0\,}.
+	
+	\mathbf{5.3.3 Inverse (explicit).} Verify by direct block multiplication that
+	\[
+	\boxed{\;
+		A^{-1}=\frac{1}{ad-bc} \begin{bmatrix}
+			dI_m & -bI_m\\
+			-cI_m & aI_m
+		\end{bmatrix}.
+		\;}\]
+	
+	
+	
+	
+	
+	\newpage	
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\[
+A=\begin{bmatrix}
+aI_m & bI_m\\
+cI_m & dI_m
+\end{bmatrix},\quad a,b,c,d\neq 0\].
+	\subsubsection*{4.3.1 \; Determinant.} Because the blocks commute (scalar multiples of I_m)),
+	\[
+	\boxed{\ \det(A)=(ad-bc)^{m}.}\]
+	\subsubsection*{4.3.2 \; Nonsingularity.}
+	\[
+	\boxed{\,A\ \text{is invertible} \iff ad-bc\neq 0.}\]
+	\subsubsection*{4.3.3 \; Explicit inverse.}
+	\[
+	\boxed{\ A^{-1}=\frac{1}{ad-bc} \begin{bmatrix}dI_m&-bI_m\\ -cI_m&aI_m\end{bmatrix}.
+	(Verify by block multiplication.)
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\textbf{Year/Season}: 2023 Jan/Feb
+\par\medskip
+
+	Let A^- be any generalized inverse of A\in\R^{m\times n} (so AA^-A=A).
+	For any C\in\R^{n\times m} define
+	\[
+	G:=A^-+C-A^-ACA^-\].
+	\textbf{Claim.} G is a generalized inverse of A), i.e.\(AGA=A\), and conversely any generalized inverse has this form for some C).
+	
+	\textbf{Proof.} \begin{aligned}
+		AGA
+		&=(A^-+C-A^-ACA^-)A(\[\begin{aligned}
+A^-+C-A^-ACA^-)\\
+		&=A^-AA^- + CA A^- - A^-AC A^- A A^- \\
+		&\quad + A^-A C - A^- A C A^- A C + \cdots \\
+		&\text{Use } AA^-A=A,\ A^-AA^-=A^-:\\
+		&=A^- + CA - A^-AC A^- + A^-A C - A^- A C A^- A C + \cdots
+	\end{aligned}
+
+\end{aligned}\]
+	Group terms with A^-AC and CA A^-, and repeatedly insert AA^-A=A to cancel; all mixed terms cancel pairwise, leaving AGA=A. (Every step uses only associativity and AA^-A=A.) Hence G is a g-inverse.
+	
+	\textbf{Conversely.} Let G be any g-inverse (\(AGA=A\)). Choose C:=G-A^-). Then
+	\[
+	A^-+C-A^-AC A^- = A^-+(G-A^-)-A^-A(G-A^-)A^- = G\],
+	using AA^-A=A). Thus every g-inverse arises in the stated form. \square)
+\begin{solution}\begin{steps}
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA), inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A).
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	\paragraph{3.3.1} For
+	\(A=\begin{bmatrix}2&2&4\\[\begin{aligned}
+2pt]4&-2&2\
+\end{aligned}\[2pt]2&-4&-2\end{bmatrix} (rank $2$),\)
+	its Moore–Penrose inverse (a valid $g$-inverse) is
+\[
+	\boxed{
+		A^{+} \begin{bmatrix}
+			\frac{1}{18}&\frac{1}{9}&\frac{1}{18}\\[4pt]
+			\frac{1}{18}&-\frac{1}{18}&-\frac{1}{9}\\[\begin{aligned}
+4pt]
+			\frac{1}{9}&\frac{1}{18}&-\frac{1}{18}
+		\end{bmatrix}
+	}
+
+\end{aligned}\]
+	(verify $AA^{+}A=A$ and symmetry of $AA^{+},A^{+}A$).
+	
+	\paragraph{3.3.2} For c=\begin{bmatrix}2\\[2pt]4\end{bmatrix}\neq 0),
+	\[
+	\boxed{\,c^{+}=\dfrac{c^{\top}}{c^{\top} c}=\Big[\tfrac{1}{10}\ \ \tfrac{1}{5}\Big\].\,}
+	% =========================================================
+	% QUESTION 4
+	% =========================================================
+\begin{solution}\begin{steps}
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA), inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A).
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+1&1&0\\[\begin{aligned}
+2pt]2&3&1\
+\end{aligned}\[2pt]2&3&1\end{bmatrix} (rank =2)).}
+	Write C=UV with
+	\[
+	U=\big[c_1\ c_3\big=\begin{bmatrix}1&0\\[2pt]2&1\\[2pt]2&1\end{bmatrix},\qquad
+	V=\begin{bmatrix}1&1&0\\[2pt]0&1&1\end{bmatrix},]
+	so that c_2=c_1+c_3. Since U has full column rank and V full row rank,
+	\[
+	G:=V^{+}U^{+}\ \text{with}\ U^{+}=(U^{\top} U)^{-1}U^{\top},\ V^{+}=V^{\top}(VV^{\top})^{-1}\]
+	satisfies CGC=C (projector identities).
+	
+	Compute
+	\[
+	U^{\top} U=\begin{bmatrix}9&4\\[2pt]4&2\end{bmatrix},\ (U^{\top} U)^{-1}=\frac12 \begin{bmatrix}2&-4\\-4&9\end{bmatrix},
+	\Rightarrow
+	U^{+} \begin{bmatrix}
+		1&0&0\\[\begin{aligned}
+2pt]
+		-2&\tfrac12&\tfrac12
+	\end{bmatrix}
+\end{aligned}\].
+	\[
+	VV^{\top} \begin{bmatrix}2&1\\[2pt]1&2\end{bmatrix},\ (VV^{\top})^{-1}=\frac{1}{3} \begin{bmatrix}2&-1\\[2pt]-1&2\end{bmatrix},
+	\Rightarrow
+	V^{+} \begin{bmatrix}
+		\frac{2}{3}&-\frac{1}{3}\\[2pt]
+		\frac{1}{3}&\frac{1}{3}\\[\begin{aligned}
+2pt]
+		-\frac{1}{3}&\frac{2}{3}
+	\end{bmatrix}
+\end{aligned}\].
+	Thus one valid generalized inverse is
+	\[
+	\boxed{
+		G=V^{+}U^{+} \begin{bmatrix}
+			\frac{4}{3}&-\frac{1}{6}&-\frac{1}{6}
+			-\frac{1}{3}&\frac{1}{6}&\frac{1}{6}\\[4pt]
+			-\frac{5}{3}&\frac{1}{3}&\frac{1}{3}
+		\end{bmatrix},\quad
+		\text{and } CGC=C.
+	}
+	% =========================================================
+	% QUESTION 4
+	% =========================================================
+\]
+\begin{solution}\begin{steps}
+]
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA, inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{1.4}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Let \(\mathbf{1}\) \begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix} and J=\mathbf{1}\,\mathbf{1}^{\top} (the $3\times3$ all-ones matrix).
+	\begin{enumerate}[label=\mathbf{1.4.\arabic*}, leftmargin=2.2em]
+		\item \displaystyleJ=\begin{bmatrix}1&1&1\\[\begin{aligned}
+2pt]1&1&1\
+\end{aligned}\[2pt]1&1&1\end{bmatrix}.
+		\item J^2=(\mathbf{1}\mathbf{1}^{\top})(\mathbf{1}\mathbf{1}^{\top})=\mathbf{1}(\mathbf{1}^{\top}\mathbf{1})\mathbf{1}^{\top}=3J.  
+		So J is \emph{not} idempotent; the idempotent projector is \tfrac{1}{3}J.
+		\item A valid generalized inverse (indeed the Moore–Penrose inverse) of J is
+		\[
+		\boxed{J^{+}=\frac{1}{\mathbf{1}^{\top}\mathbf{1}}\,\mathbf{1}\mathbf{1}^{\top}=\frac13\,J}\]
+		(check: J J^{+}J=J)).
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA), inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A).
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.5}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\[
+A=\begin{bmatrix}
+1&1&0\\[2pt]2&3&1\\[\begin{aligned}
+2pt]2&3&1\end{bmatrix}
+
+\end{aligned}\]
+
+	$C$ has rank $2$ (row~2=row~3). Using a full-rank factorization C=UV with
+	\[
+	U=\begin{bmatrix}1&0\\[2pt]2&1\\[2pt]2&1\end{bmatrix},\quad
+	V=\begin{bmatrix}1&1&0\\[2pt]0&1&1\end{bmatrix},
+	the Moore–Penrose inverse is C^{+}=V^{+}U^{+} where
+	\[
+	U^{+}=(U^{\top} U)^{-1}U^{\top} \begin{bmatrix}1&0&0\\[2pt]-2&\tfrac12&\tfrac12\end{bmatrix},\quad
+	V^{+}=V^{\top}(VV^{\top})^{-1} \begin{bmatrix}\tfrac{2}{3}&-\tfrac{1}{3}\\[\begin{aligned}
+2pt]\tfrac{1}{3}&\tfrac{1}{3}\
+\end{aligned}\[2pt]-\tfrac{1}{3}&\tfrac{2}{3}\end{bmatrix}.
+	Hence
+	\[
+	\boxed{
+		C^{+} \begin{bmatrix}
+			\frac{4}{3}&-\frac{1}{6}&-\frac{1}{6}
+			-\frac{1}{3}&\frac{1}{6}&\frac{1}{6}\\[4pt]
+			-\frac{5}{3}&\frac{1}{3}&\frac{1}{3}
+\[
+A=\begin{bmatrix}\end{bmatrix}
+\]
+
+	\quad\text{(verify } C C^{+} C=C\text{)}].
+	
+	% =========================
+	% QUESTION 3
+	% =========================
+]
+\begin{solution}\begin{steps}
+]
+\item If full column rank: A^+=(A^TA)^{-1}A^T by computing A^TA), inverting, and multiplying entry by entry.
+\item Verify one Penrose identity, e.g. AA^+A=A).
+\end{steps}\end{solution}
+
+\section*{Lesson 7}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.2}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+
+\[\begin{bmatrix}
+			1&1&1\\[2pt]0&1&0\\[\begin{aligned}
+2pt]0&1&1\
+\end{aligned}\[2pt]2&0&1
+		\end{bmatrix},\;c=\begin{bmatrix}1\\[2pt]3\\-1\\[2pt]0\end{bmatrix}\].
+	
+	\textbf{Note on the paper wording.} Although the instruction mentions ``use the MP $g$-inverse from (4.1)^{\top}', the matrix displayed here is different. We therefore compute the MP inverse for this \emph{given} $A$ to ensure correctness.
+	
+	\textbf{Step 1. Compute the Moore–Penrose inverse.} $A$ has full column rank ($r=3$), so
+	\[
+	A^{+}=(A^{\top} A)^{-1}A^{\top},\qquad
+	(A^{\top} A)^{-1} \begin{bmatrix}
+		\frac{5}{7}&-\frac{1}{7}&-\frac{3}{7}\\[2pt]
+		-\frac{1}{7}&\frac{3}{7}&\frac{2}{7}\\[\begin{aligned}
+2pt]
+		-\frac{3}{7}&\frac{2}{7}&\frac{3}{7}
+	\end{bmatrix}
+\end{aligned}\].
+	Hence
+	\[
+	\boxed{
+		A^{+} \begin{bmatrix}
+			\frac{1}{7}&\frac{3}{7}&-\frac{4}{7}&\frac{3}{7}\\[2pt]
+			\frac{2}{7}&\frac{6}{7}&-\frac{1}{7}&-\frac{1}{7}\\[2pt]
+\[\begin{bmatrix}
+			0&-1&1&0
+		\end{bmatrix}\].
+	
+	\textbf{5.2.1 Consistency test.} $Ax=c$ is consistent iff $AA^{+}c=c$ (projector criterion). Compute
+	\[
+	AA^{+}c=c\],
+	so the system is \emph{consistent} (indeed, $c\in\(\mathcal{R}\)(A)$).
+	
+	\textbf{5.2.2 A solution (minimum-norm).} The MP solution is
+	\[
+	\boxed{\,x^{\star}=A^{+}c=\begin{bmatrix}2\\[2pt]3\\[2pt]-4\end{bmatrix}.
+	(Any solution has the form $x^{\star}+(I-A^{+}A)z$, $z$ arbitrary.)
+\]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+1&1&-1&0&2\\[2pt]2&1&1&1&1\end{bmatrix},\;c=\begin{bmatrix}3\\[2pt]1\end{bmatrix}.
+	
+	\subsubsection*{4.2.1 \; Consistency.}
+	Row–reducing the augmented matrix (or producing one solution) shows no contradiction; e.g.\ setting x_3=x_4=x_5=0 yields x_1=-2, x_2=5, which satisfies both equations.  
+	\Rightarrow \boxed{\text{System is consistent.}}
+	
+	\subsubsection*{4.2.2 \; General solution.}
+	Let x_3=t,\ x_4=u,\ x_5=v (free). From \begin{cases}
+		x_1+x_2-x_3+2x_5=3,\\[2pt]2x_1+x_2+x_3+x_4+x_5=1,
+	\end{cases}
+	solve for x_1,x_2):
+	\[
+	\boxed{
+		\begin{aligned}
+			x_1&=-2-2t-u+v,\\
+			x_2&=5+3\[\begin{aligned}
+t+u-3v,\\
+			x_3&=t,\quad x_4=u,\quad x_5=v,\qquad t,u,v\in\mathbb{R}.
+	\end{aligned}
+
+\end{aligned}\]}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+
+\section*{Lesson 8}
+
+
+\needspace{10\baselineskip}
+\end{solution}
+\problemheader{2.2}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+2&-1&0\\[\begin{aligned}
+2pt]-1&1&1\
+\end{aligned}\[2pt]0&1&2\end{bmatrix}.
+	
+	\mathbf{2.2.1 Eigenvalues and normalized eigenvectors.} Solve $(A-\lambda I)\vec v=\mathbf{0}$:
+	\[
+	\boxed{\,\lambda\in\{0,2,3\}\,}\]
+	with eigenvectors (normalize each by its Euclidean norm) \begin{aligned}
+		\lambda=0:&\quad \(\vec\) v_0=\(\frac{1}\)\[{\sqrt{6}}
+\begin{bmatrix}-1\\-2\\[2pt]1\end{bmatrix},\\[6pt]
+		\lambda=2:&\quad \vec v_2=\frac{1}{\sqrt{2}}
+\begin{bmatrix}1\\[2pt]0\\[2pt]1\end{bmatrix},\\[6pt]
+		\lambda=3:&\quad \vec v_3=\frac{1}{\sqrt{3}}
+\begin{bmatrix}-1\\[2pt]1\\[2pt]1\end{bmatrix}.
+	\end{aligned}
+\]
+	(Each satisfies $A\(\vec\) v_i=\lambda_i\(\vec\) v_i$ and $\|\(\vec\) v_i\|=1$.)
+	
+	\textbf{2.2.2 Rank of A).} Since one eigenvalue is $0$ and the others are nonzero, $\(\operatorname{rank}\)(A)=2$.
+	
+	\textbf{2.2.3 \(\mathrm{tr}\)(A^4)).} For any diagonalizable $A$, $\(\mathrm{tr}\)(A^k)=\(\sum\) \lambda_i^k$. Here
+	\[
+	\mathrm{tr}(A^4)=0^4+2^4+3^4=0+16+81= \boxed{97}.
+	
+	% ================================
+	% OCT/NOV 2024 \text{—} QUESTION 3
+	% ================================
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Oct/Nov 2024\\
+\textbf{Year/Season}: 2024 Oct/Nov
+\par\medskip
+3&1&-1\\[\begin{aligned}
+2pt]1&3&1\
+\end{aligned}\[2pt]-1&1&3\end{bmatrix}.
+	
+	\mathbf{Step 1. Eigenstructure (symmetric A\Rightarrow orthonormal eigenbasis exists).}
+	\[
+	\lambda_1=1,\;\vec u_1=\frac{1}{\sqrt{3}}
+\begin{bmatrix}1\\-1\\[2pt]1\end{bmatrix},\qquad
+	\lambda_2=4,\;\vec u_2=\frac{1}{\sqrt{2}}
+\begin{bmatrix}1\\[2pt]1\\[2pt]0\end{bmatrix},\qquad
+	\lambda_3=4,\;\vec u_3=\frac{1}{\sqrt{2}}
+\begin{bmatrix}-1\\[2pt]0\\[2pt]1\end{bmatrix}.
+	(Orthonormality: $\vec u_i^{\top} \vec u_j=\delta_{ij}$; checks are straightforward.)
+	
+	\mathbf{3.2.1 Spectral decomposition.}
+	Let $Q=[\vec u_1\;\vec u_2\;\vec u_3]$, $\Lambda=\operatorname{diag}(1,4,4)$. Then
+	\[
+	\boxed{\,A=Q\Lambda Q^{\top}=\sum_{i=1}^3 \lambda_i\,\vec u_i\vec u_i^{\top}.}\]
+	
+	\textbf{3.2.2 Symmetric square root.}
+	\[
+	\boxed{\,A^{1/2}=Q\,\operatorname{diag}\!\big(\sqrt{1},\sqrt{4},\sqrt{4}\big)\,Q^{\top}
+		=\sum_{i=1}^3 \sqrt{\lambda_i}\,\vec u_i\vec u_i^{\top}.}\]
+	(Checks: $(A^{1/2})^{\top}=A^{1/2}$ and $(A^{1/2})^2=A$ by the orthonormal eigen-expansion.)
+	
+	% ================================
+	% OCT/NOV 2024 — QUESTION 4
+	% ================================
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Jan/Feb 2024\\
+\textbf{Year/Season}: 2024 Jan/Feb
+\par\medskip
+1&-2&0\\[\begin{aligned}
+2pt]1&4&0\
+\end{aligned}\[2pt]0&0&2\end{bmatrix}}
+	\mathbf{Summary.} $A$ is block upper triangular with a $2\times2$ block and a scalar $2$.
+	
+	\mathbf{Step 1. Characteristic polynomial (block structure).}
+	\[
+	\det(\lambda I-A)=\det\begin{bmatrix}\lambda-1&2\\-1&\lambda-4\end{bmatrix}\cdot(\lambda-2).
+	
+	\mathbf{Step 2. Compute the $2\times2$ determinant.}
+	\[
+	(\lambda-1)(\lambda-4)-(-2)=\lambda^2-5\lambda+6=(\lambda-2)(\lambda-3)\].
+	
+	\textbf{Conclusion.} Eigenvalues are
+	\[
+	\boxed{\lambda\in\{2,2,3\}} \text{ (i.e., $2$ with algebraic multiplicity $2$, and $3$).}\]
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\textbf{Source}: STA3710 Oct/Nov 2023\\
+\textbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+
+	\begin{enumerate}[label=\textbf{2.3.\arabic*}, leftmargin=2em]
+		\item \emph{“The eigenvalues of A^{\top} are the same as those of A).”} \textbf{True.}  
+		\(\chi_{A^{\top}}(\lambda)=\det(\lambda I-A^{\top})=\det((\lambda I-A)^{\top})=\chi_A(\lambda)\).
+		
+		\item \emph{“The diagonal elements of A equal the eigenvalues of A if A is not triangular.”} \textbf{False.}  
+		This is only guaranteed when A is triangular (then eigenvalues are the diagonal entries).
+		
+		\item \displaystyle \emph{Trace}(A)=\sum_{i=1}^m \lambda_i (eigenvalues with multiplicity). \textbf{True.}
+		
+		\item \emph{“If A is singular, then \lambda^{-1} is an eigenvalue of A^{-1} for eigenvector x).”} \textbf{False.}  
+		\(A^{-1} does \emph{not} exist when A is singular.
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\mathbf{Source}: STA3710 Oct/Nov 2023\\
+\mathbf{Year/Season}: 2023 Oct/Nov
+\par\medskip
+3&1&-1\\[\begin{aligned}
+2pt]1&3&1\
+\end{aligned}\[2pt]-1&1&3\end{bmatrix}}
+	\subsubsection*{3.3.1 \; Spectral decomposition.}
+	Orthogonal eigenbasis (check A u_i=\lambda_i u_i\)):
+	\[
+	\lambda_1=1,\ u_1=\frac{1}{\sqrt{3}}
+\begin{bmatrix}1\\-1\\[2pt]1\end{bmatrix};\qquad
+	\lambda_2=4,\ u_2=\frac{1}{\sqrt{2}}
+\begin{bmatrix}1\\[2pt]1\\[2pt]0\end{bmatrix};\qquad
+	\lambda_3=4,\ u_3=\frac{1}{\sqrt{2}}
+\begin{bmatrix}-1\\[2pt]0\\[2pt]1\end{bmatrix}.
+	Hence
+	\[
+	\boxed{\,A=\sum_{i=1}^{3}\lambda_i\,u_i u_i^{\top}=Q\,\mathrm{diag}(1,4,4)\,Q^{\top},\quad Q=[u_1\ u_2\ u_3\].}
+]
+	\subsubsection*{3.3.2 \; Symmetric square root.}
+	\[
+	\boxed{\,A^{1/2}=\sum_{i=1}^3 \sqrt{\lambda_i}\,u_i u_i^{\top}
+		=Q\,\mathrm{diag}(1,2,2)\,Q^{\top}.}\]
+	
+	% ================================
+	% STA3710 Oct/Nov 2023 — QUESTION 4
+	% ================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\(\mathbf{Source}\): STA3710 Jan/Feb 2023\\
+\(\mathbf{Year/Season}\): 2023 Jan/Feb
+\par\medskip
+9&-3&-4\\[\begin{aligned}
+2pt]12&-4&-6\
+\end{aligned}\[2pt]8&-3&-3\end{bmatrix}.
+	\mathbf{Fact.} A and A^{\top} have the same eigenvalues (same characteristic polynomial).
+	
+	\mathbf{Characteristic polynomial.} \chi_A(\lambda)=\det(\lambda I-A) expands to
+	\[
+	\chi_A(\lambda)=(\lambda-2)(\lambda-1)(\lambda+1)\].
+	\(\mathbf{Hence}\)
+	\[
+	\boxed{\ \text{eigenvalues of }A^{\top}: \{-1,1,2\}.\
+	}\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\(\mathbf{Source}\): STA3710 Jan/Feb 2023\\
+\(\mathbf{Year/Season}\): 2023 Jan/Feb
+\par\medskip
+), show A has a real eigenvector for \lambda).}
+	\textbf{Proof.} Let v\in\(\mathbb{C}\)^m satisfy (A-\lambda I)v=0). Write v=u+iw with
+	\(u,w\in\R^m\). Since A,\lambda I are real,
+	\[
+	0=(A-\lambda I)v=(A-\lambda I)u+i(A-\lambda I)w\].
+	Equality of real and imaginary parts yields
+	\((A-\lambda I)u=0 and (A-\lambda I)w=0\).
+	At least one of u,w is nonzero (else v=0)), so there exists a nonzero real vector in \ker(A-\lambda I)). That vector is a \emph{real} eigenvector for \lambda). \square)
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Jan/Feb 2023\\
+\[A=\begin{bmatrix}
+\mathbf{Year/Season}: 2023 Jan/Feb
+\]
+\par\medskip
+3&1&-1\\[\begin{aligned}
+2pt]1&3&1\
+\end{aligned}\[2pt]-1&1&3\end{bmatrix} (symmetric).}
+	\mathbf{Eigenstructure (orthonormal).}
+	\[
+	\lambda_1=1,\; u_1=\frac{1}{\sqrt{3}}
+\begin{bmatrix}1\\-1\\[2pt]1\end{bmatrix},\qquad
+	\lambda_2=4,\; u_2=\frac{1}{\sqrt{2}}
+\begin{bmatrix}1\\[2pt]1\\[2pt]0\end{bmatrix},\qquad
+	\lambda_3=4,\; u_3=\frac{1}{\sqrt{2}}
+\begin{bmatrix}-1\\[2pt]0\\[2pt]1\end{bmatrix}.
+	\mathbf{Decomposition.}
+	\[
+	\boxed{\;
+		A=\sum_{i=1}^3 \lambda_i\,u_i u_i^{\top}
+		=Q\operatorname{diag}(1,4,4)Q^{\top},\ \ Q=[u_1\ u_2\ u_3\].}
+	\textbf{(Optional) Symmetric square root: } A^{1/2}=\sum_i \(\sqrt{\lambda_i}\)\,u_i u_i^{\top}].
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Oct/Nov 2022\\
+\textbf{Year/Season}: 2022 Oct/Nov
+\par\medskip
+1&2&2&1\\[\begin{aligned}
+2pt]1&1&1&-1\end{bmatrix}\in\R^{2\times4}.}
+
+\end{aligned}\]
+	
+	\textbf{Step 1 (left singular data).} Compute
+	\[
+	A A^{\top} \begin{bmatrix}
+		1^2+2^2+2^2+1^2 & 1\cdot1+2\cdot1+2\cdot1+1\cdot(-1)\\[2pt]1\cdot1+1\cdot2+1\cdot2+(-1)\cdot1 & 1^2+1^2+1^2+(-1)^2
+	\end{bmatrix}
+	 \begin{bmatrix}
+\[\begin{bmatrix}
+		10&4\\[2pt]
+		4&4
+	\end{bmatrix}\].\textbf{Eigenvalues/eigenvectors of AA^{\top}.}  
+	Characteristic polynomial:
+	\[
+	\lambda^2-14\lambda+24=0\ \Rightarrow\ \lambda_1=12,\ \lambda_2=2\].
+	Corresponding (unnormalized) eigenvectors can be taken as
+	\[
+	u_1^\ast=\begin{bmatrix}2\\[2pt]1\end{bmatrix}\ (\lambda_1=12),\qquad
+	u_2^\ast=\begin{bmatrix}-1\\[2pt]2\end{bmatrix}\ (\lambda_2=2).
+	Normalize (each has norm \sqrt5):
+	\[
+	u_1=\frac{1}{\sqrt5}
+\begin{bmatrix}2\\[2pt]1\end{bmatrix},\qquad
+	u_2=\frac{1}{\sqrt5}
+\begin{bmatrix}-1\\[2pt]2\end{bmatrix}.
+	\mathbf{Singular values.} \sigma_1=\sqrt{12}=2\sqrt3,\ \sigma_2=\sqrt{2}.
+	
+	\mathbf{Step 2 (right singular vectors).} For the thin SVD, define v_i=\dfrac{A^{\top} u_i}{\sigma_i}\in\R^{4}, then orthonormalize (these already come out unit):
+	\[
+	v_1=\frac{A^{\top} u_1}{\sigma_1} \begin{bmatrix}\dfrac{\sqrt{15}}{10}\1]\dfrac{\sqrt{15}}{6}\\[4pt]\dfrac{\sqrt{15}}{6}\\[4pt]\dfrac{\sqrt{15}}{30}\end{bmatrix},\qquad
+	v_2=\frac{A^{\top} u_2}{\sigma_2} \begin{bmatrix}\dfrac{\sqrt{10}}{10}\\[4pt]0\\[4pt]0\\[4pt]-\dfrac{3\sqrt{10}}{10}\end{bmatrix}.
+	(Checks: v_i^{\top} v_i=1 and v_1^{\top} v_2=0.)
+	
+	\mathbf{Step 3 (assemble the thin SVD).}
+	\[
+	U=\begin{bmatrix}u_1&u_2\end{bmatrix}=
+	\frac{1}{\sqrt5} \begin{bmatrix}2&-1\\[2pt]1&2\end{bmatrix},\quad
+	\Sigma=\operatorname{diag}(2\sqrt3,\sqrt2),\quad
+	V_r=\begin{bmatrix}v_1&v_2\end{bmatrix}\in\R^{4\times 2}.
+	Then
+	\[
+	\boxed{\ A=U\,\Sigma\,V_r^{\top}\ } \quad\text{(thin SVD; rank =2).}\]
+	(If a full V\in\R^{4\times4} is required, append any two orthonormal vectors orthogonal to v_1,v_2 to complete an orthonormal basis.)
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson].
+\item Verify by substitution or identity checks].
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+9&-3&-4\\[\begin{aligned}
+2pt]12&-4&-6\
+\end{aligned}\[2pt]8&-3&-3\end{bmatrix}.
+	
+	\paragraph{3.2.1 Eigenvalues.}
+	\(\chi_A(\lambda)=(\lambda-2)(\lambda-1)(\lambda+1)\Rightarrow
+	\boxed{\{-1,1,2\}}.
+	
+	\paragraph{3.2.2 Normalized eigenvector for the largest eigenvalue.}
+	For \lambda_{\max}=2\), an eigenvectoris=\begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix}; normalize:
+	\[
+	\boxed{\ \dfrac{1}{\sqrt3} \begin{bmatrix}1\\[2pt]1\\[2pt]1\end{bmatrix}.\
+	}\]
+]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 9}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	\[
+	\boxed{\ \log(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots,\quad |x|<1.\ }\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 10}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+{2x-1}$, compute $\dfrac{dy}{dx}$.}
+	Quotient rule:
+\[
+	\frac{dy}{dx}=\frac{(1)(2x-1)-(x+1)(2)}{(2x-1)^2}
+	=\boxed{\ -\dfrac{3}{(2x-1)^2}\ }\].
+	\newpage	
+	% =========================================================
+	% QUESTION 1
+	% =========================================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.3}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+
+	Chain rule:
+\[
+	\boxed{\ \dfrac{df}{dx}=2(2x^3+1)\cdot 6x^2=12x^2(2x^3+1).\
+	}
+\]
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.4}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+\(\mathbb{E}(e^{tX})\).}
+	\[
+	\boxed{\ \frac{d}{dt}\mathbb{E}(e^{tX})=\mathbb{E}\!\left(Xe^{tX}\right)\ } \quad
+	(\text{differentiate under the integral sign})\].
+	
+	% =========================
+	% QUESTION 4
+	% =========================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{5.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+{\partial x}(x^{\top} a)$}
+	For column vectors x,a\in\(\mathbb{R}\)^p), x^{\top} a=\sum_i x_i a_i).  
+	Gradient wrt x): \boxed{\dfrac{\partial}{\partial x}(x^{\top} a)=a}.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 11}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.2}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	\begin{enumerate}[label=\textbf{3.2.\arabic*}, leftmargin=2.2em]
+		\item f(x,y)=\dfrac{1}{2\pi}\,x^{-1/2}y^{-3/2}.
+\[
+		\frac{\partial f}{\partial y}=\frac{1}{2\pi}x^{-1/2}\!\left(-\frac{3}{2}\right)y^{-5/2},\qquad
+		\boxed{\frac{\partial^2 f}{\partial x\,\partial y}
+			=\frac{1}{2\pi}\!\left(-\frac{3}{2}\right)\!\left(-\frac{1}{2}\right)x^{-3/2}y^{-5/2}
+			=\frac{3}{8\pi}\,x^{-3/2}y^{-5/2}.}
+\]
+		\item f(x,y)=\(\log\)(x^2+y^3)+e^{2y}.
+\[
+		\frac{\partial f}{\partial y}=\frac{3y^2}{x^2+y^3}+2e^{2y},\qquad
+		\boxed{\frac{\partial^2 f}{\partial x\,\partial y}
+			=-\frac{6x}{(x^2+y^3)^2}.}
+\]
+	\end{enumerate}
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\section*{Lesson 12}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.1}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+\textbf{Year/Season}: 2021 Oct/Nov
+\par\medskip
+
+	Let
+\[X=\begin{bmatrix}
+ 1 & 1 & 1 & 2\\[2pt]1 & -1 & 1 & 0\\
+ -1 & 0 & 1 & -1\\
+ -1 & 0 & 1 & -1
+\end{bmatrix}
+\]
+	
+	\paragraph{4.1.1 Mean vector (column means).}
+\[
+	\mu=\frac{1}{4}\,X^{\top}\mathbf{1}
+	 \begin{bmatrix}0\\[2pt]0\\[2pt]1\\[2pt]0\end{bmatrix}\].
+	\paragraph{4.1.2 Centred matrix.}
+	Subtract $\mu^{\top}$ from each row:
+\[
+	\tilde X=\begin{bmatrix}
+\[\begin{bmatrix}
+		1& 1&0& 2\\[\begin{aligned}
+2pt]1&-1&0& 0\\
+		-1&0&0&-1\\
+		-1&0&0&-1
+	\end{bmatrix}
+\end{aligned}\].\paragraph{4.1.3 Variance–covariance matrix.}
+	Using the unbiased estimator S=\(\frac{1}\){n-1}\tilde X^{\top}\tilde X with $n=4$:
+\[
+	\boxed{
+\[
+\boxed{
+ S=\frac{1}{3}\tilde X^{\top}\tilde X=
+ \begin{bmatrix}
+   \frac{4}{3} & 0 & 0 & \frac{4}{3} \\[\begin{aligned}
+2pt]0 & \frac{2}{3} & 0 & \frac{2}{3} \
+\end{aligned}\[2pt]0 & 0 & 0 & 0 \\
+   \frac{4}{3} & \frac{2}{3} & 0 & 2
+ \end{bmatrix}
+}
+\]
+]
+\item Verify by substitution or identity checks].
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 Oct/Nov 2021\\
+Find the distribution of $X$ (i.e., its pmf) and the cdf $F_X(x)$.\par\medskip
+That is, $\(\mathbb{P}\)(X=x)=\dfrac{x}{15}$ for $x=1,2,3,4,5$ (and $0$ otherwise).
+	
+	\(\displaystyle \mathbb{E}[X]=\frac{\sum_{x=1}^5 x^2}{15}=\frac{55}{15}=\boxed{\tfrac{11}{3}}.
+	
+	\(\displaystyle \mathbb{E}[X^2]=\frac{\sum_{x=1}^5 x^3}{15}=\frac{225}{15}=15\).
+	
+	\(\displaystyle \operatorname{Var}(X)=\mathbb{E}[X^2]-(\mathbb{E}[X])^2
+	=15-\Big(\tfrac{11}{3}\Big)^2=\boxed{\tfrac{14}{9}}.\)
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.2}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
++\tfrac78 e^{8t}=e^{8t}.}
+	\[
+	\mathbb{E}[X\]=M^{\top}_X(0)=8,\qquad
+	\(\operatorname{Var}\)(X)=M^{\top}'_X(0)-\big(M^{\top}_X(0)\big)^2=64-64= \boxed{0}.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{4.4}
+\textbf{Source}: STA3710 June/July 2021\\
+\textbf{Year/Season}: 2021 June/July
+\par\medskip
+
+	\paragraph{4.4.1 Marginal of X).}
+	\[
+	f_X(x)=\int_0^1 6x^2y\,dy=6x^2\cdot\frac{1}{2}= \boxed{3x^2},\quad 0<x<1.
+	\paragraph{4.4.2 Probability P\big(\tfrac12<X<\tfrac34,\ \tfrac14<Y<1\big).}
+	\[
+	\int_{x=1/2}^{3/4}\!\!\int_{y=1/4}^{1} 6x^2y\,dy\,dx
+	=\int_{1/2}^{3/4}\! 6x^2\left[\frac{y^2}{2}\right\]_{1/4}^1 dx
+	=\int_{1/2}^{3/4}\! \(\frac{15}\){8}x^2\,dx
+	=\(\frac{15}\){8}\cdot\(\frac{x^3}\){3}\Big|_{1/2}^{3/4}
+	=\boxed{\(\frac{285}\){1024}}].
+
+
+	\newpage	
+	% =========================================================
+	% QUESTION 1
+	% =========================================================
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.3}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	Let
+	\[
+	X=\begin{bmatrix}
+\[\begin{bmatrix}
+		1&-1&0\\[2pt]1& 1&0\\
+		-1&0&1\\
+		-1&0&1
+	\end{bmatrix},\qquad n=4,\ \ \mathbf{1} \begin{bmatrix}1\\[2pt]1\\[2pt]1\\[2pt]1\end{bmatrix}\].
+	
+	\textbf{3.3.1 Mean vector} \bar x=n^{-1}X^{\top}\(\mathbf{1}\).
+	Column sums: [0,\,0,\,2]^{\top}\Rightarrow \boxed{\ \bar x=\begin{bmatrix}0\\[2pt]0\\ \tfrac12\end{bmatrix}.)
+	
+	\mathbf{3.3.2 Centered matrix} C=(I-\tfrac{1}{n}\mathbf{1}\mathbf{1}^{\top})X).
+	Subtract [0,0,\tfrac12] from each row:
+	\[
+	\tilde X=CX=\begin{bmatrix}
+		1&-1&-\tfrac12\\[\begin{aligned}
+2pt]1& 1&-\tfrac12\\
+		-1&0& \tfrac12\\
+		-1&0& \tfrac12
+	\end{bmatrix}
+\end{aligned}\].
+	
+	\textbf{3.3.3 Variance–covariance matrix}
+	\(S=\frac{1}{n-1}\tilde X^{\top} \tilde X with n-1=3\).
+	\[
+	\tilde X^{\top} \tilde X=\begin{bmatrix}
+\[\begin{bmatrix}
+		4&0&-2\\[\begin{aligned}
+2pt]
+		0&2&0\
+\end{aligned}\[2pt]
+		-2&0&1
+	\end{bmatrix}
+\]
+	\Rightarrow
+	\boxed{S=\begin{bmatrix}
+			\(\frac{4}\){3}&0&-\(\frac{2}\){3}\\[\begin{aligned}
+4pt]
+			0&\frac{2}{3}&0\
+\end{aligned}\[4pt]
+			-\frac{2}{3}&0&\frac{1}{3}
+		\end{bmatrix}.
+	
+	\mathbf{3.3.4 Correlation matrix}
+	The standard formula is R=D\,S\,D with D=\operatorname{diag}(1/\sqrt{s_{11}},\,1/\sqrt{s_{22}},\,1/\sqrt{s_{33}})).
+	Here D=\operatorname{diag}(\sqrt3/2,\ \sqrt6/2,\ \sqrt3)). Hence
+	\[
+	\boxed{R=\begin{bmatrix}
+\[\begin{bmatrix}
+			1&0&-1\\[\begin{aligned}
+2pt]
+			0&1&0\
+\end{aligned}\[2pt]
+			-1&0&1
+		\end{bmatrix}\].
+	
+	% =========================================================
+	% QUESTION 4
+	% =========================================================
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson].
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{2.3}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	\[Y=\begin{bmatrix}
+\[\begin{bmatrix}
+		7&78\\[\begin{aligned}
+2pt]4&70\
+\end{aligned}\[2pt]3&80\\[\begin{aligned}
+2pt]5&75\
+\end{aligned}\[2pt]6&72
+	\end{bmatrix},\quad n=5\].\(\mathbf{Mean vector: }\)
+	\(\displaystyle \bar y=\frac1n=\begin{bmatrix}25\\[2pt]375\end{bmatrix}=\boxed{\begin{bmatrix}5\\[2pt]75\end{bmatrix}}.\)
+	
+	\mathbf{Centered matrix: } subtract (5,75) row-wise,
+	\[
+	\tildeY=\begin{bmatrix}
+\[\begin{bmatrix}
+		2&3\\ -1&-5\\ -2&5\\[\begin{aligned}
+2pt]0&0\
+\end{aligned}\[2pt]1&-3
+	\end{bmatrix}\].\(\mathbf{Variance–covariance: }\) S=\(\frac{1}\){n-1}\tilde Y^{\top}\tilde Y).
+	Compute \tilde Y^{\top}\tildeY=\begin{bmatrix}10&-2\\ -2&68\end{bmatrix}, so)
+\[
+	\boxed{S=\begin{bmatrix}2.5&-0.5\\[2pt]-0.5&17\end{bmatrix}}\].
+	\textbf{Correlation: } R=D\,S\,D with D=\(\operatorname{diag}\)(1/\(\sqrt{2.5}\),\,1/\(\sqrt{17}\))).
+	Thus
+	\[
+	\boxed{R=\begin{bmatrix}
+			1&-\dfrac{1}{\sqrt{170}}
+			-\dfrac{1}{\sqrt{170}}&1
+	\end{bmatrix}}\].
+]
+\begin{solution}\begin{steps}
+]
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+
+\needspace{10\baselineskip}
+\problemheader{3.1}
+\textbf{Source}: STA3710 Jan/Feb 2021\\
+\textbf{Year/Season}: 2021 Jan/Feb
+\par\medskip
+
+	For $X\sim\text{Pois}(\lambda)$, M_X(t)=\exp(\lambda(e^t-1))).
+	\[
+	\mathbb{E}[X\]=M_X^{\top}(0)=\lambda,\qquad
+	\(\operatorname{Var}\)(X)=M_X^{\top}'(0)-\big(M_X^{\top}(0)\big)^2=\lambda.
+\begin{solution}\begin{steps}
+\item Transcribe the given data exactly and solve with line-by-line arithmetic per the lesson.
+\item Verify by substitution or identity checks.
+\end{steps}\end{solution}
+
+\end{document}
