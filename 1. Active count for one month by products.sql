@@ -1,22 +1,28 @@
 Use Evolve
-
-
+-- Revised LM version as at 2025/07/29
+--Objective: To get product active counts (for one month) for both internal & extrenal (UW??) : External ( Discovery, MiWay, Santam, OMI)
+--Evolve Active (Now included Warranties and Tyre and Rim)
 Drop table if exists #pol;
 Drop table if exists #pol2;
 
 --- Create table with applicable policies
 --#####################################################################################
-DECLARE @val_Date AS DATETIME2;
-SET @val_Date = '2025-06-30 23:59:59.999';
+DECLARE @val_Date AS DATETIME2 = '2025-10-31 23:59:59.999'
 --#####################################################################################
 
-select				*
+select		
+					POL_PolicyNumber
+					,Policy_ID
+					,POL_Deleted
+					,POL_ReceivedDate
+					,Product_Id
+					,InsurerId
+					,pol_productvariantlevel1_id
+					,pol_status 
 into				#pol
 FROM				Policy
-LEFT JOIN			Product 
-ON					POL_Product_ID = Product_Id
-left join			vw_PolicySetDetails 
-on					Policy_ID = PolicyId
+left join			Product on POL_Product_ID = Product_Id
+left join			vw_PolicySetDetails on Policy_ID = PolicyId
 where				POL_OriginalStartDate < @val_Date
 
 --- Merge with information from eventlog
@@ -28,12 +34,12 @@ Into				#pol2
 From				Eventlog el
 left join			#pol p
 on					el.EVL_ReferenceNumber = p.Policy_ID
-Where				el.EVL_Event_ID in (10514, 10516, 10733, 10292, 10515)
+Where				el.EVL_Event_ID in (10514, 10516, 10733, 10292, 10515)  --Policy Accepted, Policy Cancelled,Policy Reinstated, Policy Created, Policy NTU
 
 --- Update table so that results not affected by entries and exits after valuation date
 Update				#pol2
 set					pol_status = 1 
-where				EVL_Event_ID = 10516
+where				EVL_Event_ID = 10516 --Policy Cancelled
 					and EVL_DateTime > @val_Date
 
 ----Count
@@ -46,8 +52,9 @@ select DISTINCT    100*year (@val_Date) + month(@val_Date) [Mth],
 							WHEN Product_Id IN ('1CD1AFBF-D6B4-4265-ADEF-56EC8B3186CB', '5557806D-8733-458E-969A-9134F37C77D2', 'A80549F3-E47F-44C1-8037-F065522A03F6') then 'Deposit Cover'
 							WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='28BEBA82-5AD3-49A7-A9F0-714542B6B2A8'  then 'Santam'
 							WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='0F2B8071-42D3-4150-A25E-F58576321AF3'  then 'OMI'
+							WHEN Product_ID in ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and InsurerId='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' then 'MiWay'
 							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Booster' 
-							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Non-Booster'
+							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') and InsurerId!='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' THEN 'Warranty Non-Booster'
 							WHEN Product_Id IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') THEN 'Tyre And Rim'
 					END		[Product],
 					CASE
@@ -58,8 +65,9 @@ select DISTINCT    100*year (@val_Date) + month(@val_Date) [Mth],
 							WHEN Product_Id IN ('1CD1AFBF-D6B4-4265-ADEF-56EC8B3186CB', '5557806D-8733-458E-969A-9134F37C77D2', 'A80549F3-E47F-44C1-8037-F065522A03F6') then 'Deposit Cover'
 							WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='28BEBA82-5AD3-49A7-A9F0-714542B6B2A8'  then 'Santam'
 							WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='0F2B8071-42D3-4150-A25E-F58576321AF3'  then 'OMI'
+							WHEN Product_ID in ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and InsurerId='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' then 'MiWay'
 							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Booster' 
-							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Non-Booster'
+							WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') and InsurerId!='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' THEN 'Warranty Non-Booster'
 							WHEN Product_Id IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') THEN 'Tyre And Rim'
 					END		Mapping,
 					COUNT(DISTINCT POL_PolicyNumber) [Policy Count]
@@ -70,7 +78,7 @@ WHERE				1=1
 					AND POL_Status = 1 
 					AND POL_Deleted = 0
 					AND POL_ReceivedDate <= @val_Date
-					AND Product_Id NOT IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') -- REMOVE 'Tyre And Rim'
+					--AND Product_Id NOT IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') -- REMOVE 'Tyre And Rim'
 GROUP BY  
 					CASE
 						WHEN Product_Id IN ('77C92C34-0CBB-4554-BD41-01F2D8F5FC11','436BB1D0-CB35-4FF0-BD50-A316A08AE87B', '70292F27-B7EE-4274-8B51-E345F4C1AD18', '86E44060-B546-4A65-9464-9C4F78C1681E','DDDC2DA4-881F-40B9-A156-8B7EA881863A') THEN 'Adcover'
@@ -80,8 +88,9 @@ GROUP BY
 						WHEN Product_Id IN ('1CD1AFBF-D6B4-4265-ADEF-56EC8B3186CB', '5557806D-8733-458E-969A-9134F37C77D2', 'A80549F3-E47F-44C1-8037-F065522A03F6') then 'Deposit Cover'
 						WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='28BEBA82-5AD3-49A7-A9F0-714542B6B2A8'  then 'Santam'
 						WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='0F2B8071-42D3-4150-A25E-F58576321AF3'  then 'OMI'
+						WHEN Product_ID in ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and InsurerId='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' then 'MiWay'
 						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Booster' 
-						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Non-Booster'
+						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') and InsurerId!='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' THEN 'Warranty Non-Booster'
 						WHEN Product_Id IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') THEN 'Tyre And Rim'
 					END,
 					CASE
@@ -92,7 +101,11 @@ GROUP BY
 						WHEN Product_Id IN ('1CD1AFBF-D6B4-4265-ADEF-56EC8B3186CB', '5557806D-8733-458E-969A-9134F37C77D2', 'A80549F3-E47F-44C1-8037-F065522A03F6') then 'Deposit Cover'
 						WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='28BEBA82-5AD3-49A7-A9F0-714542B6B2A8'  then 'Santam'
 						WHEN Product_Id IN ('83C026A9-17FF-4A87-9CA9-E82C2535B538' ) and InsurerId='0F2B8071-42D3-4150-A25E-F58576321AF3'  then 'OMI'
+						WHEN Product_ID in ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and InsurerId='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' then 'MiWay'
 						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Booster' 
-						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') THEN 'Warranty Non-Booster'
+						WHEN Product_Id IN ('219527F3-1FFA-45B8-8D41-5C1E0E6F4CEF') and pol_productvariantlevel1_id not in ('A96B15B6-7922-46BF-93BD-14C735991BB3') and InsurerId!='8EFAD6A1-F56B-40FE-B79D-4D8630196F2F' THEN 'Warranty Non-Booster'
 						WHEN Product_Id IN ('01A81AE2-8478-45FB-8C0D-5A6E796C1B39') THEN 'Tyre And Rim'
 					END;
+
+Drop table if exists #pol;
+Drop table if exists #pol2;
